@@ -1,0 +1,26 @@
+.Header {
+    width: 100%;
+    padding: 50px 0;
+    z-index: 689;
+    float: right;
+}
+
+.HeaderGroup {
+    display: block;
+    width: 100%;
+
+}
+.NavBar {
+    float: right;
+}
+
+.Logo {
+    display: block;
+    float: left;
+}
+
+@media (max-width: 800px) {
+    p {
+        /* TESTED */
+    }
+}

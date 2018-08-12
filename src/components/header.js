@@ -1,7 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import './Header.css'
 
 const Header = ({ siteTitle }) => (
+
+<div className="Header">
+  <div className="HeaderGroup">
+    <div className="Logo">
+      <Link to="/">Samuel W.</Link>
+    </div>
+    <div className="NavBar">
+      <Link to="/blog">Writing</Link>
+      <Link to="/photography">Photography</Link>
+      <Link to="/projects">Projects</Link>
+    </div>
+  </div>
+</div>
+)
+  /*
   <div
     style={{
       background: 'rebeccapurple',
@@ -28,6 +44,5 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </div>
-)
-
+*/
 export default Header
