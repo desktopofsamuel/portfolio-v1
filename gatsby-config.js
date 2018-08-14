@@ -6,6 +6,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: `util/typography.js`,
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/blog`,
