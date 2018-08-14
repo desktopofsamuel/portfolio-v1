@@ -1,0 +1,19 @@
+.HomeContent {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.MainIcon {
+    margin-right: 15px;
+}
+
+.IconContainer {
+    float: left;
+
+}
+
+@media (max-width: 640px) {
+    .HomeContent {
+        grid-template-columns: repeat(1, auto);
+    }
+}
