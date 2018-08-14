@@ -11,7 +11,7 @@ const typography = new Typography({
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["IBM Plex Sans", "sans"],
+  bodyFontFamily: ["IBM Plex Sans", "sans-serif"],
 });
 
 export default typography
