@@ -1,3 +1,8 @@
+.Hero {
+    background-color: rosybrown;
+}
+
+
 .HomeContent {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -10,6 +15,17 @@
 .IconContainer {
     float: left;
 
+}
+
+.SocialBar {
+    width: 100%;
+    height: 50px;
+    background-color: navy;
+}
+
+.SocialBarWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
 }
 
 @media (max-width: 640px) {

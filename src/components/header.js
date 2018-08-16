@@ -4,15 +4,17 @@ import './Header.css'
 
 const Header = ({ siteTitle }) => (
 
-<div className="Header">
-  <div className="HeaderGroup">
-    <div className="Logo">
-      <Link to="/">Samuel W.</Link>
-    </div>
-    <div className="NavBar">
-      <Link to="/blog">Writing</Link>
-      <Link to="/photography">Photography</Link>
-      <Link to="/projects">Projects</Link>
+<div className="Container"> 
+  <div className="Header">
+    <div className="HeaderGroup">
+      <div className="Logo">
+        <Link to="/">Samuel W.</Link>
+      </div>
+      <div className="NavBar">
+        <Link to="/blog">Writing</Link>
+        <Link to="/photography">Photography</Link>
+        <Link to="/projects">Projects</Link>
+      </div>
     </div>
   </div>
 </div>
