@@ -1,12 +1,21 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import animationData from './animation.json'
+import lottie from 'lottie-web'
 
-const SecondPage = () => (
-  <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
-)
+class SecondPage extends React.Component {
+  componentDidMount() {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'), // the dom element that will contain the animation
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData
+    })
+  }
+
+  render() {
+    return <div id="lottie">hi</div>
+  }
+}
 
 export default SecondPage

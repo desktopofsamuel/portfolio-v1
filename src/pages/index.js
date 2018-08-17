@@ -1,16 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import './index.css'
+import Emoji from '../components/emoji'
+
 
 const IndexPage = ({ data }) => (
   <div>
-    <section className="Hero">
-      <div className="Container Align">
-      <h1>Samuel W.</h1>
-      <p>Welcome to my new portfolio site.</p>
-      <p>Now go build something great.</p>
+    <div className="Hero">
+      <div className="shapeshifter play30"></div>
+      <div className="Container">
+        <div className="HeroTextContainer Align">
+          <h1>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h1>
+          <h1>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoje user experience</h1>
+          <h1>I co-founded a digital agecny <strong>Playa </strong></h1>
+        </div>
       </div>
-    </section>
+    </div>
+
     <div className="Container Align">
       <div className="HomeContent">
         <div className="PhotoList">
@@ -64,24 +70,24 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </div>
+  
+
   <section className="Contact">
-    <div className="AlignCenter Container">
+    <div className="TextCenter Container">
       <h3 className="Heading3">Let's Talk</h3>
       <p>Hello There</p>
-      <Link to="" />>
+      <Link to="/page-2/">Page 2</Link>
     </div>
   </section>
+
   <section className="SocialBar">
-    <div className="AlignCenter Container">
+    <div className="TextCenter Container">
       <div className="SocialBarWrapper">
         
       </div>
     </div>
   </section>
-      
-
-    
-    </div>
+</div> 
 )
 
 export const pageQuery = graphql`

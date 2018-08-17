@@ -6,6 +6,15 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+            'gatsby-remark-emoji',
+        ]
+      }
+    },
+
+    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: `util/typography.js`,
@@ -18,6 +27,5 @@ module.exports = {
         name: 'blog'
       }
     },
-    'gatsby-transformer-remark'
   ],
 }

@@ -7,6 +7,6 @@ category: "test"
 
 ##Hello World!
 
-Hello world, this is the samuel development site.
+Hello world,✌🏻 this is the samuel development site. :smile: 
 
 ###hello

@@ -1,5 +1,45 @@
+
+  .shapeshifter {
+    animation-duration: 2000ms;
+    animation-timing-function: steps(30);
+    width: 1440px;
+    height: 1000px;
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    background-repeat: no-repeat;
+    background-image: url('../images/Hero.svg');
+    animation-iteration-count: infinite;
+    animation-name: play30;
+    overflow: hidden;
+  }
+
+  @keyframes play30 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -43200px 0px;
+    }
+  }
+
+
+
 .Hero {
-    background-color: rosybrown;
+    height: 100vh;
+    position: relative;
+ 
+ 
+}
+
+.HeroTextContainer {
+    width: 60%;
+    justify-content: center;
+}
+
+.Background {
+    position: relative;
+    width: 100%
 }
 
 

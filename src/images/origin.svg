@@ -1,0 +1,9 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#49CB74" strokeWidth="10">
+        <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="
+        M279 0L344.783 202.458L557.66 202.458L385.438 327.584L451.221 530.042L279 404.916L106.779 530.042L172.562 327.584L0.340454 202.458L213.217 202.458L279 0Z; 
+        M9.2501 595L347 10L684.75 595H9.2501Z; 
+        M0 0H79H343V343H279H0V0Z;" />
+        <animate repeatCount="indefinite" attributeName="fill" values="#B3F3BD; #B3F3BD; #AFD1F7;" dur="10s"  />
+        </path>
+      </svg>
