@@ -2,19 +2,22 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './index.css'
 import Emoji from '../components/emoji'
+import Footer from '../components/footer'
+import Socialbar from '../components/socialbar';
+
 
 const IndexPage = ({ data }) => (
-  <div>
+<div>
     <div className="Hero">
       <div className="shapeshifter play30"></div>
       <div className="Container">
-        <div className="TextContainer Align">
-          <h1>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h1>
-          <h1>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h1>
+        <div className="TextContainer Padding-M">
+          <h2>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h2>
+          <h2>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h2>
         </div>
       </div>
     </div>
-    <div className="Container Align">
+    <div className="Container Padding-M">
       <div className="SelectedWork">
         <div className="IconContainer">
             <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,10 +32,13 @@ const IndexPage = ({ data }) => (
           </div>
             <h3>Selected Work</h3>
         <h3>Water For Free </h3>
+        <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
+        <h3>Creation Cabin</h3>
+        <p>Creation Cabin is a Hong Kong independent publisher that supports local writers. I have participated in 2017 to build an online novel publishing platform to encourage creative writing in the city.</p>
         </div>
     </div>
     <section className="S-PhotoandBlog"> 
-    <div className="Container Align">
+    <div className="Container Padding-M">
       <div className="HomeContent">
         <div className="PhotoList">
           <div className="IconContainer">
@@ -91,8 +97,8 @@ const IndexPage = ({ data }) => (
   
   
   <section className="S-Contact">
-      <div className="Container CenterContainer">
-        <div className="TextContainer TextCenter">
+      <div className="Container50 Padding-M TextCenter CenterContainer">
+        <div className="Test">
           <h1>Drop me a line</h1>
           <p>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </p>
           <a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel [at] gmail.com</a>
@@ -100,13 +106,9 @@ const IndexPage = ({ data }) => (
       </div>
   </section>
 
-  <section className="SocialBar">
-    <div className="TextCenter Container">
-      <div className="SocialBarWrapper">
-        
-      </div>
-    </div>
-  </section>
+  <Socialbar />
+
+  <Footer />
 </div> 
 )
 

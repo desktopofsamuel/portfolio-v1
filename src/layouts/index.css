@@ -2,12 +2,34 @@
 .Container {
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 0px 1.0875rem;
 }
 
-.Align {
-  padding-top: 100px;
-  padding-bottom: 100px;
+
+.Container50 {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 0px 1.0875rem;
+}
+
+.Padding-L {
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+}
+
+.Padding-M {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.Padding-S {
+  padding-top: 5vh;
+  padding-bottom: 5vh
+}
+
+.Padding-XS {
+  padding-top: 2vh;
+  padding-bottom: 2vh
 }
 
 .TextCenter {
@@ -28,6 +50,10 @@ body {
 }
 
 h1 {
+  font-weight: 700;
+}
+
+h2 {
   font-weight: 400;
   line-height: 1.4;
 }
@@ -51,8 +77,9 @@ strong {
   background-position: 0 0em;
 }
 
-
-
+.WhiteText {
+  color: #ffffff;
+}
 /*
 
 html {
