@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
             </svg>
           </div>
             <h3>Selected Work</h3>
-        <h3>Water For Free </h3>
+        <h3>Water For Free t2 </h3>
         <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
         <h3>Creation Cabin</h3>
         <p>Creation Cabin is a Hong Kong independent publisher that supports local writers. I have participated in 2017 to build an online novel publishing platform to encourage creative writing in the city.</p>
