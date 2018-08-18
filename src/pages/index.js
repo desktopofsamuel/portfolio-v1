@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import './index.css'
+import { FaInstagram, FaBehance, FaMedium, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const IndexPage = ({ data }) => (
   <div>
@@ -9,6 +10,7 @@ const IndexPage = ({ data }) => (
       <h1>Samuel W.</h1>
       <p>Welcome to my new portfolio site.</p>
       <p>Now go build something great.</p>
+      
       </div>
     </section>
     <div className="Container Align">
@@ -71,10 +73,14 @@ const IndexPage = ({ data }) => (
       <Link to="" />>
     </div>
   </section>
-  <section className="SocialBar">
-    <div className="AlignCenter Container">
+  <section className="S-SocialBar">
+    <div className="Align Container">
       <div className="SocialBarWrapper">
-        
+      <FaInstagram className="BrandBar"/>
+      <FaTwitter className="BrandBar"/>
+      <FaLinkedin className="BrandBar"/>
+      <FaMedium className="BrandBar"/>
+      <FaBehance className="BrandBar"/>
       </div>
     </div>
   </section>
