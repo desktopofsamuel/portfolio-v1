@@ -1,61 +1,45 @@
-import React from "react"
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
+import React from 'react'
+import Link from 'gatsby-link'
 
-class TagRoute extends React.Component {
-  render() {
-    //console.log(this.props)
-    const posts = this.props.data.allMarkdownRemark.edges
-    const title = this.props.data.site.siteMetadata.title
-    const postLinks = posts.map(post => {
-      return (
-        <li key={post.node.frontmatter.path}>
-          <Link to={post.node.frontmatter.path}>
-            {post.node.frontmatter.title}
-          </Link>
-        </li>
-      )
-    })
+const TagPage = ({data}) => (
+    <div className="Container">
+        <Link to="../">Back</Link> 
+        <h1>Tag Post</h1>
+        {data.allMarkdownRemark.edges.map(post => (
+            <div key={ post.node.id }>
+                <h3>{post.node.frontmatter.title}</h3>
+                <small>Published on {post.node.frontmatter.date} </small>
+                <br />
+                <br />
+                <Link to={post.node.frontmatter.path}>Read More</Link>
+                <br />
+                <br />
+            </div>
+        ))}
 
-    return (
-      <div>
-        <Helmet title={title} />
-        <h2>
-          {this.props.data.allMarkdownRemark.totalCount} posts tagged with “{this.props.pathContext.tag}”
-        </h2>
-        <ul>
-          {postLinks}
-        </ul>
-        <p>
-          <Link to="/tags/">Browse all tags</Link>
-        </p>
-      </div>
-    )
-  }
-}
-
-export default TagRoute
+    </div>
+)
 
 export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+  query PostByTag($tag: String!) {
     allMarkdownRemark(
-      limit: 1000
+      filter: { frontmatter: { tags: { in: [$tag] } } }
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
     ) {
-      totalCount
       edges {
         node {
+          id
+          html
           frontmatter {
             title
+            date(formatString: "MMM DD, YYYY")
+            tags
             path
           }
         }
       }
     }
-`
+  }
+`;
+
+export default TagPage

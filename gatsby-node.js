@@ -32,7 +32,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         if (result.errors) {
           console.log(result.errors)
           resolve()
-          // reject(result.errors);
+          reject(result.errors);
         }
 
         _.each(result.data.allMarkdownRemark.edges, ({ node }) => {
