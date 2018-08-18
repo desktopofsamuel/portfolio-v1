@@ -3,20 +3,35 @@ import Link from 'gatsby-link'
 import './index.css'
 import Emoji from '../components/emoji'
 
-
 const IndexPage = ({ data }) => (
   <div>
     <div className="Hero">
       <div className="shapeshifter play30"></div>
       <div className="Container">
-        <div className="HeroTextContainer Align">
+        <div className="TextContainer Align">
           <h1>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h1>
-          <h1>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoje user experience</h1>
-          <h1>I co-founded a digital agecny <strong>Playa </strong></h1>
+          <h1>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h1>
         </div>
       </div>
     </div>
-
+    <div className="Container Align">
+      <div className="SelectedWork">
+        <div className="IconContainer">
+            <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="25" height="25" fill="none" />
+              <rect width="25" height="25" rx="6.24" fill="#AFD1F7" />
+              <path d="M20 15.7V10.6684C20 10.6228 19.999 10.5783 19.9934 10.5331C19.9558 10.2295 19.7158 8.96282 18.2836 8.18139C17.8858 7.96433 17.3581 7.51743 17.1363 7.12219C16.6356 6.2297 15.8386 5.79999 14.8152 5.79999H13.5765C12.8415 5.79999 12.1657 6.20318 11.8167 6.84999C11.4676 7.4968 10.7918 7.89999 10.0568 7.89999H7.6C6.16406 7.89999 5 9.06405 5 10.5V15.7C5 17.1359 6.16406 18.3 7.6 18.3H17.4C18.8359 18.3 20 17.1359 20 15.7Z"
+              fill="#3284DC" />
+              <rect width="8" height="8" fill="none" transform="translate(9.7 9)" />
+              <ellipse cx="13.7" cy="13" rx="4" ry="4" fill="#CCE4FF" />
+              <ellipse cx="13.7" cy="13" rx="3" ry="3" fill="#5FA4EE" />
+            </svg>
+          </div>
+            <h3>Selected Work</h3>
+        <h3>Water For Free </h3>
+        </div>
+    </div>
+    <section className="S-PhotoandBlog"> 
     <div className="Container Align">
       <div className="HomeContent">
         <div className="PhotoList">
@@ -59,25 +74,30 @@ const IndexPage = ({ data }) => (
             </svg>
         </div>
         <h3>Writings</h3>
+        <Link to="/page-2/">Page 2</Link>
           {data.allMarkdownRemark.edges.map(post => (
             <div>
               <small>{post.node.frontmatter.date} </small>
               <Link to={post.node.frontmatter.path}>
                 <h3><span className="highlight">{post.node.frontmatter.title}</span></h3>
               </Link>
+              
             </div>
           ))}
         </div>
       </div>
     </div>
+  </section>
   
-
-  <section className="Contact">
-    <div className="TextCenter Container">
-      <h3 className="Heading3">Let's Talk</h3>
-      <p>Hello There</p>
-      <Link to="/page-2/">Page 2</Link>
-    </div>
+  
+  <section className="S-Contact">
+      <div className="Container CenterContainer">
+        <div className="TextContainer TextCenter">
+          <h1>Drop me a line</h1>
+          <p>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </p>
+          <a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel [at] gmail.com</a>
+        </div>
+      </div>
   </section>
 
   <section className="SocialBar">

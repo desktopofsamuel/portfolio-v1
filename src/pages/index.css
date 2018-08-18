@@ -11,7 +11,6 @@
     background-image: url('../images/Hero.svg');
     animation-iteration-count: infinite;
     animation-name: play30;
-    overflow: hidden;
   }
 
   @keyframes play30 {
@@ -23,19 +22,38 @@
     }
   }
 
+.S-PhotoandBlog {
+    background-color: #f5f5f5;    
+}
 
+.S-Contact {
+    background-color: #e0e0e0;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CenterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .Hero {
     height: 100vh;
     position: relative;
+    width: 100%;
+    overflow: hidden;
  
  
 }
 
-.HeroTextContainer {
-    width: 60%;
-    justify-content: center;
+.TextContainer {
+    width: 50%;
 }
+
 
 .Background {
     position: relative;
@@ -61,6 +79,10 @@
     width: 100%;
     height: 50px;
     background-color: navy;
+}
+
+.fab {
+    color:white;
 }
 
 .SocialBarWrapper {
