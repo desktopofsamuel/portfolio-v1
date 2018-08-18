@@ -29,7 +29,7 @@ export const pageQuery = graphql`
                         path
                         title
                         date
-                        category
+                        tags
                   }
                 }
               }

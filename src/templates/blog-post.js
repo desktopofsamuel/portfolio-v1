@@ -11,7 +11,7 @@ export default function Template({data}) {
                 <Link to="/blog">Go Back </Link>
                 <hr />
                 <h1>{post.frontmatter.title}</h1>
-                <h4>Published on {post.frontmatter.date} in {post.frontmatter.category} </h4>
+                <h4>Published on {post.frontmatter.date} in {post.frontmatter.tags} </h4>
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
             <Footer />
@@ -27,7 +27,7 @@ export const postQuery = graphql`
                 path
                 title
                 date
-                category
+                tags
             }
         }
     }
