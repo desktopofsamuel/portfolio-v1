@@ -1,6 +1,6 @@
 import React from 'react'
 import './socialbar.css'
-import { FaInstagram, FaBehance, FaMedium, FaTwitter, FaLinkedin, FaArrowRight } from 'react-icons/fa'
+import { FaInstagram, FaBehance, FaMedium, FaTwitter, FaLinkedin } from 'react-icons/lib/fa'
 
 const Socialbar = () => (
 <section className="S-SocialBar">

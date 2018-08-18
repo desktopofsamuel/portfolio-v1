@@ -21,6 +21,6 @@
 
 @media (max-width: 800px) {
     p {
-        /* TESTED */
+        font-size: 16px;
     }
 }

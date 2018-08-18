@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
 <div className="Container"> 
   <div className="Header">
     <div className="HeaderGroup">
-      <div className="Logo">
+      <div clagassName="Logo">
         <Link to="/">Samuel W.</Link>
       </div>
       <div className="NavBar">
