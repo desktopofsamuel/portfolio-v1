@@ -1,11 +1,16 @@
+const _ = require("lodash")
 const path = require ('path');
+const Promise = require("bluebird")
+const webpackLodashPlugin = require("lodash-webpack-plugin")
 
 exports.createPages = ({boundActionCreators, graphql}) => {
     const { createPage } = boundActionCreators
 
-    const postTemplate = path.resolve('src/templates/blog-post.js');
-
-    return graphql(`
+    return new Promise((resolve, reject) => {
+        const pages = []
+        const postTemplate = path.resolve('src/templates/blog-post.js');
+        const tagTemplate = path.resolve('src/templates/tag-page.js');
+        graphql(`
         {
             allMarkdownRemark {
                 edges {
@@ -21,17 +26,51 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                   }
                 }
               }
+            }
+        `
+    ).then(result => {
+        if (result.errors) {
+          console.log(result.errors)
+          resolve()
+          // reject(result.errors);
         }
-    `).then(res => {
-        if(res.errors) {
-            return Promise.reject(res.errors)
-        } 
 
-        res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        _.each(result.data.allMarkdownRemark.edges, ({ node }) => {
             createPage ({
                 path: node.frontmatter.path,
                 component: postTemplate,
             })
         })
+        
+
+        let tags = []
+        _.each(result.data.allMarkdownRemark.edges, edge => {
+        if (_.get(edge, "node.frontmatter.tags")) {
+            tags = tags.concat(edge.node.frontmatter.tags)
+        }
+        })
+        tags = _.uniq(tags)
+        tags.forEach(tag => {
+        const tagPath = `/tags/${_.kebabCase(tag)}/`
+        createPage({
+            path: tagPath,
+            component: tagTemplate,
+            context: {
+            tag,
+            },
+        })
+        })
+
+        resolve ()
+    })
     })
 }
+
+// Add Lodash plugin
+exports.modifyWebpackConfig = ({ config, stage }) => {
+    if (stage === `build-javascript`) {
+      config.plugin(`Lodash`, webpackLodashPlugin, null)
+    }
+  
+    return
+  }
