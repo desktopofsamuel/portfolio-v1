@@ -41,7 +41,7 @@ small {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
@@ -80,6 +80,13 @@ strong {
 .WhiteText {
   color: #ffffff;
 }
+
+
+.tag {
+  margin-right: 5px;
+
+}
+
 /*
 
 html {

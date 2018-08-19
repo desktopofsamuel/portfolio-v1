@@ -5,7 +5,6 @@ import Emoji from '../components/emoji'
 import Footer from '../components/footer'
 import Socialbar from '../components/socialbar';
 
-
 const IndexPage = ({ data }) => (
 <div>
     <div className="Hero">
@@ -80,6 +79,9 @@ const IndexPage = ({ data }) => (
             </svg>
         </div>
         <h3>Writings</h3>
+        <ScrollIntoView selector="footer">
+          <button>test</button>
+        </ScrollIntoView>
         <Link to="/page-2/">Page 2</Link>
           {data.allMarkdownRemark.edges.map(post => (
             <div>
@@ -87,7 +89,6 @@ const IndexPage = ({ data }) => (
               <Link to={post.node.frontmatter.path}>
                 <h3><span className="highlight">{post.node.frontmatter.title}</span></h3>
               </Link>
-              
             </div>
           ))}
         </div>
@@ -108,7 +109,7 @@ const IndexPage = ({ data }) => (
 
   <Socialbar />
 
-  <Footer />
+  <Footer id="#footer"/>
 </div> 
 )
 

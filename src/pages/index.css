@@ -80,6 +80,7 @@
 }
 
 
+
 .fab {
     color:white;
 }
@@ -88,5 +89,11 @@
 @media (max-width: 640px) {
     .HomeContent {
         grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (max-width: 640px) {
+    .TextContainer {
+        width: 100%;
     }
 }
