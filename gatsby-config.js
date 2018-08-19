@@ -27,9 +27,5 @@ module.exports = {
         name: 'blog'
       }
     },
-    {
-
-      
-    }
   ],
 }

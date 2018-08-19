@@ -79,9 +79,6 @@ const IndexPage = ({ data }) => (
             </svg>
         </div>
         <h3>Writings</h3>
-        <ScrollIntoView selector="footer">
-          <button>test</button>
-        </ScrollIntoView>
         <Link to="/page-2/">Page 2</Link>
           {data.allMarkdownRemark.edges.map(post => (
             <div>
