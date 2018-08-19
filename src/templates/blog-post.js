@@ -9,9 +9,8 @@ export default function Template({data}) {
         <div>
             <div className="Container">
                 <Link to="/blog">Go Back </Link>
-                <hr />
                 <h1>{post.frontmatter.title}</h1>
-                <h4>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
+                <small>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
                     return (
                         <span key={index} className="tag">
                             <Link to={`tags/${tag}`}
@@ -19,7 +18,8 @@ export default function Template({data}) {
                             {tag}</Link>
                         </span>
                     )
-                })}</h4> 
+                })}</small> 
+                <hr />
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
             <Footer />

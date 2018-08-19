@@ -13,6 +13,7 @@
     animation-name: play30;
   }
 
+
   @keyframes play30 {
     0% {
       background-position: 0px 0px;
@@ -50,6 +51,7 @@
 
 .TextContainer {
     width: 50%;
+    
 }
 
 
@@ -86,14 +88,29 @@
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 560px) {
     .HomeContent {
         grid-template-columns: repeat(1, auto);
     }
-}
-
-@media (max-width: 640px) {
     .TextContainer {
         width: 100%;
+        text-align: center;
+    }
+    .shapeshifter {
+        left: auto;
+        opacity: 0.2;
+        transform: scale(0.5,0.5);
+    }
+    .Hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
+
+@media (min-width: 560px) 
+  and (max-width: 720px) {
+    .TextContainer {
+        width: 75%;
+    }
+  }

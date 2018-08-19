@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,700|IBM+Plex+Serif');
 
 .Container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1080px;
   padding: 0px 1.0875rem;
 }
 
@@ -37,11 +38,13 @@
 }
 
 small {
-  font-size: 70%;
+  font-family: 'IBM Plex Mono';
+  font-size: 80%;
+  color: #c3c3c3;
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
 }
 
@@ -51,6 +54,7 @@ body {
 
 h1 {
   font-weight: 700;
+  font-size: 48px;
 }
 
 h2 {
@@ -58,8 +62,18 @@ h2 {
   line-height: 1.4;
 }
 
+h3 {
+  font-weight: 600;
+}
+
 strong {
   font-weight: 800;
+}
+
+hr {
+  height: 6px;
+	background-color: #FE8170;
+    border: 0;
 }
 
 .highlight {

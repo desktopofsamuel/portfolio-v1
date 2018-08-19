@@ -4,6 +4,7 @@ import './index.css'
 import Emoji from '../components/emoji'
 import Footer from '../components/footer'
 import Socialbar from '../components/socialbar';
+import { FaArrowRight } from 'react-icons/lib/fa';
 
 const IndexPage = ({ data }) => (
 <div>
@@ -105,6 +106,14 @@ const IndexPage = ({ data }) => (
   </section>
 
   <Socialbar />
+
+  <section className="S-Footer">
+        <div className="Container TextCenter Padding-XS">
+      <div className="FooterWrapper WhiteText">
+          <p>Design with <u>Figma</u>, Developed with <u>Gatsby</u>.  Read the story <FaArrowRight /></p>
+      </div>
+        </div>
+  </section>
 
   <Footer id="#footer"/>
 </div> 
