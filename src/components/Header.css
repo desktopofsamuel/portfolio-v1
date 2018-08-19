@@ -14,9 +14,11 @@
     float: right;
 }
 
+.NavBar a:not(:last-child) {
+    margin-right: 20px;
+}
 .Logo {
-    display: block;
-    float: left;
+    display: inline-block;
 }
 
 @media (max-width: 800px) {

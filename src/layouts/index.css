@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,700|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif');
+
+.BlogContainer {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0px 1.0875rem;
+}
 
 .Container {
   margin: 0 auto;
@@ -68,12 +74,6 @@ h3 {
 
 strong {
   font-weight: 800;
-}
-
-hr {
-  height: 6px;
-	background-color: #FE8170;
-    border: 0;
 }
 
 .highlight {

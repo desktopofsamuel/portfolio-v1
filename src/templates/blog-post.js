@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Footer from '../components/footer';
 
-export default function Template({data}) {
+export default function Template({data, pathContext}) {
     const post = data.markdownRemark
 
     return(
         <div>
-            <div className="Container">
+            <div className="BlogContainer">
                 <Link to="/blog">Go Back </Link>
                 <h1>{post.frontmatter.title}</h1>
                 <small>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
@@ -40,3 +40,4 @@ export const postQuery = graphql`
         }
     }
 `
+

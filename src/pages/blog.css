@@ -1,0 +1,32 @@
+.HeroIconWrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.BlogEntry {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin: 0 10vw;
+    padding-bottom: 25px;
+}
+
+.BlogMainWrapper h3 {
+    color: #3284DC;
+}
+
+hr {
+      background-color: #DFDFDF;
+      border: 0;
+  }
+
+@media (max-width: 560px) {
+    .BlogEntry {
+        display: block;
+        margin: 0 5vw
+    }
+    .BlogDateWrapper {
+        margin-bottom: 10px;
+    }
+
+}

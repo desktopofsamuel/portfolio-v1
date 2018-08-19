@@ -36,7 +36,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         }
 
         _.each(result.data.allMarkdownRemark.edges, ({ node }) => {
-            createPage ({
+            createPage({
                 path: node.frontmatter.path,
                 component: postTemplate,
             })

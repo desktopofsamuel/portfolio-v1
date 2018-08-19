@@ -63,7 +63,7 @@
 
 .HomeContent {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 50% 50%;
 }
 
 .MainIcon {
