@@ -8,7 +8,9 @@ export default function Template({data, pathContext}) {
     return(
         <div>
             <div className="BlogContainer">
-                <Link to="/blog">Go Back </Link>
+                <div className="BackButtonWrapper">
+                    <Link to="/blog">Back</Link>
+                </div>
                 <h1>{post.frontmatter.title}</h1>
                 <small>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
                     return (

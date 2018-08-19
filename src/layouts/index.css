@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif:400,600');
 
 .BlogContainer {
   margin: 0 auto;
@@ -43,6 +43,19 @@
   text-align: center;  
 }
 
+.BackButtonWrapper {
+  padding-bottom: 15px;
+}
+
+.BackButtonWrapper a {
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono";
+  letter-spacing: 0.25rem;
+  color: #888;
+  font-size: 70%;
+  
+}
+
 small {
   font-family: 'IBM Plex Mono';
   font-size: 80%;
@@ -74,6 +87,21 @@ h3 {
 
 strong {
   font-weight: 800;
+}
+
+.BlogMainWrapper p {
+  font-family: "IBM Plex Serif";
+}
+
+.BlogContainer p {
+  font-family: "IBM Plex Serif";
+  line-height: 2rem;
+}
+
+.BlogContainer h3 {
+  font-family: "IBM Plex Serif";
+  font-weight: 600;
+  line-height: 1.85rem;
 }
 
 .highlight {
