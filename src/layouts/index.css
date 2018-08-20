@@ -89,11 +89,7 @@ strong {
   font-weight: 800;
 }
 
-.BlogMainWrapper p {
-  font-family: "IBM Plex Serif";
-}
-
-.BlogContainer p {
+.Blog p {
   font-family: "IBM Plex Serif";
   line-height: 2rem;
 }

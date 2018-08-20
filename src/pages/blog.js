@@ -18,7 +18,7 @@ const BlogPage = ({data}) => (
                         <div className="BlogDateWrapper">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
-                        <div className="BlogMainWrapper">
+                        <div className="BlogMainWrapper Blog">
                             <Link to={post.node.frontmatter.path}><h3>{post.node.frontmatter.title}</h3></Link>
                             <p>{post.node.excerpt}</p>
                             <br />
