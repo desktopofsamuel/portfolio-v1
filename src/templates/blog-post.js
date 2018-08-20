@@ -7,6 +7,7 @@ export default function Template({data, pathContext}) {
 
     return(
         <div>
+            
             <div className="BlogContainer Blog">
                 <div className="BackButtonWrapper">
                     <Link to="/blog">Back</Link>

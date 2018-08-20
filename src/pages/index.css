@@ -42,6 +42,10 @@
     align-items: center;
 }
 
+.JustifyContainer {
+    justify-content: center;
+}
+
 .Hero {
     height: 100vh;
     position: relative;
@@ -81,6 +85,23 @@
     background-color: #4E5B69;
 }
 
+.S-Footer {
+    background-color: #444F5B;
+}
+
+.FooterWrapper small {
+    color: #BDBFC2;
+}
+
+.FooterWrapper p {
+    font-size: 80%;
+    margin-bottom: 0;
+}
+    
+.FooterWrapper a {
+    text-decoration: underline;
+    color: white;
+}
 
 
 .fab {
