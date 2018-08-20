@@ -16,7 +16,7 @@ export default function Template({data, pathContext}) {
                 { name: 'og:description', 
                     content: `${post.excerpt}`},
                 { name: 'keywords', content: `${post.frontmatter.tags}` },
-                { name: 'og:type', content: 'article', },
+                { name: 'type', content: 'article', },
                 ]}
             /> 
             <div className="BlogContainer Blog">

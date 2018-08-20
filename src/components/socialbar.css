@@ -18,7 +18,7 @@
 .BrandIcon {
     font-size: 36px;
     color: #BDBFC2;
-    transition: color 0.2s ease-in, transform 0.1s ease-in;
+    transition: color 0.2s ease-in, transform 0.2s ease-in;
 }
 
 .BrandIcon:hover {
