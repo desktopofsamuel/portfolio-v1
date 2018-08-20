@@ -1,13 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Footer from '../components/footer';
+import Helmet from 'react-helmet'
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
 
     return(
         <div>
-            
+            <Helmet
+                title={`${post.frontmatter.title} | Desktop of Samuel`}
+                meta={[
+                { name: 'description', 
+                content: `${post.excerpt}`},
+                { name: 'og:description', 
+                    content: `${post.excerpt}`},
+                { name: 'keywords', content: `${post.frontmatter.tags}` },
+                { name: 'og:type', content: 'article', },
+                ]}
+            /> 
             <div className="BlogContainer Blog">
                 <div className="BackButtonWrapper">
                     <Link to="/blog">Back</Link>
@@ -34,6 +45,7 @@ export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path }}){
             html
+            excerpt(pruneLength: 250)
             frontmatter {
                 path
                 title

@@ -127,6 +127,11 @@
         align-items: center;
         justify-content: center;
     }
+
+    .Blog h1 {
+        font-size: 36px;
+        line-height: 2.5rem;
+    }
 }
 
 @media (min-width: 560px) 
