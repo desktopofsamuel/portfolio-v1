@@ -3,7 +3,7 @@ path: "/post-two"
 date: "2018-08-12"
 title: "Second Gatsby Post"
 tags: ["test", "happy", "journal"]
-mini: "this is a blog post about post two"
+image: "./Frame-4.jpg"
 ---
 
 ##Hello World!

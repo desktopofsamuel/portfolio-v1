@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Footer from '../components/footer';
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
@@ -17,8 +18,9 @@ export default function Template({data, pathContext}) {
                     content: `${post.excerpt}`},
                 { name: 'keywords', content: `${post.frontmatter.tags}` },
                 { name: 'og:type', content: 'article', },
+                { name: 'og:image', content: `${post.frontmatter.image.publicURL}`}
                 ]}
-            /> 
+            />
             <div className="BlogContainer Blog">
                 <div className="BackButtonWrapper">
                     <Link to="/blog">Back</Link>
@@ -34,6 +36,7 @@ export default function Template({data, pathContext}) {
                     )
                 })}</small> 
                 <hr />
+
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
             <Footer />
@@ -51,8 +54,12 @@ export const postQuery = graphql`
                 title
                 date
                 tags
+                image {
+                    publicURL
+                    size 
+                } 
             }
+          }
         }
-    }
 `
 
