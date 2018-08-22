@@ -17,11 +17,39 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                   node {
                       html
                       id
+                      excerpt(pruneLength: 250)
                       frontmatter {
                           path
                           title
                           date
                           tags
+                          image {
+                            publicURL
+                            size
+                              childImageSharp {
+                              resize {
+                                src
+                                tracedSVG
+                                width
+                                height
+                                aspectRatio
+                                originalName
+                              }
+                              resolutions {
+                                base64
+                                tracedSVG
+                                aspectRatio
+                                width
+                                height
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                originalName
+                              }
+                            }
+                        }
+                          
                     }
                   }
                 }
