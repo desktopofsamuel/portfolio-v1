@@ -1,31 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Footer from '../components/footer';
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import Seo from '../components/seo';
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
 
     return(
         <div>
-            <Helmet
-                title={`${post.frontmatter.title} | Desktop of Samuel`}
-                meta={[
-                { name: 'description', 
-                content: `${post.excerpt}`},
-                { name: 'og:description', 
-                    content: `${post.excerpt}`},
-                { name: 'keywords', content: `${post.frontmatter.tags}` },
-                { name: 'og:type', content: 'article', },
-                { name: 'og:image', content: `${post.frontmatter.image.publicURL}`}
-                ]}
-            />
+            <Seo data={post} />
+            
             <div className="BlogContainer Blog">
                 <div className="BackButtonWrapper">
                     <Link to="/blog">Back</Link>
                 </div>
                 <h1>{post.frontmatter.title}</h1>
+                
                 <small>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
                     return (
                         <span key={index} className="tag">
@@ -36,7 +27,7 @@ export default function Template({data, pathContext}) {
                     )
                 })}</small> 
                 <hr />
-
+                <Img sizes={post.frontmatter.image.childImageSharp.sizes} />
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
             <Footer />
@@ -57,9 +48,14 @@ export const postQuery = graphql`
                 image {
                     publicURL
                     size 
+                    childImageSharp {
+                        sizes(maxWidth: 1140) {
+                            ...GatsbyImageSharpSizes_withWebp
+                        }
+                    }
                 } 
             }
           }
         }
-`
 
+`
