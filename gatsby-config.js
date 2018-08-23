@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'Desktop of Samuel Wong',
-  },
+    url: 'http://beta.desktopofsamuel.com',
+},
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
-    `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,
@@ -20,6 +20,7 @@ module.exports = {
       options: {
         plugins: [
             'gatsby-remark-emoji',
+            'gatsby-remark-copy-linked-files',
         ]
       }
     },
@@ -40,8 +41,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src`,
-        name: 'src'
+        path: `${__dirname}/src/images`,
+        name: 'images'
       }
     },
   ],

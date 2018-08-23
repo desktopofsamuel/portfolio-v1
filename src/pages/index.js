@@ -4,10 +4,14 @@ import './index.css'
 import Emoji from '../components/emoji'
 import Footer from '../components/footer'
 import Socialbar from '../components/socialbar';
+import Seo from '../components/seo';
+import Helmet from "react-helmet";
 
 
 const IndexPage = ({ data }) => (
 <div>
+    <Seo data="" />
+    <Helmet title={`Desktop of Samuel Test 2`}></Helmet>
     <div className="Hero">
       <div className="shapeshifter play30"></div>
       <div className="Container">

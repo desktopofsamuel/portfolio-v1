@@ -3,9 +3,11 @@ import Link from 'gatsby-link'
 import Footer from '../components/footer';
 import HeroBlogLogo from '../images/HeroBlog.svg'
 import './blog.css'
+import Seo from '../components/seo';
 
 const BlogPage = ({data}) => (
     <div>
+        <Seo data="" />
         <div className="HeroIcon">
             <div className="HeroIconWrapper Container Padding-M">
                 <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
@@ -35,6 +37,11 @@ const BlogPage = ({data}) => (
 
 export const pageQuery = graphql`
 query BlogIndex {
+    site {
+        siteMetadata {
+        title
+        }
+    }
     allMarkdownRemark (sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
