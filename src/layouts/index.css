@@ -8,7 +8,7 @@
 
 .Container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1080px;
   padding: 0px 1.0875rem;
 }
 
@@ -98,7 +98,7 @@ strong {
 }
 
 .Blog p {
-  font-family: "IBM Plex Serif";
+  font-family: "IBM Plex Sans";
   line-height: 2rem;
 }
 
@@ -107,7 +107,7 @@ strong {
 }
 
 .BlogContainer h3 {
-  font-family: "IBM Plex Serif";
+  font-family: "IBM Plex Sans";
   font-weight: 600;
   line-height: 1.85rem;
 }

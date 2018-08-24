@@ -1,12 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Seo from '../components/seo';
+import PropTypes from 'prop-types'
 
-const TagPage = ({data}) => (
+const TagPage = ({ pathContext, data}) => {
+  const { tag } = pathContext;
+  const tagHeader = `tagged with "${tag}"`;
+
+  
+  return (
     <div className="Container">
+       <Seo data="" ></Seo>
         <Link to="../">Back</Link> 
-        <h1>Tag Post</h1>
+        <h1>{tagHeader} </h1>
         {data.allMarkdownRemark.edges.map(post => (
+            
             <div key={ post.node.id }>
+            
                 <h3>{post.node.frontmatter.title}</h3>
                 <small>Published on {post.node.frontmatter.date} </small>
                 <br />
@@ -18,7 +28,17 @@ const TagPage = ({data}) => (
         ))}
 
     </div>
-)
+);
+};
+
+TagPage.propTypes = {
+  pathContext: PropTypes.shape({
+    tag: PropTypes.string.isRequired,
+  }),
+};
+
+export default TagPage
+
 
 export const pageQuery = graphql`
   query PostByTag($tag: String!) {
@@ -42,4 +62,3 @@ export const pageQuery = graphql`
   }
 `;
 
-export default TagPage
