@@ -1,0 +1,2 @@
+webpackJsonp([0x6731bafd5a98],{355:function(e,t){e.exports={data:{markdownRemark:{html:"<h2>Hello World!</h2>\n<p>Hello world,✌🏻 this is the samuel development site. 😄 </p>\n<h3>hello</h3>",excerpt:"Hello World! Hello world,✌🏻 this is the samuel development site. 😄  hello",frontmatter:{path:"/post-three",title:"First Gatsby Post",date:"2018-10-10",tags:["test","design","technology"],image:{publicURL:"/static/Frame-4-520d3167b9ae3bccd54de83379eeb97b.jpg",size:1863270}}}},pathContext:{}}}});
+//# sourceMappingURL=path---post-three-5dd3b043774dead7237b.js.map
