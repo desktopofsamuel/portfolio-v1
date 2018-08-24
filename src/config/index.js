@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: "Blog of Samuel",
   shortSiteTitle: "Desktop of Samuel",
   siteDescription: "Your nice blog description",
-  siteUrl: "http://beta.desktopofsamuel.com/",
+  siteUrl: "http://beta.desktopofsamuel.com",
   pathPrefix: "",
   siteImage: "/static/FacebookImage.png",
   siteLanguage: "en",
