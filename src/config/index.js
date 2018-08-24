@@ -4,7 +4,7 @@ module.exports = {
   siteDescription: "Your nice blog description",
   siteUrl: "http://beta.desktopofsamuel.com/",
   pathPrefix: "",
-  siteImage: "http://www.beta.desktopofsamuel.com/static/FacebookImage.png",
+  siteImage: "/static/FacebookImage.png",
   siteLanguage: "en",
   authorName: "Samuel",
   authorTwitterAccount: "desktopofsamuel",

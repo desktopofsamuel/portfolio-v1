@@ -11,7 +11,7 @@ import Helmet from "react-helmet";
 const IndexPage = ({ data }) => (
 <div>
     <Seo data="" />
-    <Helmet title={`Desktop of Samuel Test 2`}></Helmet>
+    <Helmet title={`Desktop of Samuel Test 2`} <meta property="og:url" content="http://beta.desktopofsamuel.com/" /> ></Helmet>
     <div className="Hero">
       <div className="shapeshifter play30"></div>
       <div className="Container">
