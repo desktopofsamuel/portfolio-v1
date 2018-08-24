@@ -17,6 +17,7 @@ const Seo = props => {
     const description = postDescription ? postDescription : config.siteDescription;
     const image = postCover ? postCover.childImageSharp.sizes.src : config.siteImage;
     const url = config.siteUrl + config.pathPrefix + postSlug;
+    const imageurl = config.siteUrl + image;
 
     return (
         <Helmet
@@ -32,11 +33,11 @@ const Seo = props => {
             <meta property="og:url" content={url} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
+            <meta property="og:image" content={imageurl} />
             <meta property="og:type" content="website" />
 
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:image" content={image} />
+            <meta name="twitter:image" content={imageurl} />
             <meta name="twitter:description" content={description} />
             <meta
                 name="twitter:creator"
