@@ -23,7 +23,7 @@ export default function Template({data, pathContext}) {
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
                 <hr />
                 <div className="tag">
-                {post.frontmatter.tags.map((tag, index) => {
+                Tagged with {post.frontmatter.tags.map((tag, index) => {
                     return (
                         <span key={index} className="tag">
                             <Link to={`tags/${tag}`}
