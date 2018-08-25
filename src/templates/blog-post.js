@@ -6,6 +6,7 @@ import Seo from '../components/seo';
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
+    const {next, prev} = pathContext;
 
     return(
         <div>
@@ -21,6 +22,19 @@ export default function Template({data, pathContext}) {
                 <hr />
                 {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
+                <p>
+  {prev &&
+    <Link to={prev.frontmatter.path}>
+      Previous: {prev.frontmatter.title}
+    </Link>
+  }
+</p>
+<p>
+  {next &&
+    <Link to={next.frontmatter.path}>
+      Next: {next.frontmatter.title}
+    </Link>}
+</p>
                 <hr />
                 <div className="tag">
                 {post.frontmatter.tags.map((tag, index) => {
