@@ -10,14 +10,20 @@ export default function Template({data, pathContext}) {
     return(
         <div>
             <Seo data={post} />
-            
             <div className="BlogContainer Blog">
+                <div className="Content">
                 <div className="BackButtonWrapper">
                     <Link to="/blog">Back</Link>
                 </div>
                 <h1>{post.frontmatter.title}</h1>
                 
-                <small>Published on {post.frontmatter.date} in {post.frontmatter.tags.map((tag, index) => {
+                <small>Published on {post.frontmatter.date} </small> 
+                <hr />
+                {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
+                <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
+                <hr />
+                <div className="tag">
+                {post.frontmatter.tags.map((tag, index) => {
                     return (
                         <span key={index} className="tag">
                             <Link to={`tags/${tag}`}
@@ -25,10 +31,9 @@ export default function Template({data, pathContext}) {
                             {tag}</Link>
                         </span>
                     )
-                })}</small> 
-                <hr />
-                <Img sizes={post.frontmatter.image.childImageSharp.sizes} />
-                <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+                })}
+                </div>
+            </div>
             </div>
             <Footer />
         </div>

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 const TagPage = ({ pathContext, data}) => {
   const { tag } = pathContext;
-  const tagHeader = `tagged with "${tag}"`;
+  const tagHeader = `Tagged with "${tag}"`;
 
   
   return (

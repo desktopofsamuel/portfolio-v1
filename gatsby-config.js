@@ -21,6 +21,12 @@ module.exports = {
         plugins: [
             'gatsby-remark-emoji',
             'gatsby-remark-copy-linked-files',
+            {
+              resolve: `gatsby-remark-images`,
+                options: {
+                  maxWidth: 1280,
+                },
+            },
         ]
       }
     },

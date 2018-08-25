@@ -9,3 +9,9 @@ image: "./Frame-4.jpg"
 ##Hello World!
 
 Second text post, yay!
+
+![](./IMG_5268.jpg)
+
+My name is [Samuel](http://www.facebook.com) and I am very happy. `this is happy`
+
+`this is happy`

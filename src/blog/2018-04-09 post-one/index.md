@@ -11,15 +11,17 @@ image: "./main.jpg"
 ##Thoughts on Setapp — subscription-based collection for Mac apps 
 
 
-![](https://78.media.tumblr.com/8c16986a3a85c875ea06a7eea763e9cb/tumblr_inline_pbzvlwcb3b1vn6aq1_500.png)
+![](https://78.media.tumblr.com/8c16986a3a85c875ea06a7eea763e9cb/tumblr_inline_pbzvlwcb3b1vn6aq1_500.png) 
 
 Mac apps are great. They are beautifully designed, crafted with a bunch of handy features, and they have won over the hearts of their users, willing to pay for every update. Mac App Store was launched in 2011, it was Apple’s attempt to replicate the success of iOS App Store.
 However, I would hardly call Mac App Store a success today.
 **Walls of the App Store**
 
-Despite a cheque with a lot of zeroes are written on the slide of Apple’s keynote every year at WWDC, developers share their loves & hatred at the same time toward the monstrous platform. There are a lot of Mac apps (especially those with subscription service) have yet to become available today on Mac App Store.
+> Despite a cheque with a lot of zeroes are written on the slide of Apple’s keynote every year at WWDC, developers share their loves & hatred at the same time toward the monstrous platform. There are a lot of Mac apps (especially those with subscription service) have yet to become available today on Mac App Store.
 
-It is contributed to several obvious reasons, just to name a few: 
+![](./Frame-4.jpg)
+
+It is contributed to several obvious reasons, just to name a few `text-transform` : 
 
 1 — App Store split developer’s sales revenue as high as 30%, which is too high especially for subscription-based service. 
 
@@ -30,7 +32,9 @@ It is contributed to several obvious reasons, just to name a few:
 4 — Mac App Store is not as exclusive as iOS App Store to install new apps on Mac. A lot of developers setup online store on their own according to their pricing needs, like bundles and discount
 
 1Password shares the struggle when they are releasing the new version in May. Their CEO, Jeff Shiner wrote,
-The App Store, for all it does well, struggles mightily when a paid upgrade is introduced because it does not allow developers to charge for an update to an existing app. When considering a paid upgrade, developers have two choices: they can re-use their existing app or submit a new one. Both have their pros and cons.
+> The App Store, for all it does well, struggles mightily when a paid upgrade is introduced because it does not allow developers to charge for an update to an existing app. When considering a paid upgrade, developers have two choices: they can re-use their existing app or submit a new one. Both have their pros and cons.
+
+
 
 The third way is not to rely on Mac App Store at all. But to a larger extent, the existence of paid upgrade is originated to the insufficient income for app development. The team behind Ulysses  [explained at length on their strategy switching subscription model.](https://t.umblr.com/redirect?z=https%3A%2F%2Fmedium.com%2Fbuilding-ulysses%2Fwhy-were-switching-ulysses-to-subscription-47f80b07a9cd&t=MDQ3ZmZhMWU2OWYwYmI3ZTYyNDQ5Nzc1Yzk5YTk5OTdlMmViNzliMSxSc3dIQkx3eA%3D%3D&b=t%3Amd_XHZDWEUh7XzJM6q1d8g&p=https%3A%2F%2Fjournal.desktopofsamuel.com%2Fpost%2F175975854762%2Fdo-subscription-models-work-with-apps&m=1)  Especially on how current pricing model is crooked, as developers heavily rely on new releases to get exposure and call for money.
 But they raised a bigger question on software development.
