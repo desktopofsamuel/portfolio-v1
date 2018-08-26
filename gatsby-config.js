@@ -22,6 +22,12 @@ module.exports = {
             'gatsby-remark-emoji',
             'gatsby-remark-copy-linked-files',
             {
+              resolve: 'gatsby-remark-attr',
+              options: {
+                allowDangerousDOMEventHandlers: true
+              },
+            },
+            {
               resolve: `gatsby-remark-images`,
                 options: {
                   maxWidth: 1280,

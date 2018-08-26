@@ -11,15 +11,22 @@ image: "./main.jpg"
 ##Thoughts on Setapp — subscription-based collection for Mac apps 
 
 
-![](https://78.media.tumblr.com/8c16986a3a85c875ea06a7eea763e9cb/tumblr_inline_pbzvlwcb3b1vn6aq1_500.png) 
+![](https://78.media.tumblr.com/8c16986a3a85c875ea06a7eea763e9cb/tumblr_inline_pbzvlwcb3b1vn6aq1_500.png){ .testing }
 
 Mac apps are great. They are beautifully designed, crafted with a bunch of handy features, and they have won over the hearts of their users, willing to pay for every update. Mac App Store was launched in 2011, it was Apple’s attempt to replicate the success of iOS App Store.
 However, I would hardly call Mac App Store a success today.
-**Walls of the App Store**
+**Walls of the App Store**{ .testing }
 
-> Despite a cheque with a lot of zeroes are written on the slide of Apple’s keynote every year at WWDC, developers share their loves & hatred at the same time toward the monstrous platform. There are a lot of Mac apps (especially those with subscription service) have yet to become available today on Mac App Store.
+> Despite a cheque with a lot of zeroes are written on the slide of Apple’s keynote every year at WWDC, developers share their loves & hatred at the same time toward the monstrous platform. There are a lot of Mac apps (especially those with subscription service) have yet to become available today on Mac App Store. 
+
+
 
 ![](./Frame-4.jpg)
+![](./Frame-4.jpg)
+
+
+
+Npm stand for *node*{ .testing } packet manager.
 
 It is contributed to several obvious reasons, just to name a few `text-transform` : 
 

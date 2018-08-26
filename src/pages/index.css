@@ -298,6 +298,11 @@ strong {
 font-weight: 800;
 }
 
+.testing {
+    display: grid;
+    grid-template-columns: auto;
+}
+
 .Blog h1 {
 font-size: 36px;
 line-height: 3rem;
