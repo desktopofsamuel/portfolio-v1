@@ -8,7 +8,7 @@ import config from '../config';
 const TagPage = ({ pathContext, data}) => {
   const { tag } = pathContext;
   const tagHeader = `Tagged with "${tag}"`;
-  const HelmetTitle = "Tagged with " + pathContext.tag + "| " + config.shortSiteTitle;
+  const HelmetTitle = "Read some " + pathContext.tag + " articles | " + config.shortSiteTitle;
   const HelmetURL = config.siteUrl + "/tags/" + pathContext.tag;
 
   

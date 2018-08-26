@@ -25,7 +25,7 @@ const BlogPage = ({data}) => (
                             <small>{post.node.frontmatter.date} </small>
                         </div>
                         <div className="BlogMainWrapper Blog">
-                            <Link to={post.node.frontmatter.path}><h3>{post.node.frontmatter.title}</h3></Link>
+                            <Link to={post.node.frontmatter.path}><h2>{post.node.frontmatter.title}</h2></Link>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />

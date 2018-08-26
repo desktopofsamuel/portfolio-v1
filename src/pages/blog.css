@@ -11,6 +11,12 @@
     padding-bottom: 25px;
 }
 
+.HomeBlogEntry {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding-bottom: 25px;
+}
+
 .BlogMainWrapper h3 {
     color: #3284DC;
 }

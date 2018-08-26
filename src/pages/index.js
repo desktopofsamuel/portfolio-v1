@@ -18,8 +18,8 @@ const IndexPage = ({ data }) => (
       <div className="shapeshifter play30"></div>
       <div className="Container">
         <div className="TextContainer Padding-M">
-          <h2>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h2>
-          <h2>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h2>
+          <h3>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h3>
+          <h3>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h3>
         </div>
       </div>
     </div>
@@ -36,31 +36,15 @@ const IndexPage = ({ data }) => (
               <ellipse cx="13.7" cy="13" rx="3" ry="3" fill="#5FA4EE" />
             </svg>
           </div>
-            <h3>Selected Work</h3>
-        <h3>Water For Free t2 </h3>
+            <h2>Selected Work</h2>
+        <h2>Water For Free t2 </h2>
         <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
-        <h3>Creation Cabin</h3>
+        <h2>Creation Cabin</h2>
         <p>Creation Cabin is a Hong Kong independent publisher that supports local writers. I have participated in 2017 to build an online novel publishing platform to encourage creative writing in the city.</p>
         </div>
     </div>
     <section className="S-PhotoandBlog"> 
-    <div className="Container Padding-M">
-      <div className="HomeContent">
-        <div className="PhotoList">
-          <div className="IconContainer">
-            <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="25" height="25" fill="none" />
-              <rect width="25" height="25" rx="6.24" fill="#AFD1F7" />
-              <path d="M20 15.7V10.6684C20 10.6228 19.999 10.5783 19.9934 10.5331C19.9558 10.2295 19.7158 8.96282 18.2836 8.18139C17.8858 7.96433 17.3581 7.51743 17.1363 7.12219C16.6356 6.2297 15.8386 5.79999 14.8152 5.79999H13.5765C12.8415 5.79999 12.1657 6.20318 11.8167 6.84999C11.4676 7.4968 10.7918 7.89999 10.0568 7.89999H7.6C6.16406 7.89999 5 9.06405 5 10.5V15.7C5 17.1359 6.16406 18.3 7.6 18.3H17.4C18.8359 18.3 20 17.1359 20 15.7Z"
-              fill="#3284DC" />
-              <rect width="8" height="8" fill="none" transform="translate(9.7 9)" />
-              <ellipse cx="13.7" cy="13" rx="4" ry="4" fill="#CCE4FF" />
-              <ellipse cx="13.7" cy="13" rx="3" ry="3" fill="#5FA4EE" />
-            </svg>
-          </div>
-            <h3>Photography</h3>
-          </div>
-        <div className="BlogList">
+        <div className="BlogList Container Padding-M">
           <div className="IconContainer">
             <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="25" height="25" fill="#000" fillOpacity="0" />
@@ -85,19 +69,24 @@ const IndexPage = ({ data }) => (
             <rect x="16.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
             </svg>
         </div>
-        <h3>Writings</h3>
-        <Link to="/page-2/">Page 2</Link>
-          {data.allMarkdownRemark.edges.map(post => (
-            <div>
-              <small>{post.node.frontmatter.date} </small>
-              <Link to={post.node.frontmatter.path}>
-                <h3><span className="highlight">{post.node.frontmatter.title}</span></h3>
-              </Link>
+        <h2>Writings</h2> 
+        <div className="">
+                {data.allMarkdownRemark.edges.map(post => (
+                    <div className="HomeBlogEntry" key={ post.node.id }>
+                        <div className="BlogDateWrapper">
+                            <small>{post.node.frontmatter.date} </small>
+                        </div>
+                        <div className="BlogMainWrapper Blog">
+                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                            <p>{post.node.excerpt}</p>
+                            <br />
+                            <hr />
+                        </div>
+                    </div>
+                    
+                ))}
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
+            </div>
   </section>
   
   
@@ -121,10 +110,14 @@ const IndexPage = ({ data }) => (
 
 export const pageQuery = graphql`
     query LandingIndex {
-            allMarkdownRemark {
+            allMarkdownRemark (
+              sort: { order: DESC, fields: [frontmatter___date] }
+              limit: 3
+              ) {
               edges {
                 node {
                     id
+                    excerpt(pruneLength: 300)
                     frontmatter {
                         path
                         title

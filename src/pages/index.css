@@ -285,13 +285,15 @@ font-weight: 700;
 font-size: 48px;
 }
 
-h2 {
+h3 {
 font-weight: 400;
 line-height: 1.4;
+font-size: 150%;
 }
 
-h3 {
+h2 {
 font-weight: 600;
+
 }
 
 strong {
@@ -420,9 +422,27 @@ a[href$=".jpg"], a[href$=".jpg"]:hover {
     border: none;
   }
 
+ol li::before {
+    content: counter(step-counter) ".";
+    margin-left: -40px;
+    margin-right: 20px;
+    display: inline-block;
+    list-style: none;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+}
 
+ol li {
+    line-height: 2rem;
+    counter-increment: step-counter;
+    list-style: none;
+    margin-left: 20px;
+}
 
-
+h5 {
+    font-weight: 400;
+    font-size: 80%;
+    color: #888;
+}
 
 
 a:active,

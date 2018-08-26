@@ -1,6 +1,6 @@
 ---
 path: "/post-three"
-date: "2018-10-10"
+date: "2018-04-10"
 title: "First Gatsby Post"
 tags: ["test", "design", "technology"]
 image: "./Frame-4.jpg"
