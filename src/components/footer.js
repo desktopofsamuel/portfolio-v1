@@ -7,7 +7,9 @@ const Footer = () => (
           <small>©2018 Samuel Wong — Made in Hong Kong</small>
       </div>
         </div>
+        
     </section>
+
     )
 
 export default Footer

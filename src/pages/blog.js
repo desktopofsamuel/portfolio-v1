@@ -20,12 +20,12 @@ const BlogPage = ({data}) => (
         <div className="BlogIndex">
             <div className="Container">
                 {data.allMarkdownRemark.edges.map(post => (
-                    <div className="BlogEntry" key={ post.node.id }>
-                        <div className="BlogDateWrapper">
+                    <div className="Column Grid-S" key={ post.node.id }>
+                        <div className="LeftColumn">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
-                        <div className="BlogMainWrapper Blog">
-                            <Link to={post.node.frontmatter.path}><h2>{post.node.frontmatter.title}</h2></Link>
+                        <div className="RightColumn Blog">
+                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />

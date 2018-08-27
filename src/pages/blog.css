@@ -11,13 +11,20 @@
     padding-bottom: 25px;
 }
 
-.HomeBlogEntry {
+.Column {
     display: grid;
-    grid-template-columns: 150px 1fr;
     padding-bottom: 25px;
 }
 
-.BlogMainWrapper h3 {
+.Grid-S {
+    grid-template-columns: 15% 1fr;
+}
+
+.Grid-M {
+    grid-template-columns: 33% 1fr;
+}
+
+.RightColumn h3 {
     color: #3284DC;
 }
 
@@ -31,7 +38,7 @@ hr {
         display: block;
         margin: 0 5vw
     }
-    .BlogDateWrapper {
+    .LeftColumn {
         margin-bottom: 10px;
     }
 

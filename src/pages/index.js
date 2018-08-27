@@ -37,11 +37,28 @@ const IndexPage = ({ data }) => (
             </svg>
           </div>
             <h2>Selected Work</h2>
-        <h2>Water For Free t2 </h2>
-        <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
-        <h2>Creation Cabin</h2>
-        <p>Creation Cabin is a Hong Kong independent publisher that supports local writers. I have participated in 2017 to build an online novel publishing platform to encourage creative writing in the city.</p>
+            <div className="Image">
+              <img src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
+            </div>
+            <div className="Column Grid-M">
+              <div className="LeftColumn">
+                <h2>Water For Free</h2>
+              </div>
+              <div className="RightColumn">
+              <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
+              </div>
+            </div>
+            <img src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
+            
+            <div className="Column Grid-M">
+              <div className="LeftColumn">
+                <h2>Creation Cabin</h2>
+              </div>
+              <div className="RightColumn">
+              <p>Creation Cabin is a Hong Kong independent publisher that supports local writers. I have participated in 2017 to build an online novel publishing platform to encourage creative writing in the city.</p>
         </div>
+            </div>
+    </div>
     </div>
     <section className="S-PhotoandBlog"> 
         <div className="BlogList Container Padding-M">
@@ -70,14 +87,14 @@ const IndexPage = ({ data }) => (
             </svg>
         </div>
         <h2>Writings</h2> 
-        <div className="">
+        <div className="Container">
                 {data.allMarkdownRemark.edges.map(post => (
-                    <div className="HomeBlogEntry" key={ post.node.id }>
-                        <div className="BlogDateWrapper">
+                    <div className="Column Grid-S" key={ post.node.id }>
+                        <div className="LeftColumn">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
-                        <div className="BlogMainWrapper Blog">
-                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                        <div className="RightColumn Blog">
+                            <Link to={post.node.frontmatter.path}><h2><span className="highlight-grey">{post.node.frontmatter.title}</span></h2></Link>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />
