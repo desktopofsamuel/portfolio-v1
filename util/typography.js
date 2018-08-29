@@ -13,6 +13,7 @@ const typography = new Typography({
   ],
   bodyFontFamily: ["IBM Plex Sans", "sans-serif"],
   
+  
 });
 
 export default typography

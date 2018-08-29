@@ -14,12 +14,13 @@ const IndexPage = ({ data }) => (
     <Helmet title={`Desktop of Samuel Home`} meta={[
       { property: 'og:url', content: 'http://beta.desktopofsamuel.com/', },
       ]}> > </Helmet>
-    <div className="Hero">
+    <div className="Hero AlignCenter">
       <div className="shapeshifter play30"></div>
       <div className="Container">
-        <div className="TextContainer Padding-M">
-          <h3>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h3>
-          <h3>My name is <strong>Samuel</strong>. I'm a UI/UX designer in Hong Kong focusing on bespoke user experience.</h3>
+        <div className="TextContainer Padding-S">
+          <h6>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h6>
+          <h3>My name is <strong>Samuel</strong>. I'm a UI designer who loves to solve problem with design.</h3>
+          <p>I'm currently working at <a href="https://playa.hk">Playa</a>, a web / app agency that I've founded, delivering proejcts like <a href="http://bit.ly/waterforfreeios">Water For Free</a> and <a href="">HyperAir</a>. Before that, I was the cross-content intern at iTunes & App Store.</p>
         </div>
       </div>
     </div>
@@ -38,7 +39,7 @@ const IndexPage = ({ data }) => (
           </div>
             <h2>Selected Work</h2>
             <div className="Image">
-              <img src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
+              <img className="PortfolioImage" height="250px" backgroundsize="cover" src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
             </div>
             <div className="Column Grid-M">
               <div className="LeftColumn">
