@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import Footer from '../components/footer';
 import Img from 'gatsby-image'
 import Seo from '../components/seo';
+import FaArrowRight from 'react-icons/lib/fa'
+
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
@@ -22,19 +24,17 @@ export default function Template({data, pathContext}) {
                 <hr />
                 {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
-                <p>
-  {prev &&
-    <Link to={prev.frontmatter.path}>
-      Previous: {prev.frontmatter.title}
-    </Link>
-  }
-</p>
-<p>
-  {next &&
-    <Link to={next.frontmatter.path}>
-      Next: {next.frontmatter.title}
-    </Link>}
-</p>
+                <div className="BlogNavigate">
+                <div className="Previous">
+                    {prev &&
+                        <Link to={prev.frontmatter.path}>← Previous</Link>
+                    }
+                    </div>
+                    <div className="Next" >
+                    {next &&
+                        <Link to={next.frontmatter.path}>Next → </Link>}
+                    </div >
+                </div>
                 <hr />
                 <div className="tag">
                 Tagged with {post.frontmatter.tags.map((tag, index) => {

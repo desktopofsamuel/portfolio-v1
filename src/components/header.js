@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './Header.css'
 
+
 const Header = ({ siteTitle }) => (
 
 <div className="Container"> 
@@ -9,6 +10,7 @@ const Header = ({ siteTitle }) => (
     <div className="HeaderGroup">
       <div className="Logo">
         <Link to="/">Samuel W.</Link>
+
       </div>
       <div className="NavBar">
         <Link to="/">About</Link>

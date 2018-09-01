@@ -50,7 +50,6 @@ const IndexPage = ({ data }) => (
               </div>
             </div>
             <img src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
-            
             <div className="Column Grid-M">
               <div className="LeftColumn">
                 <h2>Creation Cabin</h2>

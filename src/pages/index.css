@@ -155,6 +155,23 @@
     background-image: linear-gradient(to right, rgba(179, 243, 189, 1) 0, rgba(179, 243, 189, 1) 100%);
 }
 
+.BlogNavigate {
+    display: block;
+    position: relative;
+    clear: both;
+    height: 2rem;
+}
+
+.Previous {
+    float: left;
+    position: relative;
+}
+
+.Next {
+    float: right;
+    position: relative;
+}
+
 
 div.tag {
     padding: 0 0 5rem 0;
