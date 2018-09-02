@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => (
           </div>
             <h2>Selected Work</h2>
             <div className="Image">
-              <img className="PortfolioImage" height="250px" backgroundsize="cover" src="https://freight.cargocollective.com/t/original/i/8a4e49ae888985a7b60702baa9249324d9facfb14dffc6d172ad6cdbcc9dac64/Mockup2.png" />
+              <img className="PortfolioImage" src="static/W4F-1.png" />
             </div>
             <div className="Column Grid-M">
               <div className="LeftColumn">
