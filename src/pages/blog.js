@@ -5,6 +5,7 @@ import HeroBlogLogo from '../images/HeroBlog.svg'
 import './blog.css'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
+import Author from '../components/author';
 
 const BlogPage = ({data}) => (
     <div>
@@ -35,6 +36,7 @@ const BlogPage = ({data}) => (
                 ))}
             </div>
         </div>
+        <Author />
         <Footer />
     </div>
 )

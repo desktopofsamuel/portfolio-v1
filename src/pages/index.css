@@ -149,10 +149,12 @@
     font-family: "IBM Plex Mono", 'Courier New', Courier, monospace;
     line-height: 1;
     transition: background 0.3s ease-in;
+    border: none;
 }
 
 .tag a:hover {
     background-image: linear-gradient(to right, rgba(179, 243, 189, 1) 0, rgba(179, 243, 189, 1) 100%);
+    border: none;
 }
 
 .BlogNavigate {
@@ -303,7 +305,60 @@ font-family: "IBM Plex Mono";
 letter-spacing: 0.25rem;
 color: #888;
 font-size: 70%;
+border: none;
 
+}
+
+.BlogHeader {
+    margin-top: 20vh;
+}
+
+.author {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 500px;
+}
+
+.intro {
+    margin: 20px 0;
+    text-align: center;
+
+}
+
+.arrowbox {
+	position: relative;
+    background: #F7F7F7;
+    padding: 1rem;
+}
+.arrowbox:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #F7F7F7;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.arrowbox a {
+    border: none;
+}
+
+.smallbody {
+    font-size: 90%;
+    line-height: 1.5rem;
+}
+
+.grey {
+    color: #bdbdbd;
 }
 
 small {

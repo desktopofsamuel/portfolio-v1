@@ -4,6 +4,8 @@ import Footer from '../components/footer';
 import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import FaArrowRight from 'react-icons/lib/fa'
+import BlogHeader from '../components/blogheader';
+import Author from '../components/author'
 
 
 export default function Template({data, pathContext}) {
@@ -13,6 +15,7 @@ export default function Template({data, pathContext}) {
     return(
         <div>
             <Seo data={post} />
+            <BlogHeader />
             <div className="BlogContainer Blog">
                 <div className="Content">
                 <div className="BackButtonWrapper">
@@ -49,6 +52,7 @@ export default function Template({data, pathContext}) {
                 </div>
             </div>
             </div>
+            <Author />
             <Footer />
         </div>
     ) 
