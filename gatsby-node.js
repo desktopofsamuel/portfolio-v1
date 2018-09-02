@@ -11,7 +11,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         const postTemplate = path.resolve('src/templates/blog-post.js');
         const tagTemplate = path.resolve('src/templates/tag-page.js');
         graphql(`
-        {
+        {   
             allMarkdownRemark {
                 edges {
                   node {
