@@ -14,7 +14,7 @@ image: "./main.jpg"
 Mac apps are great. They are beautifully designed, crafted with a bunch of handy features, and they have won over the hearts of their users, willing to pay for every update. Mac App Store was launched in 2011, it was Apple’s attempt to replicate the success of iOS App Store.
 However, I would hardly call Mac App Store a success today.
 
-**Walls of the App Store**
+##Walls of the App Store
 ![](./2.jpg)
 
 Despite a cheque with a lot of zeroes are written on the slide of Apple’s keynote every year at WWDC, developers share their loves & hatred at the same time toward the monstrous platform. There are a lot of Mac apps (especially those with subscription service) have yet to become available today on Mac App Store. 
@@ -36,7 +36,9 @@ Despite a cheque with a lot of zeroes are written on the slide of Apple’s keyn
 
 The third way is not to rely on Mac App Store at all. But to a larger extent, the existence of paid upgrade is originated to the insufficient income for app development. The team behind Ulysses  [explained at length on their strategy switching subscription model.](https://t.umblr.com/redirect?z=https%3A%2F%2Fmedium.com%2Fbuilding-ulysses%2Fwhy-were-switching-ulysses-to-subscription-47f80b07a9cd&t=MDQ3ZmZhMWU2OWYwYmI3ZTYyNDQ5Nzc1Yzk5YTk5OTdlMmViNzliMSxSc3dIQkx3eA%3D%3D&b=t%3Amd_XHZDWEUh7XzJM6q1d8g&p=https%3A%2F%2Fjournal.desktopofsamuel.com%2Fpost%2F175975854762%2Fdo-subscription-models-work-with-apps&m=1)  Especially on how current pricing model is crooked, as developers heavily rely on new releases to get exposure and call for money.
 But they raised a bigger question on software development.
-**Should apps be a one-time purchase?**
+
+
+##Should apps be a one-time purchase?
 
 ![Original image from setapp.com](./4.jpeg)
 

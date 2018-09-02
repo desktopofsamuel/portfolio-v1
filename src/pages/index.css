@@ -103,10 +103,15 @@
     width: 100%;
     height: 100%;
     background-color: #4E5B69;
+    margin-bottom: -50px;
 }
 
 .S-Footer {
     background-color: #444F5B;
+    position: fixed;
+	bottom: 0;
+    z-index: -1;
+    width: 100%;
 }
 
 .FooterWrapper small {
@@ -378,8 +383,11 @@ text-decoration: none;
 color: black;
 }
 
-body {
+html, body {
 color: #444452;
+margin-bottom: 50px;
+background-color: #fff;
+z-index: 10000;
 }
 
 h1 {
@@ -394,7 +402,8 @@ font-size: 150%;
 }
 
 h2 {
-    font-weight: 600;
+font-weight: 600;
+line-height: 1.4;
 }
 
 strong {
@@ -1177,7 +1186,15 @@ pre tt:after {
 content: "";
 }
 @media only screen and (max-width: 480px) {
-html {
-    font-size: 100%;
-}
+    html {
+        font-size: 100%;
+    }   
+
+    .intro {
+        margin: 0;
+    }
+
+    .author {
+        margin-bottom: -50px;
+    }
 }
