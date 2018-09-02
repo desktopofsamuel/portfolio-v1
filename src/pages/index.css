@@ -68,7 +68,13 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    border: none;
 }
+
+.gatsby-resp-image-link:hover {
+    border: none;
+}
+
 .gatsby-resp-image-wrapper {
     max-width: 800px!important;
 }
