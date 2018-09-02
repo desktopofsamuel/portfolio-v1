@@ -4,7 +4,7 @@ import React from 'react'
 
 const Author = () => (
     <div className="author">
-        <img style={{width:'90px',height:'90px'}} src="./static/propic.png" />
+        <img style={{width:'90px',height:'90px'}} src="/static/propic.png" />
         <div className="intro">
             <div className="arrowbox">
                 <p className="smallbody grey">Greetings ✌️ </p>
