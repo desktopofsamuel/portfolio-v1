@@ -5,9 +5,7 @@ import './Header.css'
 
 const Header = ({ siteTitle }) => (
 
-  <div></div>
-
-/*<div className="Container"> 
+<div className="Container"> 
   <div className="Header">
     <div className="HeaderGroup">
       <div className="Logo">
@@ -20,7 +18,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
   </div>
-</div>*/
+</div>
 
 
 )
