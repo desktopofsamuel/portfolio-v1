@@ -2,7 +2,7 @@
 path: "/citymapper"
 date: "2018-07-03"
 title: "How to do localization right - Citymapper in Hong Kong"
-tags: ["localization", "design",]
+tags: ["localization", "app",]
 ---
 ![](./1.jpg)
 

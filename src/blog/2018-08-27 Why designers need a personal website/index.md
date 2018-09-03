@@ -6,7 +6,7 @@ date: "2018-08-26"
 
 title: "Why designers need a personal website?"
 
-tags: ["personalbrand", "process", "gatsby", ]
+tags: ["Work In Progress", "Design", "Gatsby", ]
 
 ---
 

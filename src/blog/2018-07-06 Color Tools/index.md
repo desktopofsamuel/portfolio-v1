@@ -6,7 +6,7 @@ date: "2018-07-06"
 
 title: "Essential Color Tools to Step Up Your Design Game"
 
-tags: ["design", "process", "color", ]
+tags: ["Design", "Productivity", "Color", ]
 
 ---
 

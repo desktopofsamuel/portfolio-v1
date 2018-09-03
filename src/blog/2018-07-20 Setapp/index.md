@@ -1,8 +1,8 @@
 ---
-path: "/setapp-2"
+path: "/setapp"
 date: "2018-07-20"
 title: "Do Subscription Models Work with Apps?"
-tags: ["apps", "design", "technology"]
+tags: ["Subscription", "App", "Technology"]
 image: "./main.jpg"
 ---
 

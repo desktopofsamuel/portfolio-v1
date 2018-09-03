@@ -31,6 +31,7 @@ const TagPage = ({ pathContext, data}) => {
                 <h3>{post.node.frontmatter.title}</h3>
                 <small>Published on {post.node.frontmatter.date} </small>
                 <br />
+                <p>{post.node.excerpt}</p>
                 <br />
                 <Link to={post.node.frontmatter.path}>Read More</Link>
                 <br />
@@ -61,6 +62,7 @@ export const pageQuery = graphql`
         node {
           id
           html
+          excerpt(pruneLength: 250)
           frontmatter {
             title
             date(formatString: "MMM DD, YYYY")
