@@ -253,6 +253,10 @@ h6 {
     .Grid-S {
         grid-template-columns: repeat(1, auto);
     }
+
+    .Reverse {
+        direction: ltr;
+    }
 }
 
 @media (min-width: 560px) 
