@@ -6,7 +6,7 @@
     width: 1440px;
     height: 600px;
     position: absolute;
-    z-index: -1;
+    top: 10%;
     left: 40%;
     background-repeat: no-repeat;
     background-image: url('../images/Hero.svg');
@@ -29,7 +29,6 @@
 
 .S-Contact {
     background-color: #e0e0e0;
-    height: 50vh;
     min-height: 400px;
     display: flex;
     justify-content: center;
@@ -79,11 +78,23 @@
     max-width: 800px!important;
 }
   
+.PortfolioImage {
+    height: 300px;
+    text-align: center;
+}
+
 .Background {
     position: relative;
     width: 100%
 }
 
+.Grid-Portfolio {
+    grid-template-columns: auto 50%;
+}
+
+.Reverse {
+    direction: rtl;
+}
 
 .HomeContent {
     display: grid;
@@ -229,6 +240,10 @@ h6 {
     .Blog h1 {
         font-size: 36px;
         line-height: 2.5rem;
+    }
+
+    .Grid-Portfolio {
+        grid-template-columns: repeat(1, auto);
     }
 
     .Grid-M {
@@ -399,6 +414,23 @@ h3 {
 font-weight: 400;
 line-height: 1.4;
 font-size: 150%;
+}
+
+.SectionTitle {
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.Green {
+    color: #49CB74;
+}
+
+.Red {
+    color: #FE8170;
+}
+
+.Blue {
+    color: #3284DC;
 }
 
 h2 {

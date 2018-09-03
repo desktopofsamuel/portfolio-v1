@@ -1,61 +1,73 @@
 {
   "assetsByChunkName": {
+    "path---tags-productivity": [
+      "path---tags-productivity-5bfc2c54162a06c91fdd.js",
+      "path---tags-productivity-5bfc2c54162a06c91fdd.js.map"
+    ],
+    "path---essential-color-tool-2018": [
+      "path---essential-color-tool-2018-abe1e315d986842f9a15.js",
+      "path---essential-color-tool-2018-abe1e315d986842f9a15.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-918ed58ea64cc9f3e1fb.js",
-      "component---src-pages-index-js-918ed58ea64cc9f3e1fb.js.map"
+      "component---src-pages-index-js-cf1c8d6cea157a919a67.js",
+      "component---src-pages-index-js-cf1c8d6cea157a919a67.js.map"
     ],
     "path---blog": [
-      "path---blog-3ac4494adaf5a20630a1.js",
-      "path---blog-3ac4494adaf5a20630a1.js.map"
+      "path---blog-a5c960a6af2b637e9bfe.js",
+      "path---blog-a5c960a6af2b637e9bfe.js.map"
     ],
     "path---": [
       "path----c47276a30503293c0a01.js",
       "path----c47276a30503293c0a01.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-a8d37c7fd4f5283ced09.js",
-      "path---tags-design-a8d37c7fd4f5283ced09.js.map"
+      "path---tags-design-8722c33018db1e1d7b72.js",
+      "path---tags-design-8722c33018db1e1d7b72.js.map"
     ],
     "component---src-templates-tag-page-js": [
-      "component---src-templates-tag-page-js-f65124e14359b744a64b.js",
-      "component---src-templates-tag-page-js-f65124e14359b744a64b.js.map"
+      "component---src-templates-tag-page-js-dd73aa92c1512c735002.js",
+      "component---src-templates-tag-page-js-dd73aa92c1512c735002.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-466c9240ec375305b5f3.js",
-      "component---src-templates-blog-post-js-466c9240ec375305b5f3.js.map"
+      "component---src-templates-blog-post-js-83bef7a3ccef1623a808.js",
+      "component---src-templates-blog-post-js-83bef7a3ccef1623a808.js.map"
     ],
     "path---why-designers-need-a-personal-website": [
-      "path---why-designers-need-a-personal-website-482db09a069a2f07f35c.js",
-      "path---why-designers-need-a-personal-website-482db09a069a2f07f35c.js.map"
+      "path---why-designers-need-a-personal-website-98413abb7453b9015194.js",
+      "path---why-designers-need-a-personal-website-98413abb7453b9015194.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1d31641a793380623d55.js",
-      "component---src-layouts-index-js-1d31641a793380623d55.js.map"
+      "component---src-layouts-index-js-7359c0d6909b6b87bc40.js",
+      "component---src-layouts-index-js-7359c0d6909b6b87bc40.js.map"
+    ],
+    "path---tags-subscription": [
+      "path---tags-subscription-a9c012f9cb9719aa82b2.js",
+      "path---tags-subscription-a9c012f9cb9719aa82b2.js.map"
     ],
     "path---tags-gatsby": [
-      "path---tags-gatsby-8ba898cfd962ce5dfa3a.js",
-      "path---tags-gatsby-8ba898cfd962ce5dfa3a.js.map"
+      "path---tags-gatsby-b53a9da86e0089503433.js",
+      "path---tags-gatsby-b53a9da86e0089503433.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-ee2006e5e038907f0d2b.js",
-      "path---index-ee2006e5e038907f0d2b.js.map"
+      "path---index-f560fa5f1520655fa50b.js",
+      "path---index-f560fa5f1520655fa50b.js.map"
     ],
     "path---tags-technology": [
-      "path---tags-technology-e600b6232914ae4b794e.js",
-      "path---tags-technology-e600b6232914ae4b794e.js.map"
+      "path---tags-technology-0add77d9e0702cbed8cd.js",
+      "path---tags-technology-0add77d9e0702cbed8cd.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-23a51ae43ead73ac173e.js",
+      "commons-169204378ef7a96864b0.js",
       "build-js-styles.css",
-      "commons-23a51ae43ead73ac173e.js.map",
+      "commons-169204378ef7a96864b0.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -63,54 +75,54 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tags-prototype": [
-      "path---tags-prototype-99103e7afdf4ac90b80a.js",
-      "path---tags-prototype-99103e7afdf4ac90b80a.js.map"
+      "path---tags-prototype-24cae2e4e0768cc40641.js",
+      "path---tags-prototype-24cae2e4e0768cc40641.js.map"
     ],
-    "path---tags-personalbrand": [
-      "path---tags-personalbrand-0892c221f6266ccfa5d6.js",
-      "path---tags-personalbrand-0892c221f6266ccfa5d6.js.map"
+    "path---tags-work-in-progress": [
+      "path---tags-work-in-progress-3961529dec4dd3f967e2.js",
+      "path---tags-work-in-progress-3961529dec4dd3f967e2.js.map"
     ],
-    "path---setapp-2": [
-      "path---setapp-2-427f30d80487760d6c15.js",
-      "path---setapp-2-427f30d80487760d6c15.js.map"
+    "path---setapp": [
+      "path---setapp-2ee40c92abdcb9d3b33a.js",
+      "path---setapp-2ee40c92abdcb9d3b33a.js.map"
+    ],
+    "path---tags-app": [
+      "path---tags-app-c518a0c1efac9b783a8d.js",
+      "path---tags-app-c518a0c1efac9b783a8d.js.map"
     ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-27f7fa6ea28cc343e719.js",
-      "component---src-pages-blog-js-27f7fa6ea28cc343e719.js.map"
+      "component---src-pages-blog-js-ca89bff276e11c187f84.js",
+      "component---src-pages-blog-js-ca89bff276e11c187f84.js.map"
     ],
     "component---src-pages-page-2-js": [
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js",
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
     ],
     "path---tags-localization": [
-      "path---tags-localization-b03a340fedd076d2529d.js",
-      "path---tags-localization-b03a340fedd076d2529d.js.map"
+      "path---tags-localization-3c9870137c8b311d7cf9.js",
+      "path---tags-localization-3c9870137c8b311d7cf9.js.map"
     ],
     "app": [
-      "app-59acb604435b9ff48b22.js",
+      "app-168e084e13c16dfcc572.js",
       "build-js-styles.css",
-      "app-59acb604435b9ff48b22.js.map",
+      "app-168e084e13c16dfcc572.js.map",
       "build-js-styles.css.map"
     ],
-    "path---tags-apps": [
-      "path---tags-apps-19f0434ae3e26062c556.js",
-      "path---tags-apps-19f0434ae3e26062c556.js.map"
+    "path---tags-color": [
+      "path---tags-color-271f8456f46322a4ce7d.js",
+      "path---tags-color-271f8456f46322a4ce7d.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---design-with-real-data": [
-      "path---design-with-real-data-bc7ba935fad52e352527.js",
-      "path---design-with-real-data-bc7ba935fad52e352527.js.map"
-    ],
-    "path---tags-process": [
-      "path---tags-process-1966413c0817dfb7b08c.js",
-      "path---tags-process-1966413c0817dfb7b08c.js.map"
+      "path---design-with-real-data-e968c1293d50bd13ee67.js",
+      "path---design-with-real-data-e968c1293d50bd13ee67.js.map"
     ],
     "path---citymapper": [
-      "path---citymapper-0b2e4af0fe3ac51abc4d.js",
-      "path---citymapper-0b2e4af0fe3ac51abc4d.js.map"
+      "path---citymapper-e8c5d6a8a3a7c7aafaa5.js",
+      "path---citymapper-e8c5d6a8a3a7c7aafaa5.js.map"
     ]
   }
 }

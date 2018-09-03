@@ -1,2 +1,0 @@
-webpackJsonp([4430129151547],{356:function(t,e){t.exports={data:{markdownRemark:{html:"<h2>Hello World!</h2>\n<p>Second text post, yay!</p>",excerpt:"Hello World! Second text post, yay!",frontmatter:{path:"/post-two",title:"Second Gatsby Post",date:"2018-08-12",tags:["test","happy","journal"],image:{publicURL:"/static/Frame-4-520d3167b9ae3bccd54de83379eeb97b.jpg",size:1863270}}}},pathContext:{}}}});
-//# sourceMappingURL=path---post-two-8ed7127999865f9cbc16.js.map
