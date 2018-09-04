@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => (
             <div className="Column Grid-Portfolio">
               <div className="LeftColumn">
                 <div className="Image">
-                  <img className="PortfolioImage" src="static/W4F-1.png" />
+                  <img className="PortfolioImage" src="static/W4F3.png" />
                 </div>
                 
               </div>
@@ -56,12 +56,12 @@ const IndexPage = ({ data }) => (
             <div className="Column Grid-Portfolio Reverse">
               <div className="LeftColumn">
                 <div className="Image">
-                    <img className="PortfolioImage" src="static/W4F-1.png" />
+                    <img className="PortfolioImage" src="static/Hyperair5.png" />
                   </div>
               </div>
               <div className="RightColumn">
               <h2>Hyperair</h2>
-              <p>Hyperair Travel & Service Provider is two apps that I've designed to create all-round travel experience by smoothening the travel process. </p>
+              <p>Hyperair Travel & Service Provider are two apps that I've designed to create all-round travel experience for frequent travelers  </p>
         </div>
             </div>
     </div>

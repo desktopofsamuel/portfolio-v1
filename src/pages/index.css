@@ -79,7 +79,7 @@
 }
   
 .PortfolioImage {
-    height: 300px;
+    width: 100%;
     text-align: center;
 }
 
@@ -89,11 +89,13 @@
 }
 
 .Grid-Portfolio {
-    grid-template-columns: auto 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Reverse {
-    direction: rtl;
+    flex-direction: row-reverse;
 }
 
 .HomeContent {
@@ -243,7 +245,7 @@ h6 {
     }
 
     .Grid-Portfolio {
-        grid-template-columns: repeat(1, auto);
+        flex-direction: column;
     }
 
     .Grid-M {
@@ -255,7 +257,7 @@ h6 {
     }
 
     .Reverse {
-        direction: ltr;
+        flex-direction: column;
     }
 }
 
