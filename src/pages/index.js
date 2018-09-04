@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => (
             </svg>
         </div>
         <h2 className="SectionTitle Red">Writings</h2> 
-        <div className="Container">
+        <div>
                 {data.allMarkdownRemark.edges.map(post => (
                     <div className="Column Grid-S" key={ post.node.id }>
                         <div className="LeftColumn">

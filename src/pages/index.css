@@ -265,6 +265,8 @@ h6 {
   and (max-width: 720px) {
     .TextContainer {
         width: 75%;
+        margin: 0 auto;
+
     }
   }
 
@@ -294,6 +296,7 @@ margin-left: auto;
 .Container {
 margin: 0 auto;
 max-width: 820px;
+padding: 0 1rem;
 }
 
 
