@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link"
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import config from "../config/";
+import config from "../config";
 import favicon from "./favicon";
 import facebookCover from "../images/Hero.svg";
 

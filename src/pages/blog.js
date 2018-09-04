@@ -13,13 +13,14 @@ const BlogPage = ({data}) => (
         <Helmet title={`Blog of Samuel`} meta={[
       { property: 'og:url', content: 'http://beta.desktopofsamuel.com/blog', },
       ]}> > </Helmet>
-        <div className="HeroIcon">
-            <div className="HeroIconWrapper Container Padding-M">
-                <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
-            </div>
-        </div>
+        
         <div className="BlogIndex">
-            <div className="Container">
+            <div className="Container Padding-M">
+                <div className="HeroIcon">
+                    <div className="HeroIconWrapper Padding-S">
+                        <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
+                    </div>
+                </div>
                 {data.allMarkdownRemark.edges.map(post => (
                     <div className="Column Grid-S" key={ post.node.id }>
                         <div className="LeftColumn">

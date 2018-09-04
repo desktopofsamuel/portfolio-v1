@@ -3,9 +3,10 @@ import Link from 'gatsby-link'
 import './index.css'
 import Emoji from '../components/emoji'
 import Footer from '../components/footer'
-import Socialbar from '../components/socialbar';
-import Seo from '../components/seo';
-import Helmet from "react-helmet";
+import Socialbar from '../components/socialbar'
+import Seo from '../components/seo'
+import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 
 
 const IndexPage = ({ data }) => (

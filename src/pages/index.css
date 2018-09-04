@@ -396,6 +396,12 @@ border: none;
     color: #bdbdbd;
 }
 
+.PhotoGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
 small {
 font-family: 'IBM Plex Mono';
 font-size: 80%;

@@ -18,6 +18,7 @@
     "gatsby-remark-emoji": "0.0.2",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-source-prismic": "^1.1.0",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
     "lodash": "^4.17.10",
