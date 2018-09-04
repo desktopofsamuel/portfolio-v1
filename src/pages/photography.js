@@ -13,7 +13,8 @@ const Photography = ({ data }) => (
                   <img src={HeroPhotoLogo} alt="PhotographyLogo" width="100px" height="100px"></img>
               </div>
             </div>
-            <div className="PhotoGrid">
+          </div>
+          <div className="PhotoGrid">
               {data.allPrismicPhotoGrid.edges.map(c => (
                   <div>
                   <Img sizes={c.node.data.photo.localFile.childImageSharp.sizes} />
@@ -21,7 +22,6 @@ const Photography = ({ data }) => (
                   </div>
               ))}
             </div>
-          </div>
         
         </div>
 )

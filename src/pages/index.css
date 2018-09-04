@@ -198,6 +198,14 @@
     position: relative;
 }
 
+.PhotoGrid {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+
 
 div.tag {
     padding: 0 0 5rem 0;
@@ -258,6 +266,11 @@ h6 {
 
     .Reverse {
         flex-direction: column;
+    }
+
+    .PhotoGrid {
+        margin: 0 10px;
+        grid-template-columns: repeat(1, auto);
     }
 }
 
@@ -394,12 +407,6 @@ border: none;
 
 .grey {
     color: #bdbdbd;
-}
-
-.PhotoGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
 }
 
 small {
