@@ -7,7 +7,7 @@ import HeroPhotoLogo from '../images/HeroPhotography.svg'
 const Photography = ({ data }) => (
         
         <div>
-          <div className="Container Padding-M">
+          <div className="Container Top-M">
             <div className="HeroIcon">
               <div className="HeroIconWrapper Padding-S">
                   <img src={HeroPhotoLogo} alt="PhotographyLogo" width="100px" height="100px"></img>
