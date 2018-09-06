@@ -49,7 +49,10 @@ query BlogIndex {
         title
         }
     }
-    allMarkdownRemark (sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark (
+        sort: { order: DESC, fields: [frontmatter___date] },
+        filter: {fileAbsolutePath: {regex: "\/blogs/"}}
+    ) {
       edges {
         node {
             id
