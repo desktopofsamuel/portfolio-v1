@@ -17,9 +17,6 @@ export default function Template({data, pathContext}) {
             Project Post 
             <div className="BlogContainer Blog">
                 <div className="Content">
-                <div className="BackButtonWrapper">
-                    <Link to="/blog">Back</Link>
-                </div>
                 <h1>{post.frontmatter.title}</h1>
                 
                 <small>Published on {post.frontmatter.date} </small> 
@@ -58,8 +55,8 @@ export default function Template({data, pathContext}) {
 }
 
 export const projectQuery = graphql`
-    query ProjectPostByPath($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path }}){
+    query ProjectPostByPath {
+        markdownRemark(frontmatter: { posttype: { eq: "project" }}){
             html
             excerpt(pruneLength: 250)
             frontmatter {
@@ -67,6 +64,7 @@ export const projectQuery = graphql`
                 title
                 date
                 tags
+                posttype
                 image {
                     publicURL
                     size 

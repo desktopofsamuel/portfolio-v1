@@ -29,8 +29,10 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         const postTemplate = path.resolve('src/templates/blog-post.js');
         const projectTemplate = path.resolve('src/templates/project-post.js');
         const tagTemplate = path.resolve('src/templates/tag-page.js');
-        graphql(`
-        {   
+        resolve(
+            graphql(
+                `
+            {   
             allMarkdownRemark {
                 edges {
                   node {
@@ -43,38 +45,11 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                           date
                           tags
                           posttype
-                          image {
-                            publicURL
-                            size
-                              childImageSharp {
-                              resize {
-                                src
-                                tracedSVG
-                                width
-                                height
-                                aspectRatio
-                                originalName
-                              }
-                              resolutions {
-                                base64
-                                tracedSVG
-                                aspectRatio
-                                width
-                                height
-                                src
-                                srcSet
-                                srcWebp
-                                srcSetWebp
-                                originalName
-                              }
-                            }
-                        }
-                          
+                      }
                     }
-                  }
                 }
-              }
             }
+        }
         `
     ).then(result => {
         if (result.errors) {
@@ -83,10 +58,34 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           reject(result.errors);
         }
 
-        const posts = result.data.allMarkdownRemark.edges;
-        const projectEdges = 
+        result.data.allMarkdownRemark.edges.forEach(edge => {
+            if (edge.node.frontmatter.posttype === 'project') {
+                createPage({
+                    path: `/work${edge.node.frontmatter.path}`,
+                    component: projectTemplate,
+                    cotext: {
 
-        _.each(result.data.allMarkdownRemark.edges, ({node}, index ) => {
+                    }
+
+                });
+            }   
+            else {
+                createPage({
+                    path: edge.node.frontmatter.path,
+                    component: postTemplate,
+                    context: {
+
+                    },
+                })
+            }
+        })
+    })
+)})
+}
+    
+
+
+        /*_.each(result.data.allMarkdownRemark.edges, ({node}, index ) => {
             createPage({
                 path: node.frontmatter.path,
                 component: postTemplate,
@@ -95,9 +94,9 @@ exports.createPages = ({boundActionCreators, graphql}) => {
                     next: index === posts.length - 1 ? null : posts[index + 1].node,
                   },
             })
-        })
+        })*/
         
-        let tags = []
+        /*let tags = []
 
         _.each(result.data.allMarkdownRemark.edges, edge => {
         if (_.get(edge, "node.frontmatter.tags")) {
@@ -115,9 +114,5 @@ exports.createPages = ({boundActionCreators, graphql}) => {
             },
         })
         })
-
-        resolve ()
-    })
-    })
-}
-// Add Lodash plugin
+        */
+    
