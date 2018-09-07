@@ -5,28 +5,33 @@ import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import Author from '../components/author';
+import Img from 'gatsby-image';
 
-const ProjectPage = ({data}) => (
+const ProjectPage = ({data}) => {
+    /*const ProjectLink = `/work"${data.allMArkdownRemark.edges.node.frontmatter.path}" `
+    <Link to={ "/work" + post.node.frontmatter.path} >*/
+
+    return (
     <div>
         <div className="Container">
         <p>Project </p>
+            <div className="ProjectGrid">
+            {data.allMarkdownRemark.edges.map(post => (
+                        <div className="" key={ post.node.id }>
+                            <div className="">
+                                <Img className="" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+
+                                <Link to={post.node.frontmatter.path} ><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                                <p>{post.node.excerpt}</p>
+                                <br />
+                            </div>
+                        </div>
+                        
+                    ))}
+            </div>
         </div>
-        {data.allMarkdownRemark.edges.map(post => (
-                    <div className="Column Grid-S" key={ post.node.id }>
-                        <div className="LeftColumn">
-                            <small>{post.node.frontmatter.date} </small>
-                        </div>
-                        <div className="RightColumn Blog">
-                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
-                            <p>{post.node.excerpt}</p>
-                            <br />
-                            <hr />
-                        </div>
-                    </div>
-                    
-                ))}
     </div>
-)
+)}
 
 export const pageQuery = graphql`
 query ProjectIndex {

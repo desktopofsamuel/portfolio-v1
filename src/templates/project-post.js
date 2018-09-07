@@ -8,15 +8,16 @@ import Author from '../components/author'
 
 
 export default function Template({data, pathContext}) {
-    const post = data.markdownRemark
+    const post = data.markdownRemark;
     const {next, prev} = pathContext;
 
     return(
         <div>
-            <Seo data={post} />
-            Project Post 
             <div className="BlogContainer Blog">
                 <div className="Content">
+                <div className="BackButtonWrapper">
+                    <Link to="/blog">Back</Link>
+                </div>
                 <h1>{post.frontmatter.title}</h1>
                 
                 <small>Published on {post.frontmatter.date} </small> 
@@ -48,34 +49,36 @@ export default function Template({data, pathContext}) {
                 </div>
             </div>
             </div>
-            <Author />
-            <Footer />
         </div>
     ) 
 }
+            {/*`/work${edge.node.frontmatter.path}`*/}
+            {/*frontmatter: { posttype: { eq: "project" }}*/}
+            {/*($path: String!)*/}
 
 export const projectQuery = graphql`
-    query ProjectPostByPath {
-        markdownRemark(frontmatter: { posttype: { eq: "project" }}){
-            html
-            excerpt(pruneLength: 250)
-            frontmatter {
-                path
-                title
-                date
-                tags
-                posttype
-                image {
-                    publicURL
-                    size 
-                    childImageSharp {
-                        sizes(maxWidth: 1140) {
-                            ...GatsbyImageSharpSizes_withWebp
-                        }
+query ProjectPostByPath($path: String!) {
+    markdownRemark(
+        frontmatter: { path: { eq: $path }}
+    ){
+        html
+        excerpt(pruneLength: 250)
+        frontmatter {
+            path
+            title
+            date
+            tags
+            image {
+                publicURL
+                size 
+                childImageSharp {
+                    sizes(maxWidth: 1140) {
+                        ...GatsbyImageSharpSizes_withWebp
                     }
-                } 
-            }
-          }
+                }
+            } 
         }
+      }
+    }
 
 `

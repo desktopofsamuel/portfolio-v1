@@ -2,25 +2,6 @@ const _ = require("lodash")
 const path = require ('path');
 const Promise = require("bluebird")
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-    const { createNodeField } = boundActionCreators;
-  
-    if (_.get(node, "internal.type") === `MarkdownRemark`) {
-      // Get the parent node
-      const parent = getNode(_.get(node, "parent"));
-  
-      // Create a field on this node for the "collection" of the parent
-      // NOTE: This is necessary so we can filter `allMarkdownRemark` by
-      // `collection` otherwise there is no way to filter for only markdown
-      // documents of type `post`.
-      createNodeField({
-        node,
-        name: "collection",
-        value: _.get(parent, "sourceInstanceName")
-      });
-    }
-  };
-
 exports.createPages = ({boundActionCreators, graphql}) => {
     const { createPage } = boundActionCreators
 
@@ -58,10 +39,12 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           reject(result.errors);
         }
 
+        {/*path: `/work${edge.node.frontmatter.path}`,*/}
+
         result.data.allMarkdownRemark.edges.forEach(edge => {
             if (edge.node.frontmatter.posttype === 'project') {
                 createPage({
-                    path: `/work${edge.node.frontmatter.path}`,
+                    path: edge.node.frontmatter.path,
                     component: projectTemplate,
                     cotext: {
 

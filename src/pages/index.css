@@ -369,6 +369,11 @@ border: none;
 
 }
 
+.ProjectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
 .BlogHeader {
     margin-top: 20vh;
 }
