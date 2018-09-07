@@ -27,13 +27,10 @@ const TagPage = ({ pathContext, data}) => {
         {data.allMarkdownRemark.edges.map(post => (
             
             <div key={ post.node.id }>
-
-                <h3>{post.node.frontmatter.title}</h3>
-                <small>Published on {post.node.frontmatter.date} </small>
                 <br />
+                <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
                 <p>{post.node.excerpt}</p>
-                <br />
-                <Link to={post.node.frontmatter.path}>Read More</Link>
+                <small>Published on {post.node.frontmatter.date} </small>
                 <br />
                 <br />
             </div>

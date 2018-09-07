@@ -361,7 +361,7 @@ padding-bottom: 15px;
 
 .BackButtonWrapper a {
 text-transform: uppercase;
-font-family: "IBM Plex Mono";
+font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
 letter-spacing: 0.25rem;
 color: #888;
 font-size: 70%;
@@ -427,8 +427,7 @@ border: none;
 }
 
 small {
-font-family: 'IBM Plex Mono';
-font-size: 80%;
+font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
 color: #c3c3c3;
 }
 
@@ -1229,19 +1228,22 @@ padding-right: 0;
 
 tt,
 code {
-background-color: #ddd;
+background-color: #eeeeee;
 border-radius: 3px;
-font-family: "IBM Plex Mono", Courier, monospace;
+font-family: Courier, monospace;
 padding: 0.2em 0.4em;
-white-space: nowrap;
-overflow: none;
-font-family: 'IBM Plex Mono';
 margin: 0;
 display: inline-block;
+
 }
 pre code {
-background: none;
+background-color: #eee;
+border-radius: 3px;
+font-family: Courier, monospace;
+padding: 1em 1em;
 line-height: 1.42;
+min-width: 100%;
+
 }
 code:before,
 code:after,

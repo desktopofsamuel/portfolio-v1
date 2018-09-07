@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,
-    /*{
+    {
       resolve: "gatsby-source-prismic",
       options: {
         // The name of your prismic.io repository. This is required.
@@ -55,7 +55,7 @@ module.exports = {
           }
         ),
       }
-    },*/
+    },
     {
       resolve: `gatsby-remark-images`,
       options: {
