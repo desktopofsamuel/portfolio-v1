@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Footer from '../components/footer';
 import HeroBlogLogo from '../images/HeroBlog.svg'
-import './blog.css'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import Author from '../components/author';
