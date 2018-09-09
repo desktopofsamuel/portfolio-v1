@@ -1,0 +1,45 @@
+<section className="S-PhotoandBlog"> 
+        <div className="BlogList Container Padding-M">
+          <div className="IconContainer">
+            <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="25" height="25" fill="#000" fillOpacity="0" />
+            <rect width="25" height="25" rx="6" fill="#FFBAB1" />
+            <rect x="3.8" y="7.5" width="17.3" height="10" rx="1" fill="#FE8170" />
+            <rect width="13.4" height="6.4" fill="#000" fillOpacity="0" transform="translate(5.8 9.3)"/>
+            <rect x="7.8" y="14.2" width="9.3" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect width="13.4" height="1.5" fill="#000" fillOpacity="0" transform="translate(5.8 9.3)"/>
+            <rect x="5.8" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC" />
+            <rect x="7.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC" />
+            <rect x="9.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC" />
+            <rect x="11.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="13.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="15.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="17.7" y="9.3" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect width="11.4" height="1.5" fill="#000" fillOpacity="0" transform="translate(6.7 11.8)"/>
+            <rect x="6.7" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="8.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="10.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="12.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="14.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            <rect x="16.6" y="11.8" width="1.5" height="1.5" rx="0.75" fill="#FCC"/>
+            </svg>
+        </div>
+        <h2 className="SectionTitle Red">Writings</h2> 
+        <div>
+                {data.allMarkdownRemark.edges.map(post => (
+                    <div className="Column Grid-S" key={ post.node.id }>
+                        <div className="LeftColumn">
+                            <small>{post.node.frontmatter.date} </small>
+                        </div>
+                        <div className="RightColumn Blog">
+                            <Link to={post.node.frontmatter.path}><h2><span className="highlight-grey">{post.node.frontmatter.title}</span></h2></Link>
+                            <p>{post.node.excerpt}</p>
+                            <br />
+                            <hr />
+                        </div>
+                    </div>
+                    
+                ))}
+            </div>
+            </div>
+  </section>
