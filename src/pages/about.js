@@ -12,8 +12,8 @@ import Img from 'gatsby-image'
 const IndexPage = ({ data }) => (
 <div>
     <Seo data="" />
-    <Helmet title={`Desktop of Samuel Home`} meta={[
-      { property: 'og:url', content: 'http://beta.desktopofsamuel.com/', },
+    <Helmet title={`About Me | Desktop of Samuel`} meta={[
+      { property: 'og:url', content: 'http://blog.desktopofsamuel.com/about', },
       ]}> > </Helmet>
     <div className="Hero AlignCenter">
       <div className="shapeshifter play30"></div>

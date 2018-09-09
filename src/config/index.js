@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Blog of Samuel",
+  siteTitle: "Desktop of Samuel",
   shortSiteTitle: "Desktop of Samuel",
   siteDescription: "Intersection of Design and Technology, ",
   siteUrl: "http://blog.desktopofsamuel.com",

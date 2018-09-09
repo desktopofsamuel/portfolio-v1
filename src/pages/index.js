@@ -9,8 +9,8 @@ import Author from '../components/author';
 const BlogPage = ({data}) => (
     <div>
         <Seo data="" />
-        <Helmet title={`Blog of Samuel`} meta={[
-      { property: 'og:url', content: 'http://beta.desktopofsamuel.com/blog', },
+        <Helmet title={`Blog | Desktop of Samuel Wong`} meta={[
+      { property: 'og:url', content: 'http://blog.desktopofsamuel.com/', },
       ]}> > </Helmet>
         
         <div className="BlogIndex">
