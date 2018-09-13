@@ -14,6 +14,7 @@ const Section = props => (
         <SectionLogo src={props.logo} ></SectionLogo>
         <SectionTitle>
             {props.title}
+            
         </SectionTitle> 
     </SectionHeader>
 

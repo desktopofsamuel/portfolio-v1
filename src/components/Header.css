@@ -21,6 +21,14 @@
     display: inline-block;
 }
 
+.NavBarIcon {
+    display: inline-block;
+}
+
+.Header .NavBarIcon a { 
+    color: #65678e;
+}
+
 @media (max-width: 800px) {
     p {
         font-size: 16px;

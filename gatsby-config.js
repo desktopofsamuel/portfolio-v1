@@ -37,10 +37,7 @@ module.exports = {
         // Set a list of links to fetch and be made available in your link
         // resolver function.
         // See: https://prismic.io/docs/javascript/query-the-api/fetch-linked-document-fields
-        fetchLinks: [
-          { 'fetchLinks' : 'photo.photo' }
-          // Your list of links
-        ],
+
    
         // Set an HTML serializer function used to process formatted content.
         // Fields with rich text formatting use this function to generate the

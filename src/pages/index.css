@@ -30,9 +30,10 @@
 .S-Contact {
     background-color: #e0e0e0;
     min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.ContactWrapper {
+    max-width: 70%;
 }
 
 .CenterContainer {
@@ -255,6 +256,8 @@ margin: 0 auto;
 max-width: 480px;
 padding: 0px 1.0875rem;
 }
+
+
 
 .Top-L {
     padding-top: 100vh;
@@ -787,6 +790,10 @@ margin-right: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .ContactWrapper {
+        max-width: 100%;
     }
 
     .Blog h1 {

@@ -8,6 +8,8 @@ title: "Building Gatsby With Multiple Post Type"
 
 tags: ["Work-In-Progress", "Gatsby", ]
 
+image: "./feature.png"
+
 ---
 
 TLDR: I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects . 

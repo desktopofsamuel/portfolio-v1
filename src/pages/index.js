@@ -6,6 +6,7 @@ import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import Author from '../components/author';
 
+
 const BlogPage = ({data}) => (
     <div>
         <Seo data="" />
