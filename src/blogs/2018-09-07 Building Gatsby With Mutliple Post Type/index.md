@@ -8,7 +8,7 @@ title: "Building Gatsby With Multiple Post Type"
 
 tags: ["Work-In-Progress", "Gatsby", ]
 
-image: "./feature.png"
+image: "./Gatsby-Multiple-Post-Type.png"
 
 ---
 

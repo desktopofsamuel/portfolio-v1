@@ -23,7 +23,9 @@ export default function Template({data, pathContext}) {
                 
                 <small>Published on {post.frontmatter.date} </small> 
                 <hr />
+
                 {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
+                
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
                 <div className="BlogNavigate">
                 <div className="Previous">

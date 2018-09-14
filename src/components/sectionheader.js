@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const SectionHeader = styled.div`
     display: block;
+    
 `
 const SectionLogo = styled.img``
 const SectionTitle = styled.h3`

@@ -23,13 +23,21 @@
     }
   }
 
+.S-Skill {
+    background-color: #f5f5f5;  
+  }
+
 .S-PhotoandBlog {
     background-color: #f5f5f5;    
+}
+
+.S-SelectedWork{  
 }
 
 .S-Contact {
     background-color: #e0e0e0;
     min-height: 400px;
+    margin-bottom: -50px;
 }
 
 .ContactWrapper {
@@ -90,9 +98,8 @@
 }
 
 .Grid-Portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 
@@ -802,7 +809,8 @@ margin-right: 5px;
     }
 
     .Grid-Portfolio {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
     }
 
     .Grid-M {

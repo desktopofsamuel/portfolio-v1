@@ -5,6 +5,7 @@ title: "Hyperair"
 tags: ["prototype", "design"]
 posttype: "project"
 image: "./Hyperair5.png"
+subtitle: "Currency Exchange App"
 ---
 
 Hyperair hello this is hyperair. test

@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
       </div>
       <div className="NavBar">
         <Link to="/about">About Me</Link>
-        <Link to="/blog">Blog</Link>
+        <Link to="/project">Project</Link>
         <div className="NavBarIcon">
           <a href="http://www.behance.com"><FaBehance /></a>
           <a href="http://www.linkedin.com"><FaLinkedin /></a>

@@ -43,3 +43,38 @@
             </div>
             </div>
   </section>
+
+
+<div className="LeftColumn">
+                <div className="Image">
+                  <img className="PortfolioImage" src="static/W4F3.png" />
+                </div>
+                
+              </div>
+              <div className="RightColumn">
+              <h2>Water For Free</h2>
+              <p>Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday.</p>
+              </div>
+            </div>
+            <div className="Grid-Portfolio Reverse">
+              <div className="LeftColumn">
+                <div className="Image">
+                    <img className="PortfolioImage" src="static/Hyperair5.png" />
+                  </div>
+              </div>
+              <div className="RightColumn">
+              <h2>Hyperair</h2>
+              <p>Hyperair Travel & Service Provider are two apps that I've designed to create all-round travel experience for frequent travelers  </p>
+        </div>
+
+        <section className="S-Contact">
+      <div className="Container">
+        <div className="ContactWrapper Padding-M">
+          <img style={{width:'90px',height:'90px'}} src="/static/propic.png" />
+          <h1>Drop me a line</h1>
+          <p>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </p>
+          <a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel [at] gmail.com</a>
+        </div>
+      </div>
+  </section>
+            </div>
