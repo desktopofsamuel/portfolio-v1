@@ -37,7 +37,7 @@
 .S-Contact {
     background-color: #e0e0e0;
     min-height: 400px;
-    margin-bottom: -50px;
+
 }
 
 .ContactWrapper {
@@ -97,11 +97,29 @@
     width: 100%
 }
 
-.Grid-Portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+.PortfolioIndex:first-child {
+    padding-top: 0;
 }
 
+.PortfolioIndexGroup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+
+.PortfolioIndexTitle h2 {
+    font-size: 42px;
+}
+
+.PortfolioIndexTitle h3 {
+    color: #BDBFC2;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.PortfolioIndex h2 {
+    margin-bottom: 0.75rem;
+}
 
 .Column {
     display: grid;
@@ -141,9 +159,14 @@
     margin-bottom: -50px;
 }
 
+.S-CTA {
+    position: relative;
+    margin-bottom: -50px;
+}
+
 .S-Footer {
     background-color: #444F5B;
-    position: fixed;
+    position: fixed!important;
 	bottom: 0;
     z-index: -1;
     width: 100%;
@@ -165,7 +188,6 @@
     text-decoration: underline;
     color: white;
 }
-
 
 .fab {
     color:white;
@@ -402,7 +424,8 @@ z-index: 10000;
 
 h1 {
 font-weight: 700;
-font-size: 48px;
+font-size: 36px;
+line-height: 150%;
 }
 
 h3 {
@@ -683,8 +706,12 @@ font-size: 48px;
 
 h3 {
 font-weight: 400;
-line-height: 1.4;
+line-height: 130%;
 font-size: 150%;
+}
+
+h4 {
+line-height: 130%;
 }
 
 .SectionTitle {
@@ -746,7 +773,7 @@ background-position: 0 1.2em;
 background-size: 0 100%;
 background-repeat: no-repeat;
 transition: background .5s;
-background-image: linear-gradient(to right, #FE8170 0, #FE8170 100%);
+background-image: linear-gradient(to right, #24DDA0 0, #24DDA0 100%);
 box-shadow: inset 0 .75em 0 0 #ffffff;
 }
 
@@ -785,8 +812,17 @@ margin-right: 5px;
 }
 
 @media (max-width: 700px) {
+
+    h1 {
+        font-size: 36px;
+    }
     .Container {
         padding: 0 5%;
+    }
+
+    .Padding-S {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
     }
 
     .BlogContainer {
@@ -820,7 +856,7 @@ margin-right: 5px;
         line-height: 2.5rem;
     }
 
-    .Grid-Portfolio {
+    .PortfolioIndexGroup  {
         display: grid;
         grid-template-columns: repeat(1, auto);
     }
@@ -842,6 +878,10 @@ margin-right: 5px;
         grid-template-columns: repeat(1, auto);
     }
 
+    .PortfolioIndexContent {
+        display: none;
+    }
+    
 }
 
 @media (min-width: 560px) 
@@ -1600,7 +1640,6 @@ content: "";
     }
 
     .author {
-        margin-bottom: -50px;
         margin-top: 40px;
     }
 }

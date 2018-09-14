@@ -21,8 +21,8 @@ const ProjectPage = ({data}) => {
                             <div className="">
                                 <Img className="" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
 
-                                <Link to={post.node.frontmatter.path} ><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
-                                <p>{post.node.excerpt}</p>
+                                <Link to={post.node.frontmatter.path} ><h1><span className="highlight">{post.node.frontmatter.title}</span></h1></Link>
+                                <p>{post.node.intro}</p>
                                 <br />
                             </div>
                         </div>
@@ -53,6 +53,8 @@ query ProjectIndex {
                 title
                 date
                 tags
+                subtitle
+                intro
               	image {
                   childImageSharp {
                     sizes(maxWidth: 1140) {

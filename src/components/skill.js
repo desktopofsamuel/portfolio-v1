@@ -15,7 +15,7 @@ const SkillLogo = styled.img`
     width: 64px;
 `
 
-const SkillTitle = styled.h3`
+const SkillTitle = styled.h2`
 `
 
 const SkillText = styled.p`

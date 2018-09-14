@@ -50,8 +50,6 @@ export default function Template({data, pathContext}) {
             </div>
             </div>
             <Author />
-            <Footer />
-            <CTA />
         </div>
     ) 
 }

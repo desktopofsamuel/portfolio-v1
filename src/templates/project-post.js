@@ -5,23 +5,28 @@ import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import FaArrowRight from 'react-icons/lib/fa'
 import Author from '../components/author'
+import CTA from '../components/cta'
 
 
 export default function Template({data, pathContext}) {
-    const post = data.markdownRemark;
+    const post = data.markdownRemark
     const {next, prev} = pathContext;
 
     return(
         <div>
-            <div className="BlogContainer Blog">
+            <div className="PortfolioBg">
+            <div claassName="Overlay">  </div>
+            <Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />
+            </div>
+            <Seo data={post} />
+            <div className="Padding-S">
                 <div className="Content">
-                <div className="BackButtonWrapper">
-                    <Link to="/blog">Back</Link>
-                </div>
+                <small>{post.frontmatter.category}</small>
                 <h1>{post.frontmatter.title}</h1>
-                <small>Published on {post.frontmatter.date} </small> 
-                <hr />
-                {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
+                
+
+                
+                
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
                 <div className="BlogNavigate">
                 <div className="Previous">
@@ -58,8 +63,8 @@ export default function Template({data, pathContext}) {
 export const projectQuery = graphql`
 query ProjectPostByPath($path: String!) {
     markdownRemark(
-        frontmatter: { path: { eq: $path }}
-    ){
+        frontmatter: { path: { eq:  $path} })
+    {
         html
         excerpt(pruneLength: 250)
         frontmatter {
@@ -67,6 +72,8 @@ query ProjectPostByPath($path: String!) {
             title
             date
             tags
+            subtitle
+            category
             image {
                 publicURL
                 size 
