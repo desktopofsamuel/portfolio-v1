@@ -19,7 +19,6 @@ export default function Template({data, pathContext}) {
                     <Link to="/blog">Back</Link>
                 </div>
                 <h1>{post.frontmatter.title}</h1>
-                
                 <small>Published on {post.frontmatter.date} </small> 
                 <hr />
                 {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}

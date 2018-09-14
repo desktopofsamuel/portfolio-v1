@@ -6,6 +6,7 @@ tags: ["prototype", "design"]
 posttype: "project"
 image: "./Hyperair5.png"
 subtitle: "Currency Exchange App"
+skill: "UI/UX Design"
 ---
 
 Hyperair hello this is hyperair. test

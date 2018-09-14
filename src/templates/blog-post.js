@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import FaArrowRight from 'react-icons/lib/fa'
 import Author from '../components/author'
+import CTA from '../components/cta'
 
 
 export default function Template({data, pathContext}) {
@@ -16,12 +17,8 @@ export default function Template({data, pathContext}) {
             <Seo data={post} />
             <div className="BlogContainer Blog">
                 <div className="Content">
-                <div className="BackButtonWrapper">
-                    <Link to="/blog">Back</Link>
-                </div>
+                <small>{post.frontmatter.date} </small> 
                 <h1>{post.frontmatter.title}</h1>
-                
-                <small>Published on {post.frontmatter.date} </small> 
                 <hr />
 
                 {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
@@ -54,6 +51,7 @@ export default function Template({data, pathContext}) {
             </div>
             <Author />
             <Footer />
+            <CTA />
         </div>
     ) 
 }
@@ -68,7 +66,7 @@ export const postQuery = graphql`
             frontmatter {
                 path
                 title
-                date
+                date(formatString: "MMMM DD, YYYY", locale: "en")
                 tags
                 image {
                     publicURL

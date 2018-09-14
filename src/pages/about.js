@@ -3,23 +3,19 @@ import Link from 'gatsby-link'
 import './index.css'
 import Emoji from '../components/emoji'
 import Footer from '../components/footer'
-import Socialbar from '../components/socialbar'
 import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Skill from '../components/skill'
-import SectionHeader from '../components/sectionheader'
-import PortfolioIndex from '../components/portfolioindex'
 
-
-const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
+const IndexPage = ({ data }) => (
   
 <div>
     <Seo data="" />
     <Helmet title={`About Me | Desktop of Samuel`} meta={[
       { property: 'og:url', content: 'http://blog.desktopofsamuel.com/about', },
       ]}> > </Helmet>
-    <div className="Hero AlignCenter">
+    <div className="Hero AlignCenter Full-Width">
       <div className="shapeshifter play30"></div>
       <div className="Container">
         <div className="TextContainer Padding-S">
@@ -29,7 +25,7 @@ const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
         </div>
       </div>
     </div>
-    <section className="S-Skill Padding-S">
+    <section className="S-Skill Padding-S Full-Width">
     <div className="Container">
       <div className="IconContainer">
         <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +64,7 @@ const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
     </div>
     </section>
     <section className="S-SelectedWork">
-    <div className="Container Padding-M">
+    <div className="Padding-M">
       <div className="SelectedWork">
         <div className="IconContainer">
           <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +85,6 @@ const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
             {data.PortfolioIndex.edges.map(post => (
                 <div>
                 <div className="Grid-Portfolio">
-                
                 <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
                 <p>{post.node.excerpt}</p>
                 </div>
@@ -107,7 +102,7 @@ const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
     </div>
   </section>
   <section className="S-Blog">
-      <div className="Container Padding-S">
+      <div className="Padding-S">
       <div className="IconContainer">
             <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="25" height="25" fill="#000" fillOpacity="0" />
@@ -149,7 +144,7 @@ const IndexPage = ({ data, PortfolioIndex, front, BlogIndex }) => (
             </div>
             </div>
   </section>
-  <section className="S-Contact">
+  <section className="S-Contact Full-Width">
       <div className="Container">
         <div className="ContactWrapper Padding-M">
           <img style={{width:'90px',height:'90px'}} src="/static/propic.png" />

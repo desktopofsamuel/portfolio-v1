@@ -5,7 +5,7 @@ import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <section className="Container">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -15,7 +15,7 @@ const Layout = ({ children, data }) => (
     />
     <Header siteTitle={data.site.siteMetadata.title} />
       {children()}
-  </div>
+  </section>
 )
 
 Layout.propTypes = {
