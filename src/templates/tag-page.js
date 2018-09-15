@@ -52,7 +52,10 @@ export default TagPage
 export const pageQuery = graphql`
   query PostByTag($tag: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { 
+        frontmatter: { tags: { in: [$tag] } } 
+        fileAbsolutePath: {regex: "\/blogs/"}
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

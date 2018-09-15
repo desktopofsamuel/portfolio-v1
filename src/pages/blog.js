@@ -15,7 +15,7 @@ const BlogPage = ({data}) => (
       ]}> > </Helmet>
         
         <div className="BlogIndex">
-            <div className="Container Padding-M">
+            <div className="Container Padding-S">
                 <div className="HeroIcon">
                     <div className="HeroIconWrapper Padding-S">
                         <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
@@ -23,7 +23,7 @@ const BlogPage = ({data}) => (
                 </div>
                 {data.allMarkdownRemark.edges.map(post => (
                     <div className="Column Grid-S" key={ post.node.id }>
-                        <div className="LeftColumn">
+                        <div className="LeftColumn Lower">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
                         <div className="RightColumn Blog">
@@ -38,7 +38,6 @@ const BlogPage = ({data}) => (
             </div>
         </div>
         <Author />
-        <Footer />
     </div>
 )
 
@@ -60,7 +59,7 @@ query BlogIndex {
             frontmatter {
                 path
                 title
-                date
+                date(formatString: "MMM DD, YYYY", locale: "en")
                 tags
           }
         }
