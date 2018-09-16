@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
   
 <div>
     <Seo data="" />
-    <Helmet title={`About Me | Desktop of Samuel`} meta={[
+    <Helmet title={`Desktop of Samuel`} meta={[
       { property: 'og:url', content: 'http://blog.desktopofsamuel.com/about', },
       ]}> > </Helmet>
     <div className="Full-Width Hero">
