@@ -39,18 +39,6 @@ export default function Template({data, pathContext}) {
                         <Link to={next.frontmatter.path}>Next → </Link>}
                     </div >
                 </div>
-                <hr />
-                <div className="tag">
-                Tagged with {post.frontmatter.tags.map((tag, index) => {
-                    return (
-                        <span key={index} className="tag">
-                            <Link to={`tags/${tag}`}
-                                  >
-                            {tag}</Link>
-                        </span>
-                    )
-                })}
-                </div>
             </div>
             </div>
         </div>
