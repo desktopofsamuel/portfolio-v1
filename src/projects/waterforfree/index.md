@@ -2,7 +2,6 @@
 path: "/waterforfree"
 date: "2017-07-01"
 title: "Water For Free"
-tags: ["app", "design"]
 posttype: "project"
 image: "./WaterForFree-Feature2.png"
 intro: "Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday."

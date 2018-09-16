@@ -2,7 +2,6 @@
 path: "/ftc"
 date: "2016-05-13"
 title: "Fair Training Center"
-tags: ["logo", "design", "brand"]
 posttype: "project"
 image: "./FTC-Feature2.png"
 subtitle: "Non-profit training center that offer training opportunities"

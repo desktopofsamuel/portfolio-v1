@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Footer from '../components/footer';
 import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';

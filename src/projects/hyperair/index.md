@@ -2,7 +2,6 @@
 path: "/hyperair"
 date: "2018-08-24"
 title: "Hyperair Travel"
-tags: ["prototype", "design"]
 posttype: "project"
 image: "./Hyperair-Feature3.png"
 subtitle: "All-rounded Travel Service"
