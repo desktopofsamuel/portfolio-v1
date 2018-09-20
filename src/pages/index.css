@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif:400,600');
 
   .shapeshifter {
-    animation-duration: 2000ms;
-    animation-timing-function: steps(30);
+    animation-duration: 10000ms;
+    animation-timing-function: steps(300);
     width: 1440px;
     height: 600px;
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 40%;
     background-repeat: no-repeat;
-    background-image: url('../images/Hero.svg');
+    background-image: url('https://desktopofsamuel.com/static/Herov2.svg');
     animation-iteration-count: infinite;
     animation-name: play30;
   }
@@ -19,7 +19,7 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -43200px 0px;
+      background-position: -432000px 0px;
     }
   }
 
