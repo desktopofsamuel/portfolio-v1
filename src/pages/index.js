@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
 <div>
     <Seo data="" />
     <Helmet title={`Desktop of Samuel`} meta={[
-      { property: 'og:url', content: 'http://blog.desktopofsamuel.com/about', },
+      { property: 'og:url', content: 'http://desktopofsamuel.com', },
       ]}> > </Helmet>
     <div className="Full-Width Hero">
       <div className="shapeshifter play30"></div>
@@ -46,20 +46,20 @@ const IndexPage = ({ data }) => (
         <div>
           <p>I'm currently working at <a href="https://playa.hk">Playa</a>, a web / app agency that I've co-founded in Hong Kong, crafting projects like <Link to="/waterforfree">Water For Free</Link> and <Link to="/hyperair">Hyperair</Link>. </p>
           <p>Before that, I was the cross-content intern at iTunes & App Store.</p>
+          <Link>Read More</Link>
         </div>
         <div>
-          <h6>I help with:</h6>
+          <h6>What I offer</h6>
           <div className="Grid50"> 
-          <h3>UI Design</h3>
-          <h3>Product Development</h3>
+          <p>Wireframing <br/> Prototyping <br/>UI Design</p>
+          <p>Product Development <br/> Visual Design Strategy <br/> Brand Design</p>
           </div>
           <h6>I also help with:</h6>
           <div className="Grid50"> 
-          <h3>Brand Design</h3>
-          <h3>Photography & Video Production</h3>
+          <p>Photography</p>
+          <p>Video Production</p>
           </div>
         </div>
-        
       </div>
     </div>
     </section>
@@ -83,8 +83,8 @@ const IndexPage = ({ data }) => (
             
             <div className="">
             {data.PortfolioIndex.edges.map(post => (
-                <div className="PortfolioIndex Padding-S">
-                  <div className="Padding-S">
+                <div className="PortfolioIndex Padding-XS">
+                  <div className="">
                   
                   <div className="Grid50">
                     <div className="PortfolioIndexTitle">
@@ -161,7 +161,7 @@ const IndexPage = ({ data }) => (
 
 export const pageQuery = graphql`
 query LandingIndex {
-  front: file(relativePath: { eq: "/images/W4F-1.png" }) {
+  front: file(relativePath: { eq: "/images/sprite_30fps.svg" }) {
     childImageSharp {
       sizes(maxWidth: 1440) {
         srcSet

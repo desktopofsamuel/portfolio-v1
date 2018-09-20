@@ -114,6 +114,12 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 20px;
+    padding-bottom: 36px;
+
+}
+
+.PortfolioIndex {
+    margin-bottom: 48px;
 }
 
 .PortfolioIndexTitle h2 {
@@ -277,8 +283,6 @@
     grid-gap: 10px;
     padding-top: -20vh;
 }
-
-
 
 div.tag {
     padding: 0 0 5rem 0;

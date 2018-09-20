@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-image`,
+    /*
     {
       resolve: "gatsby-source-prismic",
       options: {
@@ -52,7 +53,7 @@ module.exports = {
           }
         ),
       }
-    },
+    },*/
     {
       resolve: `gatsby-remark-images`,
       options: {

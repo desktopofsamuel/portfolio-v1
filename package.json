@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "file-loader": "^2.0.0",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
@@ -31,8 +30,7 @@
     "react-icons": "^2.2.7",
     "react-scroll-into-view": "^1.3.2",
     "resolve-url-loader": "^2.3.0",
-    "styled-components": "^3.4.5",
-    "url-loader": "^1.1.1"
+    "styled-components": "^3.4.5"
   },
   "keywords": [
     "gatsby"
@@ -46,7 +44,10 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
-    "prettier": "^1.14.2"
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "prettier": "^1.14.2",
+    "url-loader": "^1.1.1"
   },
   "repository": {
     "type": "git",
