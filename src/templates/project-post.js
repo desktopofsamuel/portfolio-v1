@@ -23,7 +23,7 @@ export default function Template({data, pathContext}) {
                 <div className="Content">
                 <small>{post.frontmatter.category}</small>
                 <h1>{post.frontmatter.title}</h1>
-                
+                <small>{post.frontmatter.date}</small>
 
                 
                 
@@ -58,7 +58,7 @@ query ProjectPostByPath($path: String!) {
         frontmatter {
             path
             title
-            date
+            date(formatString: "YYYY MMMM", locale: "en")
             tags
             subtitle
             category

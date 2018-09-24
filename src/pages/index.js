@@ -48,14 +48,14 @@ const IndexPage = ({ data }) => (
           <p>Before that, I was the cross-content intern at iTunes & App Store, Apple. </p>
         </div>
         <div>
-          <h6>What I offer</h6>
+          <h6>I'm good at</h6>
           <div className="Grid50"> 
-          <p>Wireframing <br/> Prototyping <br/>UI Design</p>
-          <p>Product Development <br/> Visual Design Strategy <br/> Brand Design</p>
+          <p>Wireframing<br/> Prototyping <br/>UI Design</p>
+          <p>Visual Design Strategy <br/> Brand Design</p>
           </div>
           <h6>I also help with:</h6>
           <div className="Grid50"> 
-          <p>Photography</p>
+          <p>Photography</p>  
           <p>Video Production</p>
           </div>
         </div>

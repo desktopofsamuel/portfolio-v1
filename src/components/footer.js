@@ -11,7 +11,7 @@ const Footer = () => (
                 <h1>Drop me a line</h1>
                 <div className="TextContainer">
                 <p>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </p>
-                <a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel [at] gmail.com</a>
+                <a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel@gmail.com</a>
                 </div>
             </div> 
             </div>

@@ -906,6 +906,9 @@ margin-right: 5px;
         display: none;
     }
     
+    .S-CTA {
+        text-align: center;
+    }
 }
 
 @media (min-width: 560px) 
