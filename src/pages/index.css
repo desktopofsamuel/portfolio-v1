@@ -4,12 +4,14 @@
     animation-duration: 10000ms;
     animation-timing-function: steps(300);
     width: 1440px;
-    height: 600px;
+    height: 700px;
     position: absolute;
-    top: 1%;
-    left: 40%;
+    top: -10%;
+    left: 45%;
     background-repeat: no-repeat;
-    background-image: url('https://desktopofsamuel.com/static/Herov3.svg');
+    transform: scale(0.9,0.9);
+    
+    background-image: url('https://desktopofsamuel.com/static/Herov4.svg');
     animation-iteration-count: infinite;
     animation-name: play30;
   }
@@ -861,7 +863,6 @@ margin-right: 5px;
     .shapeshifter {
         left: auto;
         opacity: 0.2;
-        transform: scale(0.7,0.7);
     }
     .Hero {
         display: flex;
