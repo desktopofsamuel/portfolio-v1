@@ -45,8 +45,7 @@ const IndexPage = ({ data }) => (
       <div className="Grid50">
         <div>
           <p>I'm currently working at <a href="https://playa.hk">Playa</a>, a web / app agency that I've co-founded in Hong Kong, crafting projects like <Link to="/waterforfree">Water For Free</Link> and <Link to="/hyperair">Hyperair</Link>. </p>
-          <p>Before that, I was the cross-content intern at iTunes & App Store.</p>
-          <Link>Read More</Link>
+          <p>Before that, I was the cross-content intern at iTunes & App Store, Apple. </p>
         </div>
         <div>
           <h6>What I offer</h6>
