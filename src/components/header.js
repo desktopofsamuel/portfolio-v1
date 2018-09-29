@@ -6,16 +6,7 @@ import { FaTwitter, FaBehanceSquare, FaLinkedin } from 'react-icons/lib/fa';
 
 const Header = ({ siteTitle }) => (
 
-<div className="Full-Width"> 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114278308-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114278308-3');
-</script>
-
+<div className="Full-Width">
   <div className="Header">
     <div className="HeaderGroup">
       <div className="Logo">
