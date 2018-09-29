@@ -674,6 +674,12 @@ text-align: center;
 
 }
 
+.Gallery-50 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5%;
+}
+
 .arrowbox {
 position: relative;
 background: #F7F7F7;

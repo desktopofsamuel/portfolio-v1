@@ -1,8 +1,12 @@
 {
   "assetsByChunkName": {
     "path---waterforfree": [
-      "path---waterforfree-29f08abf5b76e7c0d37e.js",
-      "path---waterforfree-29f08abf5b76e7c0d37e.js.map"
+      "path---waterforfree-81d1ca34f1ab887012c6.js",
+      "path---waterforfree-81d1ca34f1ab887012c6.js.map"
+    ],
+    "path---tags-design-matters-18": [
+      "path---tags-design-matters-18-879f610e9823748c666f.js",
+      "path---tags-design-matters-18-879f610e9823748c666f.js.map"
     ],
     "path---tags-productivity": [
       "path---tags-productivity-73f2b89d76ea2e7b08a3.js",
@@ -13,28 +17,32 @@
       "path---essential-color-tool-2018-7e707962687a75536ac3.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-9acc989c0f3044eae78d.js",
-      "component---src-pages-index-js-9acc989c0f3044eae78d.js.map"
+      "component---src-pages-index-js-9f4c66a0bdd8d79d7059.js",
+      "component---src-pages-index-js-9f4c66a0bdd8d79d7059.js.map"
     ],
     "path---blog": [
-      "path---blog-45e758c174d6f06b1d15.js",
-      "path---blog-45e758c174d6f06b1d15.js.map"
+      "path---blog-3299cf7db1eaa6a4b6c7.js",
+      "path---blog-3299cf7db1eaa6a4b6c7.js.map"
     ],
     "path---": [
       "path----c47276a30503293c0a01.js",
       "path----c47276a30503293c0a01.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-528b6df33a2d8176952f.js",
-      "path---tags-design-528b6df33a2d8176952f.js.map"
+      "path---tags-design-d4df36c1c08a3e8ebcce.js",
+      "path---tags-design-d4df36c1c08a3e8ebcce.js.map"
     ],
     "component---src-templates-tag-page-js": [
       "component---src-templates-tag-page-js-f39ee763de05feb9331e.js",
       "component---src-templates-tag-page-js-f39ee763de05feb9331e.js.map"
     ],
     "path---project": [
-      "path---project-940864378813bfde10f7.js",
-      "path---project-940864378813bfde10f7.js.map"
+      "path---project-94985b8c3bbb28522410.js",
+      "path---project-94985b8c3bbb28522410.js.map"
+    ],
+    "path---journey-to-design-matters": [
+      "path---journey-to-design-matters-3ae0ab6009a2fa006b5e.js",
+      "path---journey-to-design-matters-3ae0ab6009a2fa006b5e.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-af065311e8a8322efbd2.js",
@@ -56,43 +64,47 @@
       "path---tags-subscription-39ad547f48ac014468bc.js",
       "path---tags-subscription-39ad547f48ac014468bc.js.map"
     ],
+    "path---tags-conference": [
+      "path---tags-conference-c88d3784ba1e37e2ca9d.js",
+      "path---tags-conference-c88d3784ba1e37e2ca9d.js.map"
+    ],
     "path---hyperair": [
-      "path---hyperair-440642a3dbd226c55926.js",
-      "path---hyperair-440642a3dbd226c55926.js.map"
+      "path---hyperair-63e44511683ccc7444b7.js",
+      "path---hyperair-63e44511683ccc7444b7.js.map"
     ],
     "path---tags-gatsby": [
-      "path---tags-gatsby-d43af7496e5560fc0a94.js",
-      "path---tags-gatsby-d43af7496e5560fc0a94.js.map"
+      "path---tags-gatsby-eeb0593a2c2294f93220.js",
+      "path---tags-gatsby-eeb0593a2c2294f93220.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---index": [
-      "path---index-137e50e403705f95691b.js",
-      "path---index-137e50e403705f95691b.js.map"
+      "path---index-1abf3a8b1a0ee30d1ee1.js",
+      "path---index-1abf3a8b1a0ee30d1ee1.js.map"
     ],
     "path---tags-technology": [
       "path---tags-technology-8dc2f28d26c0123cd9df.js",
       "path---tags-technology-8dc2f28d26c0123cd9df.js.map"
     ],
     "component---src-templates-project-post-js": [
-      "component---src-templates-project-post-js-00750e1a65c64d57c069.js",
-      "component---src-templates-project-post-js-00750e1a65c64d57c069.js.map"
+      "component---src-templates-project-post-js-9ab9280e491bbc65bac5.js",
+      "component---src-templates-project-post-js-9ab9280e491bbc65bac5.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-5915c3a6e71511fcc7bb.js",
+      "commons-bc306646543d1a496532.js",
       "build-js-styles.css",
-      "commons-5915c3a6e71511fcc7bb.js.map",
+      "commons-bc306646543d1a496532.js.map",
       "build-js-styles.css.map"
     ],
     "path---ftc": [
-      "path---ftc-3153728f1481c4578c04.js",
-      "path---ftc-3153728f1481c4578c04.js.map"
+      "path---ftc-0cfb47acd9c5bd111bb8.js",
+      "path---ftc-0cfb47acd9c5bd111bb8.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -103,8 +115,8 @@
       "path---tags-prototype-0f46456fadaf2621c658.js.map"
     ],
     "path---tags-work-in-progress": [
-      "path---tags-work-in-progress-ffb0abc7e93f77feebe3.js",
-      "path---tags-work-in-progress-ffb0abc7e93f77feebe3.js.map"
+      "path---tags-work-in-progress-add4abc9fab9b39a94c3.js",
+      "path---tags-work-in-progress-add4abc9fab9b39a94c3.js.map"
     ],
     "path---setapp": [
       "path---setapp-21ab83751d1bab6ca2f2.js",
@@ -115,8 +127,8 @@
       "path---tags-app-acd3e9aa3fbd21a89fbe.js.map"
     ],
     "path---building-gatsby-with-multiple-post-type": [
-      "path---building-gatsby-with-multiple-post-type-ea3c407e2329311adf56.js",
-      "path---building-gatsby-with-multiple-post-type-ea3c407e2329311adf56.js.map"
+      "path---building-gatsby-with-multiple-post-type-c604fb84c904908b4481.js",
+      "path---building-gatsby-with-multiple-post-type-c604fb84c904908b4481.js.map"
     ],
     "component---src-pages-blog-js": [
       "component---src-pages-blog-js-be2d4dcdac64b1106d15.js",
@@ -131,9 +143,9 @@
       "path---tags-localization-bdf590a847e37efd5f71.js.map"
     ],
     "app": [
-      "app-68795d96d8358b306636.js",
+      "app-b574402b882962bc1ef1.js",
       "build-js-styles.css",
-      "app-68795d96d8358b306636.js.map",
+      "app-b574402b882962bc1ef1.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-color": [
