@@ -1,23 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import './Header.css'
-import { FaTwitter, FaBehanceSquare, FaLinkedin } from 'react-icons/lib/fa';
+import { FaTwitter, FaMedium, FaLinkedin } from 'react-icons/lib/fa';
 
 
 const Header = ({ siteTitle }) => (
 
-<div className="Full-Width">
+<div className="">
   <div className="Header">
     <div className="HeaderGroup">
-      <div className="Logo">
-        <Link to="/">Samuel W.</Link>
-
-      </div>
       <div className="NavBar">
-        <Link to="/blog">Blog</Link>
-        <div className="NavBarIcon">
+      <Link to="/">Home</Link>
+      <Link to="/work">Work</Link>
+      <Link to="/blog">Blog</Link>  
+      </div>
+      <div className="NavBarRight">
+      <div className="NavBarIcon">
+          <a href="https://www.twitter.com/desktopofsamuel"><FaTwitter /></a>
+          <a href="https://www.medium.com/desktopofsamuel"><FaMedium /></a>
           <a href="https://www.linkedin.com/in/wongchunlong/"><FaLinkedin /></a>
-          <a href="http://www.twitter.com/desktopofsamuel"><FaTwitter /></a>
         </div>
       </div>
     </div>

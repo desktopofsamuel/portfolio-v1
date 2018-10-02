@@ -23,12 +23,13 @@ const IndexPage = ({ data }) => (
           <h6>Hey there <Emoji symbol="✌🏻" label="Victory-Hand"/> </h6>
           <h3>My name is <strong>Samuel</strong>.</h3>
           <h3>I love to solve problems with design.</h3>
-          
+          <p>I'm currently working at <a href="https://playa.hk">Playa</a>, a web / app agency that I've co-founded in Hong Kong, crafting projects like <Link to="/waterforfree">Water For Free</Link> and <Link to="/hyperair">Hyperair</Link>. </p>
+          <p>Before that, I was the cross-content intern at iTunes & App Store, Apple. </p>
         </div>
       </div>
       </div>
     </div>
-    <section className="S-Skill Padding-M Full-Width">
+    {/*<section className="S-Skill Padding-M Full-Width">
     <div className="Container">
       <div className="IconContainer">
         <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,12 +42,14 @@ const IndexPage = ({ data }) => (
         </svg>
 
       </div>
-    <h2 className="SectionTitle Yellow">About Me</h2>
+    <h2 className="SectionTitle Yellow">Let's Make A List</h2>
+      <div className="Grid25">
+        <div><h6>I'm good at</h6><ol><li>Wireframing</li><li>Prototyping</li><li>UI Design</li><li>Visual Design Strategy</li><li>Brand Design</li></ol></div>
+        <div><h6>I love</h6><ol><li></li><li>Wireframing</li><li>Wireframing</li></ol></div>
+        <div><h6>Lesiure</h6><ol><li>Wireframing</li><li>Wireframing</li><li>Wireframing</li></ol></div>
+        <div><h6>Fun Fact</h6><ol><li>Wireframing</li><li>Wireframing</li><li>Wireframing</li></ol></div>
+      </div>
       <div className="Grid50">
-        <div>
-          <p>I'm currently working at <a href="https://playa.hk">Playa</a>, a web / app agency that I've co-founded in Hong Kong, crafting projects like <Link to="/waterforfree">Water For Free</Link> and <Link to="/hyperair">Hyperair</Link>. </p>
-          <p>Before that, I was the cross-content intern at iTunes & App Store, Apple. </p>
-        </div>
         <div>
           <h6>I'm good at</h6>
           <div className="Grid50"> 
@@ -61,7 +64,7 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </div>
-    </section>
+    </section>*/}
     <section className="S-SelectedWork">
     <div className="Padding-M">
       <div className="SelectedWork">
