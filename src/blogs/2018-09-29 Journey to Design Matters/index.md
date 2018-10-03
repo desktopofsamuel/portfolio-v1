@@ -14,7 +14,7 @@ image: "./IMG_20180927_145719.jpg"
 
 ![](./IMG_20180927_145719.jpg)
 
-It was a truly enlightening trip to Denmark, attending Design Matters 2018 in Copenhagen (Sep 26 -27, 2018). Not only did the talks and workshops given by design practitioners across the industry are illuminating, it had also made me realised to take a step back to reflect on the whole workflow of design process.
+It was a truly enlightening trip to Denmark, attending Design Matters 2018 in Copenhagen (Sep 26 -27, 2018). Not only are the talks and workshops given by design practitioners across the industry illuminating, it had also made me take a step back to reflect on the whole workflow of design process.
 
 ##Design for feelings
 
