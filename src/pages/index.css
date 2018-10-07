@@ -4,7 +4,7 @@
     animation-duration: 10000ms;
     animation-timing-function: steps(300);
     width: 1440px;
-    height: 700px;
+    height: 1024px;
     position: absolute;
     top: -10%;
     left: 45%;
@@ -303,6 +303,13 @@ h6 {
 max-width: 640px;
 margin-right: auto;
 margin-left: auto;
+margin-top: 50px;
+}
+
+.Layout {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
 }
 
 .Container {
@@ -318,7 +325,9 @@ max-width: 480px;
 padding: 0px 1.0875rem;
 }
 
-
+.Bottom-S {
+    margin-bottom: 10vh;
+}
 
 .Top-L {
     padding-top: 100vh;

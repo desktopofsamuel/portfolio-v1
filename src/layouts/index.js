@@ -7,7 +7,7 @@ import './index.css'
 
 const Layout = ({ children, data }) => (
   <section className="">
-    <div className="Container">
+    <div className="Layout">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[

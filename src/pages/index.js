@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
     <Helmet title={`Desktop of Samuel`} meta={[
       { property: 'og:url', content: 'http://desktopofsamuel.com', },
       ]}> > </Helmet>
-    <div className="Full-Width Hero">
+    <div className="Hero">
       <div className="shapeshifter play30"></div>
       <div className="Container">
       <div className="">
@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => (
     </div>
     </section>*/}
     <section className="S-SelectedWork">
-    <div className="Padding-M">
+    <div className="Padding-M Container">
       <div className="SelectedWork">
         <div className="IconContainer">
           <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,25 +86,25 @@ const IndexPage = ({ data }) => (
             <div className="">
             {data.PortfolioIndex.edges.map(post => (
                 <div className="PortfolioIndex Padding-XS">
-                  <div className="">
-                  
+                  <div className="Bottom-S">
+                    <Link to={post.node.frontmatter.path}>
+                      <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                    </Link>
+                  </div>
                   <div className="Grid50">
                     <div className="PortfolioIndexTitle">
                       <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
                       <h3>{post.node.frontmatter.subtitle}</h3> 
                       <small>{post.node.frontmatter.category}</small><small> | </small><small>{post.node.frontmatter.date}</small>
-                    
                     </div>
                     <div className="PortfolioIndexContent">
                       <p>{post.node.frontmatter.intro}</p>
                       <Link to={post.node.frontmatter.path}>View Case Study</Link>
                     </div>
                   </div>
-                </div>
+                
                 <div>
-                <Link to={post.node.frontmatter.path}>
-                  <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
-                </Link>
+                
                 </div>
                 </div>
             ))}
@@ -117,7 +117,7 @@ const IndexPage = ({ data }) => (
     </div>
   </section>
   <section className="S-Blog">
-      <div className="Padding-S">
+      <div className="Padding-S Container">
       <div className="IconContainer">
             <svg className="MainIcon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="25" height="25" fill="#000" fillOpacity="0" />

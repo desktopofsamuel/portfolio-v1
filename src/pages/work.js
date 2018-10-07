@@ -20,8 +20,11 @@ const WorkPage = ({ data }) => (
           <div className="">
           {data.PortfolioIndex.edges.map(post => (
               <div className="PortfolioIndex Padding-XS">
-                <div className="">
-                
+                <div className="Bottom-S">
+                <Link to={post.node.frontmatter.path}>
+                <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                </Link>
+                </div>
                 <div className="Grid50">
                   <div className="PortfolioIndexTitle">
                     <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
@@ -34,11 +37,8 @@ const WorkPage = ({ data }) => (
                     <Link to={post.node.frontmatter.path}>View Case Study</Link>
                   </div>
                 </div>
-              </div>
               <div>
-              <Link to={post.node.frontmatter.path}>
-                <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
-              </Link>
+              
               </div>
               </div>
           ))}

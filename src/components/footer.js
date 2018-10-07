@@ -16,7 +16,7 @@ const Footer = () => (
             </div> 
             </div>
         </section>
-        <section className="S-Footer Full-Width">
+        <section className="S-Footer">
             <div className="Container TextCenter Padding-XS">
             <div className="FooterWrapper WhiteText">
                 <small>©2018 Samuel Wong — Made in Hong Kong</small>

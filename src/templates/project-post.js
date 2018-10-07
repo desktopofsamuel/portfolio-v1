@@ -16,10 +16,10 @@ export default function Template({data, pathContext}) {
         <div>
             <div className="PortfolioBg">
             <div claassName="Overlay">  </div>
-            <Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />
+            <Img className="ContentWide Container" sizes={post.frontmatter.image.childImageSharp.sizes} />
             </div>
             <Seo data={post} />
-            <div className="Padding-S">
+            <div className="Padding-S Container">
                 <div className="Content">
                 <small>{post.frontmatter.category}</small>
                 <h1>{post.frontmatter.title}</h1>
