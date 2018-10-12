@@ -42,6 +42,9 @@
 
 }
 
+.Width-70 {
+    max-width: 70%;
+}
 
 .ContactWrapper {
     max-width: 70%;
@@ -49,6 +52,7 @@
 
 .CenterContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -120,23 +124,6 @@
 
 }
 
-.PortfolioIndex {
-    margin-bottom: 48px;
-}
-
-.PortfolioIndexTitle h2 {
-    font-size: 36px;
-}
-
-.PortfolioIndexTitle h3 {
-    color: #BDBFC2;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
-}
-
-.PortfolioIndex h2 {
-    margin-bottom: 0.75rem;
-}
 
 .Column {
     display: grid;
@@ -233,12 +220,7 @@
 }
 
 .Full-Width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: 100%;
 
 }
 .tag a {
@@ -309,7 +291,6 @@ margin-top: 50px;
 .Layout {
     width: 100%;
     margin: 0;
-    padding: 0 1rem;
 }
 
 .Container {
@@ -323,6 +304,10 @@ padding: 0 1rem;
 margin: 0 auto;
 max-width: 480px;
 padding: 0px 1.0875rem;
+}
+
+.Bottom-XS {
+    margin-bottom: 5vh;
 }
 
 .Bottom-S {
@@ -899,6 +884,10 @@ margin-right: 5px;
         max-width: 100%;
     }
 
+    .Width-70 {
+        max-width: 100%;
+    }
+
     .Blog h1 {
         font-size: 36px;
         line-height: 2.5rem;
@@ -924,10 +913,6 @@ margin-right: 5px;
     .PhotoGrid {
         margin: 0 10px;
         grid-template-columns: repeat(1, auto);
-    }
-
-    .PortfolioIndexContent {
-        display: none;
     }
     
     .S-CTA {

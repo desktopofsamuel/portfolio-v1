@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
     <div className="HeaderGroup">
       <div className="NavBar">
       <Link to="/">Home</Link>
-      <Link to="/work">Work</Link>
+      <Link to="/project">Work</Link>
       <Link to="/blog">Blog</Link>  
       </div>
       <div className="NavBarRight">

@@ -1,80 +1,149 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Footer from '../components/footer';
-import HeroBlogLogo from '../images/HeroBlog.svg'
-import Seo from '../components/seo';
-import Helmet from 'react-helmet';
-import Author from '../components/author';
-import Img from 'gatsby-image';
+import './index.css'
+import Seo from '../components/seo'
+import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
+import HeroProjectLogo from '../images/HeroProject.svg'
+import styled from 'styled-components'
+import MajorButton from '../components/majorbutton'
 
-const ProjectPage = ({data}) => {
-    /*const ProjectLink = `/work"${data.allMArkdownRemark.edges.node.frontmatter.path}" `
-    <Link to={ "/work" + post.node.frontmatter.path} >*/
+const ProjectTitleWrapper = styled.div`
+    max-width: 70%;
+    margin-bottom: 5vh;
 
-    return (
+    @media (max-width: 700px) {
+        max-width: 100%;
+    }
+`
+
+const ProjectContentWrapper = styled.div`
+    max-width: 70%;   
+
+    @media (max-width: 700px) {
+        max-width: 100%;
+    } 
+`
+
+const ProjectTitle = styled.h2`
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 0.75rem;
+`
+
+const ProjectSubtitle = styled.h3`
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+` 
+
+const ProjectInfo = styled.small`
+    color: #fff;
+    opacity: 0.7;
+`
+
+const ProjectIntro = styled.p`
+    color: #fff;
+`
+
+const WorkPage = ({ data }) => (
     <div>
-        <div className="Container">
-        <p>Project </p>
-            <div className="ProjectGrid">
-            {data.allMarkdownRemark.edges.map(post => (
-                        <div className="" key={ post.node.id }>
-                            <div className="">
-                                <Img className="" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+    <Seo data="" />
+    <Helmet title={`Project | Desktop of Samuel`} meta={[
+      { property: 'og:url', content: 'http://desktopofsamuel.com/project', },
+      ]}>
+    </Helmet>
 
-                                <Link to={post.node.frontmatter.path} ><h1><span className="highlight">{post.node.frontmatter.title}</span></h1></Link>
-                                <p>{post.node.intro}</p>
-                                <br />
-                            </div>
-                        </div>
-                        
-                    ))}
-            </div>
+    <div className="SelectedWork Padding-S">
+    <div className="HeroIcon">
+        <div className="HeroIconWrapper Padding-S">
+            <img src={HeroProjectLogo} alt="BlogLogo" width="100px" height="100px"></img>
+            <h2>Project</h2>
+            <div className="Container CenterContainer"><p className="Width-70">My selected recent works, for more up-to-date work and design titbit. Feel free to follow my Behance and Twitter.</p></div>
         </div>
     </div>
-)}
+    <div className=""> 
+          <div className="">
+          {data.PortfolioIndex.edges.map(post => (
+              <section className="Full-Width PortfolioIndex Padding-XS" style={{ backgroundColor: `${post.node.frontmatter.color}`}}>
+                <div className="Container">
+                <div className="Bottom-XS">
+                <Link to={post.node.frontmatter.path}>
+                <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                </Link>
+                </div>
+                <div className="TextCenter Padding-XS CenterContainer">
+                <ProjectTitleWrapper>
+                  <div className="PortfolioIndexTitle ">
+                    
+                    <ProjectTitle>{post.node.frontmatter.title}</ProjectTitle>
+                    <ProjectSubtitle>{post.node.frontmatter.subtitle}</ProjectSubtitle>
+                    <ProjectInfo>{post.node.frontmatter.category} | {post.node.frontmatter.date}</ProjectInfo>
+                    
+                  </div>
+                  </ProjectTitleWrapper>
+                  <ProjectContentWrapper>
+                  <div className="PortfolioIndexContent">
+                    <ProjectIntro>{post.node.frontmatter.intro}</ProjectIntro>
+                    <MajorButton href={post.node.frontmatter.path} title={"View Case Study"}></MajorButton>
+                  </div>
+                  </ProjectContentWrapper>
+                </div>
+                </div>
+              <div>
+              </div>
+            </section>
+          ))}
+          </div>
+    </div>
+    </div>
+    </div>
+)
 
 export const pageQuery = graphql`
-query ProjectIndex {
-    site {
-        siteMetadata {
-        title
+query ProjectPage {
+    front: file(relativePath: { eq: "/images/sprite_30fps.svg" }) {
+      childImageSharp {
+        sizes(maxWidth: 1440) {
+          srcSet
         }
+      }
     }
-    allMarkdownRemark (
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: {posttype: {eq: "project"}}}
-    ) {
+    PortfolioIndex: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {posttype: {eq: "project"}}}, limit: 4) {
       edges {
         node {
-            id
-            excerpt(pruneLength: 250)
-            frontmatter {
-                path
-                title
-                date
-                tags
-                subtitle
-                intro
-              	image {
-                  childImageSharp {
-                    sizes(maxWidth: 1140) {
-                            base64
-                            aspectRatio
-                            src
-                            srcSet
-                            srcWebp
-                            srcSetWebp
-                            sizes
-                            originalImg
-                            originalName
-                              }
-                  }
+          id
+          excerpt(pruneLength: 300)
+          frontmatter {
+            color
+            path
+            title
+            date(formatString: "YYYY MMMM", locale: "en")
+            tags
+            subtitle
+            intro
+            category
+            image {
+              childImageSharp {
+                sizes(maxWidth: 1140) {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+                  originalImg
+                  originalName
                 }
+              }
+            }
           }
         }
       }
     }
   }
-`
-
-export default ProjectPage
+  `
+  
+  export default WorkPage
+  

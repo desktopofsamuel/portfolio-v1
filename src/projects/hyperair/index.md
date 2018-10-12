@@ -7,6 +7,7 @@ image: "./Hyperair-Feature3.png"
 subtitle: "All-rounded Travel Service"
 category: "UI/UX Design"
 intro: "HyperAir Incorporation is a start-up in Hong Kong specialising in all-rounded travel service. I have worked on their debut app focusing on currency exchange."
+color: "#0176EE"
 ---
 
 HyperAir Incorporation is a start-up in Hong Kong specialising in all-rounded travel service. In 2018, I have worked with them as a designer to launch their debut apps to embellish the experience of foreign currency exchange.

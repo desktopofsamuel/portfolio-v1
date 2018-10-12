@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
     <Helmet title={`Desktop of Samuel`} meta={[
       { property: 'og:url', content: 'http://desktopofsamuel.com', },
       ]}> > </Helmet>
-    <div className="Hero">
+    <div className="Hero Full-Width">
       <div className="shapeshifter play30"></div>
       <div className="Container">
       <div className="">
