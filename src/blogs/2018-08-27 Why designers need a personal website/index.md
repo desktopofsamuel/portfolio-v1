@@ -8,6 +8,8 @@ title: "Why designers need a personal website?"
 
 tags: ["Work-In-Progress", "Design", "Gatsby", ]
 
+intro: "I'm summing up the reasons why a designer should build a custom site using Gatsby.JS." 
+
 ---
 
 TLDR: I'm summing up the reasons why a designer should build a custom site using Gatsby.JS. 

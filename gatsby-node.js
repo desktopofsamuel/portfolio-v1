@@ -5,10 +5,9 @@ const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 
 let postNodes = [];
-
 function addSiblingNodes(createNodeField) {
   
-  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/blog/') > 0) return post; });
+  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/blogs/') > 0) return post; });
   
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) =>
@@ -63,9 +62,9 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     }
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+      slug = `/${_.kebabCase(node.frontmatter.path)}`;
     }
     createNodeField({ node, name: 'slug', value: slug });
     postNodes.push(node);
