@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
       <div className="NavBarRight">
       <div className="NavBarIcon">
           <a href="https://www.twitter.com/desktopofsamuel"><FaTwitter /></a>
-          <a href="https://www.medium.com/desktopofsamuel"><FaMedium /></a>
+          <a href="https://medium.com/@desktopofsamuel"><FaMedium /></a>
           <a href="https://www.linkedin.com/in/wongchunlong/"><FaLinkedin /></a>
         </div>
       </div>
