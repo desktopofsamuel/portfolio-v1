@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif:400,600');
 
+    #NavBar {
+        display: none;
+    }
+
     .Grey {
         color: #B5B5B5;
+    }
+
+    .White {
+        color: #f7f7f7;
     }
 
   .shapeshifter {
@@ -166,6 +174,10 @@
 .IconContainer {
     float: left;
 
+}
+
+.Height-100 {
+    height: 100vh;
 }
 
 .S-SocialBar {

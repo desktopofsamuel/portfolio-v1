@@ -2,8 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import Link from "gatsby-link"
 
-const ButtonWrapper = styled.button`
-    background-color: navy;
+const Text = styled.small`
+    font-size: 16px;
+    color: ${props => props.textColor || "white"};
+    text-decoration: none;
+`
+
+const Button = styled.button`
+    background-color: ${props => props.bgColor || "navy"};
     padding: 10px 25px;
     border: none;
     margin-bottom: 10vh;
@@ -15,18 +21,10 @@ const ButtonWrapper = styled.button`
     }
 `
 
-const ButtonText = styled.small`
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-`
-
-const MajorButton = props => (
-    <Link to={props.href}>
-        <ButtonWrapper>
-            <ButtonText>{props.title}</ButtonText>
-        </ButtonWrapper>
-   </Link>
+export default (props) => (
+        <Link to={props.href}>
+        <Button style={{backgroundColor:`${props.bgColor}`}}>
+            <Text style={{color:`${props.textColor}`}}>{props.title}</Text>
+        </Button>
+        </Link>
 )
-
-export default MajorButton
