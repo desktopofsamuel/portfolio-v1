@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
@@ -13,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-resolve-src": "^1.1.4",
     "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-attr": "0.0.1",
     "gatsby-remark-copy-linked-files": "^1.5.37",
