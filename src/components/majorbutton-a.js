@@ -22,11 +22,11 @@ const ButtonText = styled.small`
 `
 
 const MajorButton = props => (
-    <Link to={props.href}>
+    <a href={props.href}>
         <ButtonWrapper>
             <ButtonText>{props.title}</ButtonText>
         </ButtonWrapper>
-   </Link>
+   </a>
 )
 
 export default MajorButton

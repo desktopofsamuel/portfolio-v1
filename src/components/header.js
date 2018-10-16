@@ -6,12 +6,12 @@ import { FaTwitter, FaMedium, FaLinkedin } from 'react-icons/lib/fa';
 
 const Header = ({ siteTitle }) => (
 
-<div className="">
+<div className="Container">
   <div className="Header">
     <div className="HeaderGroup">
       <div className="NavBar">
       <Link to="/">Home</Link>
-      <Link to="/project">Work</Link>
+      <Link to="/work">Work</Link>
       <Link to="/blog">Blog</Link>  
       </div>
       <div className="NavBarRight">

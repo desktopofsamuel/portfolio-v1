@@ -3,11 +3,12 @@ path: "/hyperair"
 date: "2018-08-24"
 title: "Hyperair Travel"
 posttype: "project"
-image: "./Hyperair-Feature3.png"
+image: "./Hyperair-Feature-v5.png"
 subtitle: "All-rounded Travel Service"
 category: "UI/UX Design"
 intro: "HyperAir Incorporation is a start-up in Hong Kong specialising in all-rounded travel service. I have worked on their debut app focusing on currency exchange."
-color: "#0176EE"
+color: "#125E8A"
+url: "http://hyperair.com/"
 ---
 
 HyperAir Incorporation is a start-up in Hong Kong specialising in all-rounded travel service. In 2018, I have worked with them as a designer to launch their debut apps to embellish the experience of foreign currency exchange.

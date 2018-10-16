@@ -103,6 +103,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   category
                   subtitle
                   intro
+                  url
                   posttype
                 }
               }
@@ -174,6 +175,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     );
   });
+};
+
+exports.onCreatePage = ({ page }) => {
+  if (page.path.startsWith('/404')) {
+    page.layout = '404.index';
+  }
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {

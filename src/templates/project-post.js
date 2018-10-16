@@ -6,6 +6,7 @@ import Seo from '../components/seo';
 import FaArrowRight from 'react-icons/lib/fa'
 import Author from '../components/author'
 import CTA from '../components/cta'
+import MajorButton from '../components/majorbutton-a';
 
 
 export default function Template({data, pathContext}) {
@@ -13,34 +14,20 @@ export default function Template({data, pathContext}) {
     const {next, prev} = pathContext;
 
     return(
-        <div>
-            <div className="PortfolioBg">
-            <div claassName="Overlay">  </div>
-            <Img className="ContentWide Container" sizes={post.frontmatter.image.childImageSharp.sizes} />
-            </div>
+        <div className="Container">
+            <Img sizes={post.frontmatter.image.childImageSharp.sizes} />
             <Seo data={post} />
-            <div className="Padding-S Container">
+            <div className="Padding-S">
                 <div className="Content">
                 <small>{post.frontmatter.category}</small>
                 <h1>{post.frontmatter.title}</h1>
                 <small>{post.frontmatter.date}</small>
-
-                
-                
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
-                <div className="BlogNavigate">
-                <div className="Previous">
-                    {prev &&
-                        <Link to={prev.frontmatter.path}>← Previous</Link>
-                    }
-                    </div>
-                    <div className="Next" >
-                    {next &&
-                        <Link to={next.frontmatter.path}>Next → </Link>}
-                    </div >
-                </div>
+                <div className="CenterContainer"><MajorButton href={post.frontmatter.url} title={"Visit Site"}></MajorButton></div>
+                
             </div>
             </div>
+            <hr />
         </div>
     ) 
 }
@@ -62,6 +49,7 @@ query ProjectPostByPath($path: String!) {
             tags
             subtitle
             category
+            url
             image {
                 publicURL
                 size 

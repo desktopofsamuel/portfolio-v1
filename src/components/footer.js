@@ -1,12 +1,11 @@
 import React from 'react'
 
 const Footer = () => (
-    <div>
+    <div id="#footer">
         
         <section className="S-CTA">
             <div className="Container Padding-S">
-            <hr />
-            <div className="Padding-M">
+            <div className="Padding-XS">
                 <img style={{width:'90px',height:'90px'}} src="/static/propic.png" />
                 <h1>Drop me a line</h1>
                 <div className="TextContainer">

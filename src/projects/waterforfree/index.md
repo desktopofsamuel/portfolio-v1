@@ -3,11 +3,12 @@ path: "/waterforfree"
 date: "2017-07-01"
 title: "Water For Free"
 posttype: "project"
-image: "./WaterForFree-Feature2.png"
+image: "./W4F-Feature2.png"
 intro: "Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday."
 subtitle: "Hong Kong Water Dispenser Map"
 category: "UI/UX Design"
-color: "#00BFF3"
+color: "#62B6CB"
+url: "https://www.waterforfree.org"
 ---
 
 ##Water For Free

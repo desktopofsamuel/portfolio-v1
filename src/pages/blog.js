@@ -4,10 +4,12 @@ import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import Author from '../components/author';
+import NavBar from '../components/navbar';
 
 
 const BlogPage = ({data}) => (
     <div>
+
         <Seo data="" />
         <Helmet title={`Blog | Desktop of Samuel Wong`} meta={[
       { property: 'og:url', content: 'http://blog.desktopofsamuel.com/', },
@@ -18,6 +20,9 @@ const BlogPage = ({data}) => (
                 <div className="HeroIcon">
                     <div className="HeroIconWrapper Padding-S">
                         <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
+                        <h2>Blog</h2>
+                        <div className="Container CenterContainer"><p className="Grey Width-70">Thoughts on design, technology and productivity. </p></div>
+        
                     </div>
                 </div>
                 {data.allMarkdownRemark.edges.map(post => (
