@@ -1,32 +1,90 @@
 import React from 'react'
 import styled from 'styled-components'
+import MajorButton from '../components/majorbutton-a'
+import { FaMedium, FaDribbble, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/lib/fa'
 
 const CTA = styled.section`
     position: relative;
     margin-bottom: -50px;
-    text-align: center;
     background-color: #f7f7f7;
 `
 
-const Title = styled.h1`
-
-    font-weight: 600;
-`
 
 const Content = styled.p`
 
 `
 
+const PropicWrapper = styled.div`
+position: relative;
+display: block;
+box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.025);
+`
+
+const Propic = styled.div`
+background-image: url("/static/Profile.jpg");
+background-position: left bottom;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+`
+const NametagWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+`
+
+const Nametag = styled.div`
+position: relative;
+display: block;
+height: auto;
+padding: 36px;
+background-color: #ffffff;
+`
+
+const Social = styled.div`
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+width: 50%;
+cursor: pointer;
+
+a {
+    color: #797979;
+}
+
+a:hover {
+    color: #292929;
+}
+
+`
+
 const Footer = () => (
-    <div id="#footer">
+    <div id="footer">
     <CTA>
-        <div className="CenterContainer Padding-S">
-        <img style={{width:'90px',height:'90px'}} src="/static/propic.png" />
-        <Title>Let's Keep In Touch</Title>
-        <div className="">
-        <Content>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </Content>
-        <Content><a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel@gmail.com</a></Content>
-        </div>
+        <div className="Container Padding-M">
+        <PropicWrapper>
+        
+        <NametagWrapper>
+        <Propic />
+        <Nametag>
+            <h6>Let's Keep In Touch</h6>
+            <Content><a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel@gmail.com</a></Content>
+            <Content>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </Content>
+            <MajorButton href="mailto:desktopofsamuel@gmail.com" text="Let's Chat" bgColor="#3284DC"></MajorButton>
+            <Social>
+                <a href="https://dribbble.com/desktopofsamuel" target="blank"><FaDribbble /></a>
+                <a href="https://www.linkedin.com/in/wongchunlong/" target="blank"><FaLinkedin /></a>
+                <a href="https://www.twitter.com/desktopofsamuel" target="blank"><FaTwitter /></a>
+                <a href="https://medium.com/@desktopofsamuel" target="blank"><FaMedium /></a>
+                <a href="mailto:desktopofsamuel@gmail.com" target="blank"><FaEnvelope /></a>
+            </Social>
+        </Nametag>
+        </NametagWrapper>
+        </PropicWrapper>
         </div>
     </CTA>
         <section className="S-Footer">

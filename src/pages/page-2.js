@@ -20,14 +20,22 @@ const Grid = styled.div`
 const MapSection = styled.section`
   position: relative;
   height: 720px;
-
-  
 `
 const Content = styled.div`
   position: relative;
   top: 0px;
   left: 0px;
   z-index: 1;
+`
+
+const Geo = styled.div`
+
+`
+
+const ContactWrapper = styled.div`
+background-color: white;
+box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.025);
+padding: 20px;
 `
 
 const MapWideWrapper = styled.div`
@@ -117,9 +125,9 @@ const Index = ({ data }) => (
     <div>
       <h6>I Can Help You With <Emoji symbol="✌🏻" label="Victory-Hand"/> </h6>
       <Grid className="Grid33">
-<Card icon={HeroProjectLogo} title="Web Design" content="I can help you convert visitors into customers." />
+<Card icon={HeroProjectLogo} title="Web Design" content="I beleive storytelling and experience is essential to a successful website. From conception to production, I help companies revamp and launch their website." />
         <Card icon={HeroProjectLogo} title="UI/UX Design" content="I specialise in helping project owners visualising their concepts into both high-fi and low-di design drafts." />
-        <Card icon={HeroProjectLogo} title="Brand Design" content="I help new brands launching thier distinct and memorable key visual idenditiies to establish their online and offline presence." />
+        <Card icon={HeroProjectLogo} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." />
       </Grid>
     </div>
   </div>
@@ -127,7 +135,10 @@ const Index = ({ data }) => (
  <section>
         <MapSection>
           <Content className="CenterContainer">
-          <h3>Hello from Hong Kong</h3>
+          <Geo className="Grid50">
+                <div></div>
+                <ContactWrapper><h4>Hello From Hong Kong</h4></ContactWrapper>
+          </Geo>
           </Content>
           <MapWideWrapper><MapWide></MapWide></MapWideWrapper>
           <MapMobileWrapper><MapMobile></MapMobile></MapMobileWrapper>

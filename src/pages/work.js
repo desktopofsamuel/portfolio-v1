@@ -94,7 +94,7 @@ const WorkPage = ({ data }) => (
                   <ProjectContentWrapper>
                   <div className="PortfolioIndexContent">
                     <ProjectIntro>{post.node.frontmatter.intro}</ProjectIntro>
-                    <MajorButton href={post.node.frontmatter.path} title={"View Project"}></MajorButton>
+                    <MajorButton href={post.node.frontmatter.path} text={"View Project"}></MajorButton>
                   </div>
                   </ProjectContentWrapper>
                 </div>

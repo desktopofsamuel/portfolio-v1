@@ -21,7 +21,7 @@ const BlogPage = ({data}) => (
                     <div className="HeroIconWrapper Padding-S">
                         <img src={HeroBlogLogo} alt="BlogLogo" width="100px" height="100px"></img>
                         <h2>Blog</h2>
-                        <div className="Container CenterContainer"><p className="Grey Width-70">Thoughts on design, technology and productivity. </p></div>
+                        <div className="Container CenterContainer"><p className="Grey Width-70">Articles I’ve written about design, technology and productivity. </p></div>
         
                     </div>
                 </div>
