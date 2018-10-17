@@ -1,20 +1,24 @@
 {
   "assetsByChunkName": {
+    "path---roadnottaken": [
+      "path---roadnottaken-232ace337ba28cc91942.js",
+      "path---roadnottaken-232ace337ba28cc91942.js.map"
+    ],
     "path---waterforfree": [
       "path---waterforfree-bcd1430dbda0db81af82.js",
       "path---waterforfree-bcd1430dbda0db81af82.js.map"
     ],
     "component---src-pages-work-js": [
-      "component---src-pages-work-js-2edcbd3bf8504b2a5852.js",
-      "component---src-pages-work-js-2edcbd3bf8504b2a5852.js.map"
+      "component---src-pages-work-js-745622c04db1c44896a1.js",
+      "component---src-pages-work-js-745622c04db1c44896a1.js.map"
     ],
     "path---tags-design-matters-18": [
       "path---tags-design-matters-18-e185fcaca56b7faa95d3.js",
       "path---tags-design-matters-18-e185fcaca56b7faa95d3.js.map"
     ],
     "path---work": [
-      "path---work-16a0126ade5415a4f582.js",
-      "path---work-16a0126ade5415a4f582.js.map"
+      "path---work-18c0dfa7a85cbf3c00af.js",
+      "path---work-18c0dfa7a85cbf3c00af.js.map"
     ],
     "path---tags-productivity": [
       "path---tags-productivity-73f2b89d76ea2e7b08a3.js",
@@ -25,8 +29,8 @@
       "path---essential-color-tool-2018-8888e788689642d42be2.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-fa42b3720bf1185e356b.js",
-      "component---src-pages-index-js-fa42b3720bf1185e356b.js.map"
+      "component---src-pages-index-js-59e0a7950b5abde33947.js",
+      "component---src-pages-index-js-59e0a7950b5abde33947.js.map"
     ],
     "path---blog": [
       "path---blog-fa0afc9d9835860341f9.js",
@@ -57,8 +61,8 @@
       "path---journey-to-design-matters-13d27ecc9b1d488fdad3.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-ad56500d5c2e8082a756.js",
-      "component---src-templates-blog-post-js-ad56500d5c2e8082a756.js.map"
+      "component---src-templates-blog-post-js-4318bd41e5b4f6969b0f.js",
+      "component---src-templates-blog-post-js-4318bd41e5b4f6969b0f.js.map"
     ],
     "component---src-pages-project-js": [
       "component---src-pages-project-js-638dea348b4d9e7ecfb9.js",
@@ -69,8 +73,8 @@
       "path---why-designers-need-a-personal-website-493bc386a7ce790932c3.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-a1b4d9c04a54bb6e3c4f.js",
-      "component---src-layouts-index-js-a1b4d9c04a54bb6e3c4f.js.map"
+      "component---src-layouts-index-js-3d317636d2a459df1c9b.js",
+      "component---src-layouts-index-js-3d317636d2a459df1c9b.js.map"
     ],
     "path---tags-subscription": [
       "path---tags-subscription-39ad547f48ac014468bc.js",
@@ -105,8 +109,8 @@
       "path---tags-technology-8dc2f28d26c0123cd9df.js.map"
     ],
     "component---src-templates-project-post-js": [
-      "component---src-templates-project-post-js-125c365dc26e2998fed1.js",
-      "component---src-templates-project-post-js-125c365dc26e2998fed1.js.map"
+      "component---src-templates-project-post-js-5ad590a1de75e4dc20a1.js",
+      "component---src-templates-project-post-js-5ad590a1de75e4dc20a1.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-5d97dda300cb5e8d79ed.js",
@@ -155,21 +159,21 @@
       "path---building-gatsby-with-multiple-post-type-148700888650aff13607.js.map"
     ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-52aaf8f317073625fd1a.js",
-      "component---src-pages-blog-js-52aaf8f317073625fd1a.js.map"
+      "component---src-pages-blog-js-a9d84f06dd09ef112526.js",
+      "component---src-pages-blog-js-a9d84f06dd09ef112526.js.map"
     ],
     "component---src-pages-page-2-js": [
-      "component---src-pages-page-2-js-fc3d2baac9936bd5365f.js",
-      "component---src-pages-page-2-js-fc3d2baac9936bd5365f.js.map"
+      "component---src-pages-page-2-js-65eaf0eccdfdbcbd6bde.js",
+      "component---src-pages-page-2-js-65eaf0eccdfdbcbd6bde.js.map"
     ],
     "path---tags-localization": [
       "path---tags-localization-bdf590a847e37efd5f71.js",
       "path---tags-localization-bdf590a847e37efd5f71.js.map"
     ],
     "app": [
-      "app-60b4c0ea45fb8406d08d.js",
+      "app-06967e1deb1c86640d3d.js",
       "build-js-styles.css",
-      "app-60b4c0ea45fb8406d08d.js.map",
+      "app-06967e1deb1c86640d3d.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-experience-design": [
@@ -177,8 +181,8 @@
       "path---tags-experience-design-50c62f5aa79273ad883d.js.map"
     ],
     "component---src-layouts-404-index-js": [
-      "component---src-layouts-404-index-js-5336ebba968e656464ec.js",
-      "component---src-layouts-404-index-js-5336ebba968e656464ec.js.map"
+      "component---src-layouts-404-index-js-365cd6e2b560eb276e5e.js",
+      "component---src-layouts-404-index-js-365cd6e2b560eb276e5e.js.map"
     ],
     "path---tags-color": [
       "path---tags-color-d49d93251c8b67ff58d6.js",
