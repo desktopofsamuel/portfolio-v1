@@ -3,6 +3,7 @@ import MajorButton from '../components/majorbutton'
 import styled from 'styled-components'
 import Header from '../components/header'
 import NavBar from '../components/navbar'
+import Hero404Logo from '../images/HeroProject.svg'
 
 const Background = styled.section`
     position: absolute;
@@ -32,8 +33,9 @@ const NotFoundPage = () => (
         <Header></Header>
         <NavBar></NavBar>
             <section className="">
-            <div className="Container Top-S CenterContainer Hero">
-            <h3 className="TextCenter White Width-70">First man walked on the moon in 1960s, but you have reached a place where no human has ever set foot.</h3>
+            <div className="Container Top-XS CenterContainer Hero">
+            <img className="clean" src={Hero404Logo} alt="404" width="100px" height="100px"></img>
+            <h3 className="TextCenter White Width-70">First man walked on the moon in 1960s. And yet, you have reached a place where no human has ever set foot.</h3>
             <MajorButton textColor="#000" bgColor="#eee" href="/" title={"Back to Home"}></MajorButton>
             </div>
             </section>

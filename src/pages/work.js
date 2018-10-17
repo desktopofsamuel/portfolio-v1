@@ -58,12 +58,12 @@ const ProjectIntro = styled.p`
 const WorkPage = ({ data }) => (
     <div>
     <Seo data="" />
-    <Helmet title={`Project | Desktop of Samuel`} meta={[
-      { property: 'og:url', content: 'http://desktopofsamuel.com/project', },
+    <Helmet title={`Work | Desktop of Samuel`} meta={[
+      { property: 'og:url', content: 'http://desktopofsamuel.com/work', },
       ]}>
     </Helmet>
 
-    <div className="SelectedWork Padding-S">
+    <div className="SelectedWork">
     <div className="HeroIcon">
         <div className="HeroIconWrapper Padding-S">
             <img src={HeroProjectLogo} alt="BlogLogo" width="100px" height="100px"></img>
@@ -74,7 +74,7 @@ const WorkPage = ({ data }) => (
     <div className=""> 
           <div className="">
           {data.PortfolioIndex.edges.map(post => (
-              <section className="Full-Width PortfolioIndex Padding-XS" style={{ backgroundColor: `${post.node.frontmatter.color}`}}>
+              <section className="Full-Width PortfolioIndex" style={{ backgroundColor: `${post.node.frontmatter.color}`}}>
                 <div className="Container">
                 <ProjectPhoto className="Top-S">
                     <Link to={post.node.frontmatter.path}>
@@ -94,7 +94,7 @@ const WorkPage = ({ data }) => (
                   <ProjectContentWrapper>
                   <div className="PortfolioIndexContent">
                     <ProjectIntro>{post.node.frontmatter.intro}</ProjectIntro>
-                    <MajorButton href={post.node.frontmatter.path} title={"View Case Study"}></MajorButton>
+                    <MajorButton href={post.node.frontmatter.path} title={"View Project"}></MajorButton>
                   </div>
                   </ProjectContentWrapper>
                 </div>
@@ -118,7 +118,7 @@ query WorkPage {
         }
       }
     }
-    PortfolioIndex: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {posttype: {eq: "project"}}}, limit: 4) {
+    PortfolioIndex: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {posttype: {eq: "project"}}}, limit: 20) {
       edges {
         node {
           id

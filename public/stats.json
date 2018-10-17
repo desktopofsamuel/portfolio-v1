@@ -1,20 +1,20 @@
 {
   "assetsByChunkName": {
     "path---waterforfree": [
-      "path---waterforfree-81d1ca34f1ab887012c6.js",
-      "path---waterforfree-81d1ca34f1ab887012c6.js.map"
+      "path---waterforfree-bcd1430dbda0db81af82.js",
+      "path---waterforfree-bcd1430dbda0db81af82.js.map"
     ],
     "component---src-pages-work-js": [
-      "component---src-pages-work-js-0b7e745746ff75573fc3.js",
-      "component---src-pages-work-js-0b7e745746ff75573fc3.js.map"
+      "component---src-pages-work-js-2edcbd3bf8504b2a5852.js",
+      "component---src-pages-work-js-2edcbd3bf8504b2a5852.js.map"
     ],
     "path---tags-design-matters-18": [
       "path---tags-design-matters-18-e185fcaca56b7faa95d3.js",
       "path---tags-design-matters-18-e185fcaca56b7faa95d3.js.map"
     ],
     "path---work": [
-      "path---work-a8806e751b6ff395aae7.js",
-      "path---work-a8806e751b6ff395aae7.js.map"
+      "path---work-16a0126ade5415a4f582.js",
+      "path---work-16a0126ade5415a4f582.js.map"
     ],
     "path---tags-productivity": [
       "path---tags-productivity-73f2b89d76ea2e7b08a3.js",
@@ -25,20 +25,20 @@
       "path---essential-color-tool-2018-8888e788689642d42be2.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-16cb32ed7e1c55c5a547.js",
-      "component---src-pages-index-js-16cb32ed7e1c55c5a547.js.map"
+      "component---src-pages-index-js-fa42b3720bf1185e356b.js",
+      "component---src-pages-index-js-fa42b3720bf1185e356b.js.map"
     ],
     "path---blog": [
       "path---blog-fa0afc9d9835860341f9.js",
       "path---blog-fa0afc9d9835860341f9.js.map"
     ],
     "path---": [
-      "path----4f4df8c7a06d80bd600e.js",
-      "path----4f4df8c7a06d80bd600e.js.map"
+      "path----e02c6e6d826999166b7e.js",
+      "path----e02c6e6d826999166b7e.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-d4df36c1c08a3e8ebcce.js",
-      "path---tags-design-d4df36c1c08a3e8ebcce.js.map"
+      "path---tags-design-6448612cb7f638da5af6.js",
+      "path---tags-design-6448612cb7f638da5af6.js.map"
     ],
     "component---src-templates-tag-page-js": [
       "component---src-templates-tag-page-js-f39ee763de05feb9331e.js",
@@ -49,28 +49,28 @@
       "path---lessonsfromikea-b3c07987b88710bbc92c.js.map"
     ],
     "path---project": [
-      "path---project-94985b8c3bbb28522410.js",
-      "path---project-94985b8c3bbb28522410.js.map"
+      "path---project-16a0126ade5415a4f582.js",
+      "path---project-16a0126ade5415a4f582.js.map"
     ],
     "path---journey-to-design-matters": [
       "path---journey-to-design-matters-13d27ecc9b1d488fdad3.js",
       "path---journey-to-design-matters-13d27ecc9b1d488fdad3.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-3e00a79e9a415ed49930.js",
-      "component---src-templates-blog-post-js-3e00a79e9a415ed49930.js.map"
+      "component---src-templates-blog-post-js-ad56500d5c2e8082a756.js",
+      "component---src-templates-blog-post-js-ad56500d5c2e8082a756.js.map"
     ],
     "component---src-pages-project-js": [
-      "component---src-pages-project-js-ac0d9414819148698acb.js",
-      "component---src-pages-project-js-ac0d9414819148698acb.js.map"
+      "component---src-pages-project-js-638dea348b4d9e7ecfb9.js",
+      "component---src-pages-project-js-638dea348b4d9e7ecfb9.js.map"
     ],
     "path---why-designers-need-a-personal-website": [
       "path---why-designers-need-a-personal-website-493bc386a7ce790932c3.js",
       "path---why-designers-need-a-personal-website-493bc386a7ce790932c3.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-19cb0fda0b4d1443059b.js",
-      "component---src-layouts-index-js-19cb0fda0b4d1443059b.js.map"
+      "component---src-layouts-index-js-a1b4d9c04a54bb6e3c4f.js",
+      "component---src-layouts-index-js-a1b4d9c04a54bb6e3c4f.js.map"
     ],
     "path---tags-subscription": [
       "path---tags-subscription-39ad547f48ac014468bc.js",
@@ -81,42 +81,46 @@
       "path---tags-conference-c2c1895124a4fdaeb7f1.js.map"
     ],
     "path---hyperair": [
-      "path---hyperair-63e44511683ccc7444b7.js",
-      "path---hyperair-63e44511683ccc7444b7.js.map"
+      "path---hyperair-22d137303f9881921542.js",
+      "path---hyperair-22d137303f9881921542.js.map"
+    ],
+    "path---pingspace": [
+      "path---pingspace-bdc94f353973bd1e519c.js",
+      "path---pingspace-bdc94f353973bd1e519c.js.map"
     ],
     "path---tags-gatsby": [
       "path---tags-gatsby-9d65428ff2f51675161d.js",
       "path---tags-gatsby-9d65428ff2f51675161d.js.map"
     ],
     "path---page-2": [
-      "path---page-2-a0e39f21c11f6a62c5ab.js",
-      "path---page-2-a0e39f21c11f6a62c5ab.js.map"
+      "path---page-2-788a1bd493187f55bbe9.js",
+      "path---page-2-788a1bd493187f55bbe9.js.map"
     ],
     "path---index": [
-      "path---index-9cfd951f765279e3ea24.js",
-      "path---index-9cfd951f765279e3ea24.js.map"
+      "path---index-788a1bd493187f55bbe9.js",
+      "path---index-788a1bd493187f55bbe9.js.map"
     ],
     "path---tags-technology": [
       "path---tags-technology-8dc2f28d26c0123cd9df.js",
       "path---tags-technology-8dc2f28d26c0123cd9df.js.map"
     ],
     "component---src-templates-project-post-js": [
-      "component---src-templates-project-post-js-4b75f6b1e5381fb6d9c6.js",
-      "component---src-templates-project-post-js-4b75f6b1e5381fb6d9c6.js.map"
+      "component---src-templates-project-post-js-125c365dc26e2998fed1.js",
+      "component---src-templates-project-post-js-125c365dc26e2998fed1.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+      "component---src-pages-404-js-5d97dda300cb5e8d79ed.js",
+      "component---src-pages-404-js-5d97dda300cb5e8d79ed.js.map"
     ],
     "commons": [
-      "commons-2a15d0c786d67ba7b2d1.js",
+      "commons-8aade0540ec9c9d68260.js",
       "build-js-styles.css",
-      "commons-2a15d0c786d67ba7b2d1.js.map",
+      "commons-8aade0540ec9c9d68260.js.map",
       "build-js-styles.css.map"
     ],
     "path---ftc": [
-      "path---ftc-0cfb47acd9c5bd111bb8.js",
-      "path---ftc-0cfb47acd9c5bd111bb8.js.map"
+      "path---ftc-15b2ea43d86e59f1cc66.js",
+      "path---ftc-15b2ea43d86e59f1cc66.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -151,26 +155,30 @@
       "path---building-gatsby-with-multiple-post-type-148700888650aff13607.js.map"
     ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-be2d4dcdac64b1106d15.js",
-      "component---src-pages-blog-js-be2d4dcdac64b1106d15.js.map"
+      "component---src-pages-blog-js-52aaf8f317073625fd1a.js",
+      "component---src-pages-blog-js-52aaf8f317073625fd1a.js.map"
     ],
     "component---src-pages-page-2-js": [
-      "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js",
-      "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
+      "component---src-pages-page-2-js-fc3d2baac9936bd5365f.js",
+      "component---src-pages-page-2-js-fc3d2baac9936bd5365f.js.map"
     ],
     "path---tags-localization": [
       "path---tags-localization-bdf590a847e37efd5f71.js",
       "path---tags-localization-bdf590a847e37efd5f71.js.map"
     ],
     "app": [
-      "app-931d103f8562f3439e0a.js",
+      "app-60b4c0ea45fb8406d08d.js",
       "build-js-styles.css",
-      "app-931d103f8562f3439e0a.js.map",
+      "app-60b4c0ea45fb8406d08d.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-experience-design": [
       "path---tags-experience-design-50c62f5aa79273ad883d.js",
       "path---tags-experience-design-50c62f5aa79273ad883d.js.map"
+    ],
+    "component---src-layouts-404-index-js": [
+      "component---src-layouts-404-index-js-5336ebba968e656464ec.js",
+      "component---src-layouts-404-index-js-5336ebba968e656464ec.js.map"
     ],
     "path---tags-color": [
       "path---tags-color-d49d93251c8b67ff58d6.js",

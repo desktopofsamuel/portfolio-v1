@@ -18,7 +18,6 @@ display: none;
     top: 0px;
     width: 100%;
     z-index: 689;
-    box-shadow: 0px 10px 42px -26px rgba(0,0,0,0.55);
     
     a:hover {
       padding-bottom: 0;
@@ -31,7 +30,6 @@ position: relative;
 width: 100%;
 height: 40px;
 background-color: #ffffff;
-padding: 5px;
 display: flex;
 flex-direction: horizontal;
 justify-content: space-between;
@@ -48,6 +46,9 @@ const Grid = styled.div`
     width: 100%;
     display: none;
     grid-template-columns: 1fr 1fr;
+    transition: 500ms ease-in-out;
+    visibility: hidden;
+    grid-gap: 0.5px;
 `
 
 const Button = styled.button`
@@ -68,7 +69,16 @@ const Menu = styled.div`
 /* This is where the onClick Trigger would perform */
   &.active #Mobile {
     display: grid;
+    visibility: visible;
+    animation-name: dropin;
+    animation-duration: 500ms;
+    transition: 500ms ease-in-out;
+    box-shadow: 0px 10px 42px -26px rgba(0,0,0,0.55);
 
+   @keyframes dropin {
+      from { transform: translate(0, -10px)};
+      to { transform: translate(0, 0px)};
+    }
   }
 `;
 
@@ -105,7 +115,7 @@ class NavBar extends Component {
           <Link className="borderright bordertop" to="/"><Button><NavLogo src={HeroProfileLogo}></NavLogo><p className="clean">Profile</p></Button></Link>
           <Link className="bordertop" to="/work"><Button><NavLogo src={HeroProjectLogo}></NavLogo><p className="clean">Work</p></Button></Link>
           <Link className="borderright" to="/blog"><Button><NavLogo src={HeroBlogLogo}></NavLogo><p className="clean">Blog</p></Button></Link>
-          <Link className="borderright" to="/blog"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Social</p></Button></Link>
+          <Link className="" to="/blog"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Social</p></Button></Link>
           </Grid>
         </Menu>
         

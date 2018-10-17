@@ -11,4 +11,4 @@ color: "#2C1E80"
 url: "https://pingspace.io"
 ---
 
-Pingspace
+Pingspace started as a project internally at Playa. Aiming to keep alert to clients' websites and apps uptime. 

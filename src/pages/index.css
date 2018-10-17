@@ -67,6 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .CenterGrid {
@@ -188,8 +189,7 @@
 }
 
 .S-CTA {
-    position: relative;
-    margin-bottom: -50px;
+
 }
 
 .S-Footer {

@@ -9,10 +9,53 @@ import Img from 'gatsby-image'
 import Skill from '../components/skill'
 import HeroProjectLogo from '../images/HeroProject.svg'
 import HeroBlogLogo from '../images/HeroBlog.svg'
-import Card from '../components/card';
+import Card from '../components/card'
+import MapWide from '../components/map-wide'
+import MapMobile from '../components/map-mobile'
 
 const Grid = styled.div`
   grid-gap: 20px;
+`
+
+const MapSection = styled.section`
+  position: relative;
+  height: 720px;
+
+  
+`
+const Content = styled.div`
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+`
+
+const MapWideWrapper = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+
+  @media (max-width: 700px) {
+        display: none;
+    }
+`
+const MapMobileWrapper = styled.div`
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+
+    @media screen and (min-width: 701px) {
+        display: none;
+    }
+
 `
 
 const Index = ({ data }) => (
@@ -68,19 +111,28 @@ const Index = ({ data }) => (
   </section>
   </div>
   </div>
+  
  <section className="BG-Grey">
   <div className="Container Padding-M">
     <div>
       <h6>I Can Help You With <Emoji symbol="✌🏻" label="Victory-Hand"/> </h6>
       <Grid className="Grid33">
-        <Card icon={HeroProjectLogo} title="Web Design" content="I can help you convert visitors into customers." />
+<Card icon={HeroProjectLogo} title="Web Design" content="I can help you convert visitors into customers." />
         <Card icon={HeroProjectLogo} title="UI/UX Design" content="I specialise in helping project owners visualising their concepts into both high-fi and low-di design drafts." />
         <Card icon={HeroProjectLogo} title="Brand Design" content="I help new brands launching thier distinct and memorable key visual idenditiies to establish their online and offline presence." />
       </Grid>
     </div>
   </div>
  </section>
-     
+ <section>
+        <MapSection>
+          <Content className="CenterContainer">
+          <h3>Hello from Hong Kong</h3>
+          </Content>
+          <MapWideWrapper><MapWide></MapWide></MapWideWrapper>
+          <MapMobileWrapper><MapMobile></MapMobile></MapMobileWrapper>
+        </MapSection>
+      </section>
   </div> 
 )
 

@@ -11,8 +11,8 @@ const BlogPage = ({data}) => (
     <div>
 
         <Seo data="" />
-        <Helmet title={`Blog | Desktop of Samuel Wong`} meta={[
-      { property: 'og:url', content: 'http://blog.desktopofsamuel.com/', },
+        <Helmet title={`Blog | Desktop of Samuel`} meta={[
+      { property: 'og:url', content: 'http://desktopofsamuel.com/blog', },
       ]}> > </Helmet>
         
         <div className="BlogIndex">
