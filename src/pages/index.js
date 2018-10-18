@@ -8,6 +8,7 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Skill from '../components/skill'
 
+
 const IndexPage = ({ data }) => (
   
 <div>

@@ -142,7 +142,12 @@
     grid-template-columns: 50% 50%;
     grid-gap: 20px;
     padding-bottom: 36px;
+}
 
+.Grid40 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 20px;
 }
 
 .Column {
@@ -768,7 +773,7 @@ z-index: 10000;
 }
 
 h1 {
-font-weight: 700;
+font-weight: 600;
 font-size: 48px;
 }
 
@@ -939,6 +944,10 @@ margin-right: 5px;
     .Grid50  {
         display: grid;
         grid-template-columns: repeat(1, auto);
+    }
+
+    .Grid40  {
+        display: initial;
     }
 
     .Grid-M {
