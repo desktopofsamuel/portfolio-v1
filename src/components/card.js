@@ -11,7 +11,7 @@ padding: 30px;
 `
 
 const Icon = styled.img`
-width: 50px;
+width: 75px;
 `
 
 const Title = styled.h3`

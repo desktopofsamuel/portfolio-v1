@@ -949,6 +949,10 @@ margin-right: 5px;
         grid-template-columns: repeat(1, auto);
     }
 
+    .Grid33 {
+        grid-template-columns: 1fr;
+    }
+
     .Reverse {
         flex-direction: column;
     }
@@ -997,9 +1001,7 @@ margin-right: 5px;
         margin-bottom: 10px;
     }
 
-    .Grid33 {
-        grid-template-columns: 1fr;
-    }
+    
 }
 
 

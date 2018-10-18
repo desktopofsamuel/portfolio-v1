@@ -7,6 +7,9 @@ import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Skill from '../components/skill'
+import ServiceBrandDesign from '../images/Service-BrandDesign.svg'
+import ServiceWebDesign from '../images/Service-WebDesign2.svg'
+import ServiceUIDesign from '../images/Service-UIDesign2.svg'
 import HeroProjectLogo from '../images/HeroProject.svg'
 import HeroBlogLogo from '../images/HeroBlog.svg'
 import Card from '../components/card'
@@ -124,9 +127,9 @@ const Index = ({ data }) => (
     <div>
       <h6>I Can Help You With <Emoji symbol="✌🏻" label="Victory-Hand"/> </h6>
       <Grid className="Grid33">
-<Card icon={HeroProjectLogo} title="Web Design" content="I beleive storytelling and experience is essential to a successful website. From conception to production, I help companies revamp and launch their website." />
-        <Card icon={HeroProjectLogo} title="UI/UX Design" content="I specialise in helping project owners visualising their concepts into both high-fi and low-di design drafts." />
-        <Card icon={HeroProjectLogo} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." />
+<Card icon={ServiceWebDesign} title="Web Design" content="From conception to production, I’m experienced in executing design for digital service website and web app." />
+        <Card icon={ServiceUIDesign} title="UI/UX Design" content="I also work on mobile app project, crafting low-fi wireframes, interactive prototypes and production-ready assets." />
+        <Card icon={ServiceBrandDesign} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." />
       </Grid>
     </div>
   </div>

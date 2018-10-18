@@ -36,7 +36,7 @@ const NotFoundPage = () => (
             <div className="Container Top-XS CenterContainer Hero">
             <img className="clean" src={Hero404Logo} alt="404" width="100px" height="100px"></img>
             <h3 className="TextCenter White Width-70">First man walked on the moon in 1960s. And yet, you have reached a place where no human has ever set foot.</h3>
-            <MajorButton textColor="#000" bgColor="#eee" href="/" title={"Back to Home"}></MajorButton>
+            <MajorButton textColor="#000" bgColor="#eee" href="/" text={"Back to Home"}></MajorButton>
             </div>
             </section>
     </Content>

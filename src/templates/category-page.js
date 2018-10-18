@@ -7,7 +7,6 @@ import Helmet from 'react-helmet';
 import config from '../config';
 
 const TagPage = ({ pathContext, data}) => {
-  const { category } = pathContext;
   const tagHeader = `${category}`;
   const HelmetTitle = "Read some " + pathContext.category + " articles | " + config.shortSiteTitle;
   const HelmetURL = config.siteUrl + "/tags/" + pathContext.category;
