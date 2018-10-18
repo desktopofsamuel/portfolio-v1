@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import MajorButton from '../components/majorbutton'
-import Gatsby from '../images/gatsby.svg'
 
 const Background = styled.div`
     position: relative;
