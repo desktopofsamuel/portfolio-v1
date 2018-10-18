@@ -7,6 +7,8 @@ image: "./FTC-Feature2.png"
 subtitle: "Non-profit training center that offer training opportunities"
 category: "Brand Design"
 intro: "Fair Training Center is a non-profit, social business in the Philippines that prepares migrant women for life overseas as a domestic worker."
+color: "#7CBB63"
+url: "https://www.fairtraining.org/"
 ---
 
 Fair Training Center is a non-profit, social business in the Philippines that prepares migrant women for life overseas as a domestic worker.

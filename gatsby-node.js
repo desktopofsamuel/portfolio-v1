@@ -5,10 +5,9 @@ const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 
 let postNodes = [];
-
 function addSiblingNodes(createNodeField) {
   
-  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/blog/') > 0) return post; });
+  postNodes = postNodes.filter(post => {  if (post.id.indexOf('/blogs/') > 0) return post; });
   
   postNodes.sort(
     ({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) =>
@@ -63,9 +62,9 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     }
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
+      slug = `/${_.kebabCase(node.frontmatter.path)}`;
     }
     createNodeField({ node, name: 'slug', value: slug });
     postNodes.push(node);
@@ -87,7 +86,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const postPage = path.resolve('src/templates/blog-post.js');
     const workPage = path.resolve('src/templates/project-post.js');
     const tagPage = path.resolve('src/templates/tag-page.js');
-    const categoryPage = path.resolve('src/templates/category-page.jsx');
+    const categoryPage = path.resolve('src/templates/category-page.js');
     resolve(
       graphql(
         `
@@ -104,6 +103,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   category
                   subtitle
                   intro
+                  url
                   posttype
                 }
               }
@@ -127,9 +127,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             });
           }
 
-          {/* if (edge.node.frontmatter.category) {
+          {if (edge.node.frontmatter.category) {
             categorySet.add(edge.node.frontmatter.category);
-          } */}
+          } }
           
 
           if (edge.node.frontmatter.posttype === 'project') {
@@ -160,7 +160,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           });
         });
 
-        /*
+        
         const categoryList = Array.from(categorySet);
         categoryList.forEach(category => {
           createPage({
@@ -171,10 +171,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           });
         });
-            */
+            
       })
     );
   });
+};
+
+exports.onCreatePage = ({ page }) => {
+  if (page.path.startsWith('/404')) {
+    page.layout = '404.index';
+  }
 };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {

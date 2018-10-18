@@ -10,9 +10,11 @@ tags: ["Work-In-Progress", "Gatsby", ]
 
 image: "./Gatsby-Multiple-Post-Type.png"
 
+intro: "I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. "
+
 ---
 
-TLDR: I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects . 
+TLDR: I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. 
 
 As a designer with no prior experience in React, starting Gatsby with a starter template is the easiest way. After that, adding bits and pieces by following online tutorials and Github threads are the parts that you learn, as you understand how to adapt others' code and review each expression and argument means whenever you encounter errors.
 

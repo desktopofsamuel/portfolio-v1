@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{130:function(t,o){t.exports={layoutContext:{}}},131:function(t,o){t.exports={data:{site:{siteMetadata:{title:"Desktop of Samuel Wong",url:"http://desktopofsamuel.com"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----e02c6e6d826999166b7e.js.map

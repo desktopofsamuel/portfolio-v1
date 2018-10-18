@@ -3,14 +3,21 @@ import Link from 'gatsby-link'
 import Footer from '../components/footer';
 import Img from 'gatsby-image'
 import Seo from '../components/seo';
-import FaArrowRight from 'react-icons/lib/fa'
+import { FaArrowRight, FaArrowLeft }  from 'react-icons/lib/fa'
 import Author from '../components/author'
 import CTA from '../components/cta'
+import PostSuggestions from '../components/related'
+import styled from 'styled-components'
 
 
 export default function Template({data, pathContext}) {
-    const post = data.markdownRemark
+    const post = data.markdownRemark;
     const {next, prev} = pathContext;
+
+    const Related = styled.div`
+        display: flex;
+        justify-content: space-between;
+    `
 
     return(
         <div>
@@ -48,8 +55,16 @@ export default function Template({data, pathContext}) {
                 })}
                 </div>
             </div>
+            
             </div>
-            <Author />
+            <div className="Container">
+            <Related>
+            <div><Link to={post.fields.prevSlug}><h4>Last Article</h4><h5>{post.fields.prevTitle}</h5></Link></div>
+            <div><Link to={post.fields.nextSlug}><h4>What's Next</h4><h5>{post.fields.nextTitle}</h5></Link></div>
+            </Related>
+            </div>
+        
+
         </div>
     ) 
 }
@@ -66,6 +81,7 @@ export const postQuery = graphql`
                 title
                 date(formatString: "MMMM DD, YYYY", locale: "en")
                 tags
+                intro
                 image {
                     publicURL
                     size 
@@ -76,6 +92,13 @@ export const postQuery = graphql`
                     }
                 } 
             }
+            fields {
+                nextTitle
+                nextSlug
+                prevTitle
+                prevSlug
+                slug
+              }
           }
         }
 

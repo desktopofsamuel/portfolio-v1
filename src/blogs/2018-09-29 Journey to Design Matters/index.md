@@ -10,6 +10,8 @@ tags: ["Design", "Conference", "DesignMatters18" ]
 
 image: "./IMG_20180927_145719.jpg"
 
+intro: "Here I come, Denamrk. My journey to Copenhagen, participating Design Matters conference."
+
 ---
 
 ![](./IMG_20180927_145719.jpg)

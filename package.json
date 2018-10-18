@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "classnames": "^2.2.6",
     "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
@@ -12,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-resolve-src": "^1.1.4",
     "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-attr": "0.0.1",
     "gatsby-remark-copy-linked-files": "^1.5.37",
@@ -21,6 +24,7 @@
     "gatsby-source-prismic": "^1.1.0",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
+    "hamburgers": "^1.1.3",
     "lodash": "^4.17.10",
     "lodash-webpack-plugin": "^0.11.5",
     "lottie-web": "^5.2.1",
@@ -30,6 +34,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-scroll-into-view": "^1.3.2",
+    "react-simple-maps": "^0.12.1",
     "resolve-url-loader": "^2.3.0",
     "styled-components": "^3.4.5"
   },
