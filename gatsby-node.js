@@ -167,7 +167,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: `/categories/${_.kebabCase(category)}/`,
             component: categoryPage,
             context: {
-              category: `${_.kebabCase(category)}/`,
+              category
             }
           });
         });

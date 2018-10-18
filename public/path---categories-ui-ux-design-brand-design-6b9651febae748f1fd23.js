@@ -1,0 +1,2 @@
+webpackJsonp([0xbd8359920b8a],{429:function(a,n){a.exports={data:{allMarkdownRemark:null},pathContext:{category:"ui-ux-design-brand-design/"}}}});
+//# sourceMappingURL=path---categories-ui-ux-design-brand-design-6b9651febae748f1fd23.js.map
