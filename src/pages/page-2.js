@@ -44,7 +44,6 @@ const MapWideWrapper = styled.div`
   left: 0px;
   z-index: 0;
   width: 100%;
-  height: 520px;
   overflow: hidden;
 
   @media (max-width: 700px) {
@@ -135,9 +134,9 @@ const Index = ({ data }) => (
  <section>
         <MapSection>
           <Content className="CenterContainer">
-          <Geo className="Grid50">
+          <Geo className="Grid50 Container">
                 <div></div>
-                <ContactWrapper><h4>Hello From Hong Kong</h4></ContactWrapper>
+                <ContactWrapper><h4>Hello From Hong Kong</h4><p>Born and raised in Hong Kong, this is a city that i love. Scientists monitoring the Ross Ice Shelf in West Antarctica captured the acoustic oddity. Using a series of ultra sensitive seismic sensors, they produced a soundscape that would fit in perfectly at a Halloween haunted house or as the soundtrack to a 1950s B-movie about aliens arriving on Earth. But beyond being spooky, the sounds reveal how numerous processes from winds to warming are changing Antarctica’s ice.</p></ContactWrapper>
           </Geo>
           </Content>
           <MapWideWrapper><MapWide></MapWide></MapWideWrapper>
