@@ -10,7 +10,7 @@ import {
 const wrapperStyles = {
   width: "100%",
   maxWidth: 1920,
-  minHeight: 720,
+  minHeight: 800,
   margin: "0",
   fontFamily: "IBM Plex Sans, sans-serif",
 }

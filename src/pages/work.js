@@ -67,7 +67,7 @@ const WorkPage = ({ data }) => (
     <div className="HeroIcon">
         <div className="HeroIconWrapper Padding-S">
             <img src={HeroProjectLogo} alt="BlogLogo" width="100px" height="100px"></img>
-            <h2>Project</h2>
+            <h2>Work</h2>
             <div className="Container CenterContainer"><p className="Grey Width-70">My selected recent works, for more up-to-date work and design titbit. Feel free to follow my Behance and Twitter.</p></div>
         </div>
     </div>

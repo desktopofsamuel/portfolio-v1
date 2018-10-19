@@ -8,6 +8,10 @@ padding: 30px;
 
 &:hover {
 }
+
+@media (max-width: 700px) {
+    padding: 20px 20px 0px 20px;
+}
 `
 
 const Icon = styled.img`

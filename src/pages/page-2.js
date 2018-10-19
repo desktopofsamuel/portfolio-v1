@@ -6,6 +6,7 @@ import Emoji from '../components/emoji'
 import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Skill from '../components/skill'
 import ServiceBrandDesign from '../images/Service-BrandDesign.svg'
 import ServiceWebDesign from '../images/Service-WebDesign2.svg'
@@ -15,8 +16,33 @@ import HeroBlogLogo from '../images/HeroBlog.svg'
 import Card from '../components/card'
 import MapWide from '../components/map-wide'
 import MapMobile from '../components/map-mobile'
-import MajorButton from '../components/majorbutton-a';
+import MajorButtonA from '../components/majorbutton-a';
+import MajorButton from '../components/majorbutton';
 import Banner from '../components/banner'
+
+const HeroText = styled.div`
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  font-size: 64px;
+  line-height: 1.25;
+
+}
+h1:first-child {
+  margin: 0px;
+}
+
+h1:last-child {
+  color: #625E6B;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+    line-height: 3rem;
+  }
+}
+`
 
 const Grid = styled.div`
   grid-gap: 20px;
@@ -24,8 +50,13 @@ const Grid = styled.div`
 
 const MapSection = styled.section`
   position: relative;
-  height: 720px;
+  height: 800px;
   overflow: hidden;
+
+  @media (max-width: 700px) {
+    height: auto;
+  
+  }
 `
 const Content = styled.div`
   position: relative;
@@ -43,17 +74,24 @@ background-color: white;
 box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.025);
 padding: 30px;
 
+@media (max-width: 700px) {
+  margin: 10px;
+}
+
 `
 
 const IntroWrapper = styled.div`
-height: 500px;
-overflow: scroll;
+height: 600px;
 
 p {
   color: grey;
   font-size: 16px;
-  
 }
+
+@media (max-width: 700px) {
+        height: auto;
+    }
+
 `
 
 const MapWideWrapper = styled.div`
@@ -93,6 +131,16 @@ const BorderBox = styled.div`
     }
 `
 
+const BlogWrapper = styled.div`
+    h3 {
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+    }
+`
+
 const QuoteBox = styled.div`
     margin-top: 20px;
 
@@ -116,26 +164,32 @@ const Index = ({ data }) => (
       
   </div>
   
- <section className="">
-  <div className="Container Padding-M">
+ <section className="Height-100-Mobile">
+  <div className="Container Padding-M ">
       <div className="">
-        <h6><Emoji symbol="🖥" label="Desk"/> Desktop of</h6>
-        <h1>Samuel W.</h1>
+        <h6>Hi<Emoji symbol="👋" label="Wave-Hand"/> My name is</h6>
+        <HeroText>
+        <h1>Samuel Wong</h1>
+        <h1>I design stuff.</h1>
+        </HeroText>
         <div className="Width-70">
         <p>I'm a product designer currently based in Hong Kong. I deliver web / app projects in <a href="https://www.playa.hk" target="blank">Playa</a>, a web / app agency that I've co-founded.</p> <p>Before that, I worked as Cross-Content Intern at iTunes & App Store, Apple during college. </p>
         </div>
+        <AnchorLink href="#footer"><h6>Get In Touch</h6></AnchorLink>
+       
       </div>
       </div>
 
     </section>
     <section className="BG-Grey">
-    <div className="Container Padding-M">
+    <div className="Container Padding-S">
       <h6>I Can Help You With <Emoji symbol="🖱️" label="Computer-Mouse"/></h6>
       <Grid className="Grid33">
 <Card icon={ServiceWebDesign} title="Web Design" content="From conception to production, I’m experienced in executing design for digital service website and web app." />
         <Card icon={ServiceUIDesign} title="UI/UX Design" content="I also work on mobile app project, crafting low-fi wireframes, interactive prototypes and production-ready assets." />
         <Card icon={ServiceBrandDesign} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." />
       </Grid>
+      <div className="CenterContainer Top-XS"><MajorButton href="/work" text="View My Work"></MajorButton></div>
       </div>
   </section>
  <section>
@@ -143,22 +197,11 @@ const Index = ({ data }) => (
           <Content className="CenterContainer">
           <Geo className="Grid50 Container">
                 <div></div>
-                <ContactWrapper><h3>A little bit about myself...</h3><IntroWrapper><p>My name is Samuel and I’m a UI/UX designer. I currently work at a web/app agency that I have co-founded in Hong Kong.</p>
+                <ContactWrapper><h3>A little bit about myself...</h3><IntroWrapper className="Scroll"><p>Hello! I’m a UI/UX designer who visions design as a mean to cross the barriers between sectors, by making technology more accessible. I craft wireframes and prototypes and execute stunning visuals and user interfaces. </p>
 
-<p>For the past 3 years, I have been delivering and crafting website and app projects for clients across sectors. I help clients to conceptualise their ideas into wireframes and prototypes, and to execute visual design and user interface by delivering high fidelity mock-ups.</p>
-
-
-<p>Even though technology has become a major part of our lives nowadays, there is still a big gap of knowledge between people who build apps and people who use apps. Therefore, I started my agency years ago hoping to help small entrepreneurs and non-profits launching their projects. </p>
-
-
-<p>Being a self-taught designer, I treasure every opportunity to be inspired to design better, for my clients, for delivering a bespoke experience and even for a better society. </p>
-
-
-<p>I’m tech-savvy and many of my skillsets have been intertwined with my interest in technology. I embarked such journey after my one-year internship in Apple Inc, working as a cross-content intern in App & iTunes Store team  in 2013, where I learned to  deliver and publish digital content with scale and promote in Asia Pacific. I also took on the role to support my team’s operation with editorial schedules and local content research. </p>
-
-
-<p>There’s still a lot of untapped areas waiting to be disrupted. I vision design as a major means to cross the barriers, by making technology more accessible. The intersection of liberal arts and technology, as stated by Steve Jobs has been my great source of inspiration. A well-designed digital products not only mean to solve users' need, but also be accessed with the right technology. The core needs and behaviour of mankind could be addressed with the right design, reaching a simple solution for complicated problems with simple solution.</p> </IntroWrapper></ContactWrapper>
-          </Geo>
+<p>I started my agency Playa in 2015, hoping to help small entrepreneurs and non-profits launching their projects, bridging the gap between project owners and end-users. I am constantly learning and  treasure every opportunity to design better. I’m learning to code right now and this website is my first attempt.</p>
+              </IntroWrapper></ContactWrapper>
+                </Geo>
           </Content>
           <MapWideWrapper><MapWide></MapWide></MapWideWrapper>
           <MapMobileWrapper><MapMobile></MapMobile></MapMobileWrapper>
@@ -186,9 +229,9 @@ const Index = ({ data }) => (
             </div>
             <hr />
              */}
-            <div>
-              <div className=""><img src={HeroBlogLogo}></img></div>
-              <a href="/blog"><h6>Blog</h6></a>
+            <div className="MobileCenter">
+              <div><img src={HeroBlogLogo}></img></div>
+              <a href="/blog"><h5>Blog</h5></a>
               <h2>I write about design, technology and productivity.</h2>
               <BorderBox />
               <QuoteBox>
@@ -204,15 +247,15 @@ const Index = ({ data }) => (
         <div>
                 {data.BlogIndex.edges.map(post => (
                     <div className="" key={ post.node.id }>
-                        <div>
+                        <BlogWrapper>
                         <Img className="Bottom-XS" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
-                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                            <Link to={post.node.frontmatter.path}><h3><span className="highlight">{post.node.frontmatter.title}</span></h3></Link>
                             <p>{post.node.excerpt}</p>
                             <MajorButton href={post.node.frontmatter.path} text="Read More"></MajorButton>
                             <br />
                     
 
-                        </div>
+                        </BlogWrapper>
                     </div>
                    
                     

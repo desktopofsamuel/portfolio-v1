@@ -12,7 +12,7 @@ const Button = styled.button`
     background-color: ${props => props.bgColor || "navy"};
     padding: 10px 25px;
     border: none;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color ease-in-out 0.2s;
@@ -24,7 +24,7 @@ const Button = styled.button`
 
 export default (props) => (
         <Link to={props.href}>
-        <Button style={{backgroundColor:`${props.bgColor}`, color:`${props.textColor}`}}>
+        <Button style={{backgroundColor:`${props.bgColor}`, color:`${props.textColor}`, borderColor: `${props.borderColor}`}}>
             <Text style={{color:`${props.textColor}`}}>{props.text}</Text>
         </Button>
         </Link>

@@ -186,6 +186,14 @@
     height: 100vh;
 }
 
+.Height-100-Mobile {
+    height: 90vh;
+}
+
+.Height-1000 {
+    height: 100%;
+}
+
 .S-SocialBar {
     width: 100%;
     height: 100%;
@@ -328,6 +336,7 @@ max-width: 1280px;
 padding: 0 1rem;
 }
 
+
 .Container50 {
 margin: 0 auto;
 max-width: 480px;
@@ -352,6 +361,10 @@ padding: 0px 1.0875rem;
 
 .Top-S {
     padding-top: 10vh;
+}
+
+.Top-XS {
+    padding-top: 5vh;
 }
 
 .Padding-L {
@@ -457,6 +470,7 @@ color: #c3c3c3;
 a {
 text-decoration: none;
 color: black;
+cursor: pointer;
 }
 
 html, body {
@@ -753,6 +767,19 @@ line-height: 1.5rem;
 color: #bdbdbd;
 }
 
+.NoMargin {
+    margin: 0px;
+}
+
+
+.Scroll::-webkit-scrollbar:horizontal {
+    appearance: none;
+}
+
+.Scroll:hover::-webkit-scrollbar {
+
+}
+
 small {
 font-family: 'IBM Plex Sans';
 text-transform: uppercase;
@@ -973,6 +1000,18 @@ margin-right: 5px;
     
     .S-CTA {
         text-align: center;
+    }
+
+    .MobileCenter {
+        text-align: center;
+    }
+
+    .Height-100-Mobile {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

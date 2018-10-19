@@ -26,7 +26,6 @@ background-position: left bottom;
 background-size: cover;
 background-repeat: no-repeat;
 
-
 `
 const NametagWrapper = styled.div`
     display: grid;
@@ -35,6 +34,7 @@ const NametagWrapper = styled.div`
 
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
+        grid-auto-rows: 200px auto;
     }
 `
 
@@ -44,6 +44,10 @@ display: block;
 height: auto;
 padding: 36px;
 background-color: #ffffff;
+
+@media (max-width: 700px) {
+    padding: 18px;
+}
 `
 
 const Social = styled.div`
@@ -72,8 +76,8 @@ const Footer = () => (
         <Propic />
         <Nametag>
             <h6>Let's Keep In Touch</h6>
-            <Content><a href="mailto:desktopofsamuel@gmail.com">desktopofsamuel@gmail.com</a></Content>
-            <Content>I'm interested in freelance projects and remote work, or feel free to ping me about design & technology. </Content>
+            <Content>If you have any projects, I'm interested in freelance projects or remote work.</Content>
+            <Content>Feel free to ping me about design & technology or let's grab coffee if you are in town. </Content>
             <MajorButton href="mailto:desktopofsamuel@gmail.com" text="Let's Chat" bgColor="#3284DC"></MajorButton>
             <Social>
                 <a href="https://dribbble.com/desktopofsamuel" target="blank"><FaDribbble /></a>
