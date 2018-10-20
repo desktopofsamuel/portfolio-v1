@@ -7,7 +7,7 @@ import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Skill from '../components/skill'
+import { Zoom, Slide, Fade } from 'react-reveal'
 import ServiceBrandDesign from '../images/Service-BrandDesign.svg'
 import ServiceWebDesign from '../images/Service-WebDesign2.svg'
 import ServiceUIDesign from '../images/Service-UIDesign2.svg'
@@ -167,15 +167,17 @@ const Index = ({ data }) => (
  <section className="Height-100-Mobile">
   <div className="Container Padding-M ">
       <div className="">
-        <h6>Hi<Emoji symbol="👋" label="Wave-Hand"/> My name is</h6>
+      <h6>Hi<Emoji symbol="👋" label="Wave-Hand"/> My name is</h6>
         <HeroText>
-        <h1>Samuel Wong</h1>
-        <h1>I design stuff.</h1>
+        <Fade><h1>Samuel Wong</h1></Fade>
+        <Fade delay={100}><h1>I design stuff.</h1></Fade>
         </HeroText>
+        <Fade bottom delay={150}>
         <div className="Width-70">
         <p>I'm a product designer currently based in Hong Kong. I deliver web / app projects in <a href="https://www.playa.hk" target="blank">Playa</a>, a web / app agency that I've co-founded.</p> <p>Before that, I worked as Cross-Content Intern at iTunes & App Store, Apple during college. </p>
-        </div>
         <AnchorLink href="#footer"><h6>Get In Touch</h6></AnchorLink>
+        </div></Fade>
+        
        
       </div>
       </div>
@@ -183,13 +185,16 @@ const Index = ({ data }) => (
     </section>
     <section className="BG-Grey">
     <div className="Container Padding-S">
-      <h6>I Can Help You With <Emoji symbol="🖱️" label="Computer-Mouse"/></h6>
-      <Grid className="Grid33">
-<Card icon={ServiceWebDesign} title="Web Design" content="From conception to production, I’m experienced in executing design for digital service website and web app." />
-        <Card icon={ServiceUIDesign} title="UI/UX Design" content="I also work on mobile app project, crafting low-fi wireframes, interactive prototypes and production-ready assets." />
-        <Card icon={ServiceBrandDesign} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." />
-      </Grid>
-      <div className="CenterContainer Top-XS"><MajorButton href="/work" text="View My Work"></MajorButton></div>
+    <Zoom><h6>I Can Help You With <Emoji symbol="🖱️" label="Computer-Mouse"/></h6></Zoom>
+        
+        <div className="Grid33" style={{gridGap:"20px"}}>
+        <Zoom><Card icon={ServiceWebDesign} title="Web Design" content="From conception to production, I’m experienced in executing design for digital service website and web app." /></Zoom>
+        <Zoom delay={250}><Card icon={ServiceUIDesign} title="UI/UX Design" content="I also work on mobile app project, crafting low-fi wireframes, interactive prototypes and production-ready assets." /></Zoom>
+        <Zoom delay={500}><Card icon={ServiceBrandDesign} title="Brand Design" content="I help new brands launching their distinct and compelling key visual idendities to kickstart their start-up journey." /></Zoom>
+        </div>
+        
+      
+      <div className="CenterContainer Top-XS"><Zoom delay={600}><MajorButton href="/work" text="View My Work"></MajorButton></Zoom></div>
       </div>
   </section>
  <section>
