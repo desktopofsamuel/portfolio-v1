@@ -7,7 +7,7 @@ import Img from 'gatsby-image'
 import HeroProjectLogo from '../images/HeroProject.svg'
 import styled from 'styled-components'
 import MajorButton from '../components/majorbutton'
-import MobileNav from '../components/mobilenav';
+import { Zoom, Slide, Fade } from 'react-reveal'
 
 const ProjectTitleWrapper = styled.div`
     max-width: 70%;
@@ -75,7 +75,7 @@ const WorkPage = ({ data }) => (
           <div className="">
           {data.PortfolioIndex.edges.map(post => (
               <section className="Full-Width PortfolioIndex" style={{ backgroundColor: `${post.node.frontmatter.color}`}}>
-                <div className="Container">
+                <Zoom><div className="Container">
                 <ProjectPhoto className="Top-S">
                     <Link to={post.node.frontmatter.path}>
                     <Img className="PortfolioIndexPhoto" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
@@ -98,10 +98,12 @@ const WorkPage = ({ data }) => (
                   </div>
                   </ProjectContentWrapper>
                 </div>
+                
                 </div>
+                
               <div>
               </div>
-            </section>
+              </Zoom></section>
           ))}
           </div>
     </div>

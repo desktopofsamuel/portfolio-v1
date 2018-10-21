@@ -5,6 +5,7 @@ import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import Author from '../components/author';
 import NavBar from '../components/navbar';
+import { Zoom, Slide, Fade } from 'react-reveal'
 
 
 const BlogPage = ({data}) => (
@@ -26,7 +27,7 @@ const BlogPage = ({data}) => (
                     </div>
                 </div>
                 {data.allMarkdownRemark.edges.map(post => (
-                    <div className="Column Grid-S" key={ post.node.id }>
+                    <Zoom><div className="Column Grid-S" key={ post.node.id }>
                         <div className="LeftColumn Lower">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
@@ -36,12 +37,11 @@ const BlogPage = ({data}) => (
                             <br />
                             <hr />
                         </div>
-                    </div>
+                    </div></Zoom>
                     
                 ))}
             </div>
         </div>
-        <Author />
     </div>
 )
 

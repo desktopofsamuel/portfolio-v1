@@ -87,7 +87,13 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+}
 
+.HeroStyle h1 {
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    font-size: 64px;
+    line-height: 1.25;
 }
 
 .TextContainer {
@@ -188,6 +194,7 @@
 
 .Height-100-Mobile {
     height: 90vh;
+    min-height: 600px;
 }
 
 .Height-1000 {

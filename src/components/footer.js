@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import MajorButton from '../components/majorbutton-a'
 import { FaMedium, FaDribbble, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/lib/fa'
+import { Zoom, Slide, Fade } from 'react-reveal'
 
 const CTA = styled.section`
     position: relative;
@@ -69,7 +70,7 @@ a:hover {
 const Footer = () => (
     <div id="footer">
     <CTA>
-        <div className="Container Padding-M">
+        <Zoom><div className="Container Padding-M">
         <PropicWrapper>
         
         <NametagWrapper>
@@ -89,7 +90,7 @@ const Footer = () => (
         </Nametag>
         </NametagWrapper>
         </PropicWrapper>
-        </div>
+        </div></Zoom>
     </CTA>
         <section className="S-Footer">
             <div className="Container TextCenter Padding-XS">
