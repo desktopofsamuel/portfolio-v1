@@ -3,8 +3,6 @@ import Link from 'gatsby-link'
 import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
-import Author from '../components/author';
-import NavBar from '../components/navbar';
 import { Zoom, Slide, Fade } from 'react-reveal'
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import MajorButton from '../components/majorbutton-a'
+import MajorButton from './majorbutton-a'
 import { FaMedium, FaDribbble, FaTwitter, FaEnvelope, FaLinkedin } from 'react-icons/lib/fa'
 import { Zoom, Slide, Fade } from 'react-reveal'
 
