@@ -11,7 +11,7 @@ export default function Template({data, pathContext}) {
 
     return(
         <div className="Container">
-            <Img sizes={post.frontmatter.image.childImageSharp.sizes} />
+            <div className="Top-S" ><Img sizes={post.frontmatter.image.childImageSharp.sizes} /></div>
             <Seo data={post} />
             <div className="Padding-S">
                 <div className="Content">
