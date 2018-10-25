@@ -8,7 +8,8 @@ import Author from '../components/author'
 import CTA from '../components/cta'
 import PostSuggestions from '../components/related'
 import styled from 'styled-components'
-require("prismjs/themes/prism-okaidia.css")
+import '../config/prismic.css'
+import kebabCase from 'lodash/kebabCase';
 
 
 export default function Template({data, pathContext}) {
@@ -48,7 +49,7 @@ export default function Template({data, pathContext}) {
                 Tagged with {post.frontmatter.tags.map((tag, index) => {
                     return (
                         <span key={index} className="tag">
-                            <Link to={`tags/${tag}`}
+                            <Link to={`/tags/${kebabCase(tag)}`}
                                   >
                             {tag}</Link>
                         </span>

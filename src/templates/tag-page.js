@@ -4,16 +4,17 @@ import Seo from '../components/seo';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import config from '../config';
+import kebabCase from 'lodash/kebabCase';
 
 const TagPage = ({ pathContext, data}) => {
   const { tag } = pathContext;
   const tagHeader = `Tagged with "${tag}"`;
-  const HelmetTitle = "Read some " + pathContext.tag + " articles | " + config.shortSiteTitle;
-  const HelmetURL = config.siteUrl + "/tags/" + pathContext.tag;
+  const HelmetTitle = pathContext.tag + " Articles | " + config.shortSiteTitle;
+  const HelmetURL = config.siteUrl + "/tags/" + kebabCase(pathContext.tag);
 
   
   return (
-    <div className="Container">
+    <div className="Container Padding-S">
        <Seo data=""></Seo>
        <Helmet 
         title={HelmetTitle}
@@ -22,8 +23,9 @@ const TagPage = ({ pathContext, data}) => {
           { property: 'og:url', content: `${HelmetURL}`},
         ]}
          />
+         <section className="Top-S">
         <Link to="../">Back</Link> 
-        <h1>{tagHeader} </h1>
+        <h1 className="Tax-Title">{tagHeader} </h1>
         {data.allMarkdownRemark.edges.map(post => (
             
             <div key={ post.node.id }>
@@ -35,7 +37,7 @@ const TagPage = ({ pathContext, data}) => {
                 <br />
             </div>
         ))}
-
+          </section>
     </div>
 );
 };

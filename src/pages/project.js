@@ -118,7 +118,10 @@ query ProjectPage {
         }
       }
     }
-    PortfolioIndex: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {posttype: {eq: "project"}}}, limit: 4) {
+    PortfolioIndex: allMarkdownRemark(
+      sort: {order: DESC, fields: [frontmatter___date]}, 
+      filter: {frontmatter: {posttype: {eq: "project"}}},
+    ) {
       edges {
         node {
           id

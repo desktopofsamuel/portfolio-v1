@@ -134,24 +134,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
           
-
-          if (edge.node.frontmatter.posttype === 'project') {
-            createPage({
-              path: `${edge.node.frontmatter.path}`,
-              component: workPage,
-              context: {
-              }
-            });
-          } else { // blog post
-            createPage({
-              path: edge.node.frontmatter.path,
-              component: postPage,
-              context: {
-              }
-            });
-          }
-        });
-
         const tagList = Array.from(tagSet);
         tagList.forEach(tag => {
           createPage({
@@ -174,6 +156,23 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           });
         });
+
+        if (edge.node.frontmatter.posttype === 'project') {
+          createPage({
+            path: `${edge.node.frontmatter.path}`,
+            component: workPage,
+            context: {
+            }
+          });
+        } else { // blog post
+          createPage({
+            path: edge.node.frontmatter.path,
+            component: postPage,
+            context: {
+            }
+          });
+        }
+      });
             
       })
     );

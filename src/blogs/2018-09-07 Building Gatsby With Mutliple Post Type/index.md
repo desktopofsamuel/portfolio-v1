@@ -2,7 +2,7 @@
 
 path: "/building-gatsby-with-multiple-post-type"
 
-date: "2018-09-07"
+date: "2018-10-25"
 
 title: "Building Gatsby With Multiple Post Type"
 
@@ -10,11 +10,13 @@ tags: ["Work-In-Progress", "Gatsby", ]
 
 image: "./Gatsby-Multiple-Post-Type.png"
 
-intro: "I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. "
+intro: "I'm sharing my way of setting up multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. "
 
 ---
 
-TLDR: I'm sharing my way of setting up a multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. 
+**2018/10/25: Updated the post on how to create Category and Tag page for multiple post type.**
+
+TLDR: I'm sharing my way of setting up multiple post types in GatsbyJS. It works for portfolio setup with blog + projects. 
 
 As a designer with no prior experience in React, starting Gatsby with a starter template is the easiest way. After that, adding bits and pieces by following online tutorials and Github threads are the parts that you learn, as you understand how to adapt others' code and review each expression and argument means whenever you encounter errors.
 
@@ -58,7 +60,7 @@ For frontmatter of the markdown, I have added a new field called "Posttype", tho
 
 My markdown frontmatter setup is:
 
-```
+```markdown
 path: "/project-1"
 date: "2018-09-07"
 title: "Project 1"
@@ -70,7 +72,7 @@ image: "./project-1.png"
 
 ##2. Edit Gatsby-Config.js
 We will need to edit gatsby-config.js in order to let Gatsby know where to look when create a new post page. 
-```
+```javascript
 {
   resolve: 'gatsby-source-filesystem',
   options: {
@@ -89,19 +91,23 @@ Let's copy everything from `blog-post.js` and paste it in Project Post. This wil
 **Being a static site generator, Gatsby-Node.js handles how your site is generated.** Personally speaking, it is a rather confusing part of the whole Gatsby development process.
 
 CreatePages should be in the file already. 
-`exports.createPages = ({boundActionCreators, graphql}) => {
-    const { createPage } = boundActionCreators`
+```javascript
+exports.createPages = ({boundActionCreators, graphql}) => {
+const { createPage } = boundActionCreators
+```
 
 We will need to import the `project-post.js`right after the blog template. 
 
-`const postTemplate = path.resolve('src/templates/blog-post.js');
-        const projectTemplate = path.resolve('src/templates/project-post.js');`
+```javascript
+const postTemplate = path.resolve('src/templates/blog-post.js');
+const projectTemplate = path.resolve('src/templates/project-post.js');
+```
         
 After that, we will use our newly created frontmatter field, "posttype" to filter all our markdown pages. Because a majority of markdown pages will be blog page, if / else argument is used here. Unless specified post "posttype" is equal to "project" (or any other posttype to be included in the future), or else Gatsby will recognise the post as a blog post.
 
 Here's my `gatsby-node.js` file:
 
-```Javascript
+```javascript
 result.data.allMarkdownRemark.edges.forEach(edge => {
     if (edge.node.frontmatter.posttype === 'project') {
         createPage({
@@ -133,7 +139,7 @@ Right now this method is not creating a prefix path in front of the project post
 Now the individual post is done, let's work on a Project Main page that will query all project post. 
 
 First, all the standards:
-```
+```javascript
 import React from 'react'
 import Link from 'gatsby-link'
 
@@ -154,7 +160,7 @@ export const pageQuery = graphql`
 
 Then we will add our GraphQL query at the end, notice I have filtered using the frontmatter, only those markdown files with assigned "project" as a post type will display. 
 
-```
+```graphql
 query ProjectIndex {
   allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]}, 
@@ -189,7 +195,6 @@ query ProjectIndex {
     }
   }
 }
-
 ```
 
 Remember to add `export default ProjectPage`
@@ -200,19 +205,87 @@ Then if you go to Blog Main page, you would still see a mix of blog posts and pr
 
 Because we use if/else function in `gatsby-node.js`, stating all post without specifying posttype will be a blog post. We cannot query this page using frontmatter's post type,  we will use the filter function base on the Markdown's path.
   
-```GraphQL
+```graphql
 allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: {fileAbsolutePath: {regex: "\/blogs/"}}
     )
 ```
 
-##7. Make sure other functions will not mix up in different post types
+##7. Creating Tag & Category Page
 
-Last but not least, we'll need to double check if functions like tags, prev/next will mix up both post type. I'm still working on this part. Will update soon.
-Meanwhile, feel free to share your ways of creating your own personal site using Gatsby. Please let me know if there are any better ways to do so.
+Last but not least, we'll need to double check other components will not mix up with different post type. This is very dependable on how do you want different content type to work. In my case, I would like to separate the taxonomy between blog and portfolio. Therefore, I use different frontmatter for different post type. 
 
+I use tag for blog and category for portfolio, Tag page would be a collection of articles that I have written regarding the certain topic, while Category page would be my field of work. To set this up, I have referenced [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter/blob/master/gatsby-node.js). It allows us to create Tag & Category page as long as the frontmatter is in an array format. 
+```markdown
+category: [ "UI/UX Design", "Brand Design" ]
+```
+In your `gatsby-node.js` after resolving the GraphQL. Create tag set and category set to create page for each tag and category.
 
+```javascript
+//gatsby-node.js
+const tagSet = new Set();
+      const categorySet = new Set();
+      result.data.allMarkdownRemark.edges.forEach(edge => {
+        if (edge.node.frontmatter.tags) {
+          edge.node.frontmatter.tags.forEach(tag => {
+            tagSet.add(tag);
+          });
+        }
+
+        {if (edge.node.frontmatter.category) {
+          edge.node.frontmatter.category.forEach(category => {
+            categorySet.add(category);
+          });
+        }
+      }
+        
+      const tagList = Array.from(tagSet);
+      tagList.forEach(tag => {
+        createPage({
+          path: `/tags/${_.kebabCase(tag)}/`,
+          component: tagPage,
+          context: {
+            tag
+          }
+        });
+      });
+      
+      const categoryList = Array.from(categorySet);
+      categoryList.forEach(category => {
+        createPage({
+          path: `/categories/${_.kebabCase(category)}/`,
+          component: categoryPage,
+          context: {
+            category
+          }
+        });
+      });
+```
+
+In project template page, if you want to add a hyperlink to the category page, you can map the categories after query GraphQL. If you copied everything from `blog-post.js` , remember to change tags to category in GraphQL query. I used kebabCase to process category text into hyperlink friendly text. 
+
+```javascript
+//project-post.js
+{post.frontmatter.category.map(((category, index) => {
+return (
+  <span key={index}>
+    <Link to={`/categories/${kebabCase(category)}`}>
+      <small>{category}</small>
+    </Link>
+  </span>
+)
+}))}
+```
+
+This should wrap up everything you need in order to create multiple post type in Gatsby. If you encountered any problems in setting it up. Make sure you:  
+
+1. Restart localhost server every time if you have edited the `gatsby-node.js`
+2. Test it step by step to eliminate any cause of error. 
+
+For designers who are looking forward to build your first Gatsby site, I recommend look for the functionalities offered by starter template instead of style and layout. This will save so much time. Changing CSS and moving around different React component is much easier than figuring how node.js work. 
+
+Feel free to share your ways of creating your own personal site using Gatsby. If you have a better solution or encountered any problems, I would love to know the case.
 
 
 

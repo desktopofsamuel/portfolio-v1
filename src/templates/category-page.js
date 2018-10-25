@@ -4,17 +4,18 @@ import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import kebabCase from 'lodash/kebabCase';
 import config from '../config';
 
 const TagPage = ({ pathContext, data}) => {
   const { category } = pathContext;
   const tagHeader = `${category}`;
-  const HelmetTitle = "Read some " + pathContext.category + " articles | " + config.shortSiteTitle;
-  const HelmetURL = config.siteUrl + "/tags/" + pathContext.category;
+  const HelmetTitle = "My " + pathContext.category + " work | " + config.shortSiteTitle;
+  const HelmetURL = config.siteUrl + "/category/" + kebabCase(pathContext.category);
 
   
   return (
-    <div className="Container">
+    <div className="Container Padding-S">
        <Seo data=""></Seo>
        <Helmet 
         title={HelmetTitle}
@@ -23,8 +24,9 @@ const TagPage = ({ pathContext, data}) => {
           { property: 'og:url', content: `${HelmetURL}`},
         ]}
          />
+        <section className="Top-S">
         <Link to="../">Back</Link> 
-        <h1>{tagHeader} </h1>
+        <h1 className="Tax-Title">{tagHeader} </h1>
         {data.allMarkdownRemark.edges.map(post => (
             
             <div key={ post.node.id }>
@@ -41,6 +43,7 @@ const TagPage = ({ pathContext, data}) => {
                 </div>
             </div>
         ))}
+        </section>
 
     </div>
 );

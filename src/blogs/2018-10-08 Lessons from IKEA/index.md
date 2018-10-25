@@ -6,7 +6,7 @@ date: "2018-10-08"
 
 title: "Lessons from IKEA"
 
-tags: ["IKEA", "Sweden", "ExperienceDesign" ]
+tags: ["IKEA", "Sweden", "Experience Design" ]
 
 image: "./IMG_6232-Web-3.jpg"
 

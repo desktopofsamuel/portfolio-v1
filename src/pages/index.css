@@ -321,7 +321,7 @@ h6 {
     line-height: 1;
     color: #888;
     text-transform: uppercase;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
 }
 
 .BlogContainer {
@@ -357,6 +357,8 @@ padding: 0px 1.0875rem;
 .Bottom-S {
     margin-bottom: 10vh;
 }
+
+
 
 .Top-L {
     padding-top: 100vh;
@@ -852,6 +854,10 @@ display: grid;
 grid-template-columns: auto;
 }
 
+.Tax-Title h1 {
+    margin-top: 50px;
+}
+
 .Blog h1 {
 font-size: 48px;
 line-height: 4rem;
@@ -919,6 +925,11 @@ margin-right: 5px;
 }
 
 @media (max-width: 700px) {
+
+    .HeroStyle h1 {
+        font-size: 36px;
+        line-height: 3rem;
+    }
 
     .Container {
         padding: 0 5%;
