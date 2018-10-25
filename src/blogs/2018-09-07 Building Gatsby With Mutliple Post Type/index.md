@@ -6,7 +6,7 @@ date: "2018-10-25"
 
 title: "Building Gatsby With Multiple Post Type"
 
-tags: ["Work-In-Progress", "Gatsby", ]
+tags: ["Work In Progress", "Gatsby", ]
 
 image: "./Gatsby-Multiple-Post-Type.png"
 
