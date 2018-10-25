@@ -10,6 +10,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-image`,
+    
+
     /*
     {
       resolve: "gatsby-source-prismic",
@@ -67,6 +69,7 @@ module.exports = {
         plugins: [
             'gatsby-remark-emoji',
             'gatsby-remark-copy-linked-files',
+            `gatsby-remark-prismjs`,
             {
               resolve: 'gatsby-remark-attr',
               options: {

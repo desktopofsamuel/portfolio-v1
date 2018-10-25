@@ -128,8 +128,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
 
           {if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category);
-          } }
+            edge.node.frontmatter.category.forEach(category => {
+              categorySet.add(category);
+            });
+          }
+        }
           
 
           if (edge.node.frontmatter.posttype === 'project') {

@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import MajorButton from '../components/majorbutton-a';
+import kebabCase from 'lodash/kebabCase';
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
@@ -15,7 +16,12 @@ export default function Template({data, pathContext}) {
             <Seo data={post} />
             <div className="Padding-S">
                 <div className="Content">
-                <Link to={CategoryURL}><small>{post.frontmatter.category}</small></Link>
+                {post.frontmatter.category.map(((category, index) => {
+                    return (
+                        <span key={index}><Link to={`/categories/${kebabCase(category)}`}><small>{category}</small></Link></span>
+                    )
+                })
+                )}
                 <h1>{post.frontmatter.title}</h1>
                 <small>{post.frontmatter.date}</small>
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>

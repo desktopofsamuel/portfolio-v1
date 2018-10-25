@@ -8,6 +8,7 @@ import Author from '../components/author'
 import CTA from '../components/cta'
 import PostSuggestions from '../components/related'
 import styled from 'styled-components'
+require("prismjs/themes/prism-okaidia.css")
 
 
 export default function Template({data, pathContext}) {

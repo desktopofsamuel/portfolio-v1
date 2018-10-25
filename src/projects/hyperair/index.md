@@ -5,7 +5,7 @@ title: "Hyperair Travel"
 posttype: "project"
 image: "./Hyperair-Feature-v5.png"
 subtitle: "All-rounded Travel Service"
-category: "UI/UX Design"
+category: [ "UI/UX Design" ]
 intro: "HyperAir Incorporation is a start-up in Hong Kong specialising in all-rounded travel service. I have worked on their debut app focusing on currency exchange."
 color: "#125E8A"
 url: "http://hyperair.com/"

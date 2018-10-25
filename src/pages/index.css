@@ -1721,20 +1721,21 @@ td:last-child {
 padding-right: 0;
 }
 
+pre {
+    overflow: scroll;
+}
+
 tt,
 code {
-background-color: #eeeeee;
 border-radius: 3px;
-font-family: Courier, monospace;
 padding: 0.2em 0.4em;
 margin: 0;
 display: inline-block;
 
+
 }
 pre code {
-background-color: #eee;
 border-radius: 3px;
-font-family: Courier, monospace;
 padding: 1em 1em;
 line-height: 1.42;
 min-width: 100%;
@@ -1757,6 +1758,10 @@ content: "";
     html {
         font-size: 100%;
     }   
+
+    pre {
+        overflow: scroll;
+    }
 
     .intro {
         margin: 0;

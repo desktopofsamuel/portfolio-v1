@@ -5,7 +5,7 @@ title: "Road Not Taken"
 posttype: "project"
 image: "./RNT-Feature.png"
 subtitle: "Independent Documentary"
-category: "Documentary"
+category: [ "Documentary" ]
 intro: "Road Not Taken is my feature-length documentary directed when I was in college."
 color: "#C0D0A9"
 url: "https://vimeo.com/ondemand/roadnottaken"

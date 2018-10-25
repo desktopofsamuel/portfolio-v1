@@ -6,7 +6,7 @@ posttype: "project"
 image: "./W4F-Feature2.png"
 intro: "Water for Free is a mobile app that shows over 1600 locations of water dispensers in Hong Kong and Macau. It is an effort to reduce the vast amounts single-use beverage containers entering our landfills and oceans everyday."
 subtitle: "Hong Kong Water Dispenser Map"
-category: "UI/UX Design"
+category: [ "UI/UX Design" ]
 color: "#62B6CB"
 url: "https://www.waterforfree.org"
 ---
