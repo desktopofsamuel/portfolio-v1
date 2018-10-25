@@ -71,7 +71,7 @@ image: "./project-1.png"
 
 
 ##2. Edit Gatsby-Config.js
-We will need to edit gatsby-config.js in order to let Gatsby know where to look when create a new post page. 
+We will need to edit gatsby-config.js in order to let Gatsby know where to look when creating a new post page. 
 ```javascript
 {
   resolve: 'gatsby-source-filesystem',
@@ -85,7 +85,7 @@ We will need to edit gatsby-config.js in order to let Gatsby know where to look 
 ##3. Create Project Post Template
 Then, we will need to create a Project Post template `project-post.js`, putting in my template (src/templates) folder together with `blog-post.js`, so later `gatsby-node.js` can reference to when creating project pages.
  
-Let's copy everything from `blog-post.js` and paste it in Project Post. This will ensure everything works accordingly. However, you will only need to rename the GraphQL query name, since all GraphQL query need to have unique name. I changed from "BlogPostByPath" to "ProjectPostByPath". We can come back and edit it later. 
+Let's copy everything in `blog-post.js` and paste it in Project Post. This will ensure everything works accordingly. However, you will only need to rename the GraphQL query name, since all GraphQL query need to have unique name. I changed from "BlogPostByPath" to "ProjectPostByPath". We can come back and edit it later. 
 
 ##4. Edit Gatsby-Node.js
 **Being a static site generator, Gatsby-Node.js handles how your site is generated.** Personally speaking, it is a rather confusing part of the whole Gatsby development process.
@@ -113,7 +113,7 @@ result.data.allMarkdownRemark.edges.forEach(edge => {
         createPage({
             path: edge.node.frontmatter.path,
             component: projectTemplate,
-            cotext: {}
+            context: {}
         });
     }   
     else {
