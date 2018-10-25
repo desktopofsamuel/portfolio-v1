@@ -33,10 +33,10 @@ Things we need to do:
 1. Create a new "projects" folder and post under source folder
 2. Edit `gatsby-config.js` to include new source folder in `gatsby-source-filesystem` plugin
 3. Duplicate `blog-post.js` to create `project-post.js` template
-3. Edit `gatsby-node.js` CreatePage API to adopt a separate template for different post type. 
-4. Create Project Main page to query project post
-5. Edit Blog Main page not to query project post
-6. Make sure other functions like Tags, Prev/Next will not mix up in both types
+4. Edit `gatsby-node.js` CreatePage API to adopt a separate template for different post type. 
+5. Create Project Main page to query project post
+6. Edit Blog Main page not to query project post
+7. Create Tag & Category Page for Project
 
 ##1. Create New Projects Folder
 My source folder setup is like this:
