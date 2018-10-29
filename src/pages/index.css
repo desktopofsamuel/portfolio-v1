@@ -811,6 +811,7 @@ z-index: 10000;
 h1 {
 font-weight: 600;
 font-size: 48px;
+line-height: 1.25;
 }
 
 h3 {
