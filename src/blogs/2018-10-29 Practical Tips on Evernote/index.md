@@ -23,13 +23,13 @@ With the brand revamp last month and foreseeable major app revamp upcoming. Letâ
 
 ## Better to be late than sorry: **Templates**
 
-[](https://www.notion.so/167e25e6c0644a8296466bc03d4a1dd2#5bae6329720b4e0bbf84b4372815acf7)
+![](./Template.png)
 
 Templates should have been on Evernote since it was ever released. Before that, I always had a template tag with all the reusable documents. But it's better to be late than sorry. Templates might not be very useful for long-time pro users since I assume most of them developed their own workflow already. But it is always nice to check out how do other people work, it would be even better if people can submit and share their own template. At least you can do it in your notebook, by clicking "Save as Template" in context menu next to the title. 
 
 ## **Tables has been revamped**
 
-[](https://www.notion.so/167e25e6c0644a8296466bc03d4a1dd2#fd0618bc815446c6ad066f090886557d)
+![](./Tables.png)
 
 My impression of the old Evernote tables was always lack of style and function. It was a pure html table without much formatting options.
 
@@ -37,7 +37,7 @@ New table features revamped a year ago, but I have discovered only recently. Sup
 
 ## **To-do List + Saved Search with Filters**
 
-[](https://www.notion.so/167e25e6c0644a8296466bc03d4a1dd2#f58ee5ce0aa8471490d67470caef923e)
+![](./Saved-Search.png)
 
 Most people used Todoist or Wunderlist or Things for task management. But practicing bullet journals since last year has made me realized it is more important to be engaged with the task in time than tools itself. The essence and also the beauty of Bullet Journal system is a fresh start every day and copying unresolved tasks manually to remind yourself.  
 
@@ -49,7 +49,7 @@ Check out this official guide on how to create saved search [https://help.everno
 
 ## Full Customizable Widgets (Android Only)
 
-[](https://www.notion.so/167e25e6c0644a8296466bc03d4a1dd2#01dbcf8a58794a90a988badb25f461b6)
+![](./Widgets.png)
 
 I love Evernote's Android widget that everything is customizable. You can query the notes to show on the widget, arrange the order of action bar icons and even which notebook are those quick notes are saving to. 
 
@@ -57,7 +57,7 @@ This kind of flexibility allows me to turn my Android widget into an inbox of my
 
 ## Masonry Grid View (Windows Only)
 
-[](https://www.notion.so/167e25e6c0644a8296466bc03d4a1dd2#597ecdd0f89c4f14abd6c3c99565723e)
+![](./Masonry.png)
 
 It is weird that Evernote has actually built a Masonry Grid View (It's called Thumbnail View), but the feature is only limited to Windows Evernote.  This feature is useful for designers who want to collect visual graphics within a notebook. You can even control the numbers of columns you want to show in the grid.
 
