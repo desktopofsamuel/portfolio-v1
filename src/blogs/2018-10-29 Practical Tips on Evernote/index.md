@@ -27,13 +27,13 @@ With the brand revamp last month and foreseeable major app revamp upcoming. Letâ
 
 Templates should have been on Evernote since it was ever released. Before that, I always had a template tag with all the reusable documents. But it's better to be late than sorry. Templates might not be very useful for long-time pro users since I assume most of them developed their own workflow already. But it is always nice to check out how do other people work, it would be even better if people can submit and share their own template. At least you can do it in your notebook, by clicking "Save as Template" in context menu next to the title. 
 
-## **Tables has been revamped**
+## **Tables have been revamped**
 
 ![](./Tables.png)
 
 My impression of the old Evernote tables was always lack of style and function. It was a pure html table without much formatting options.
 
-New table features revamped a year ago, but I have discovered only recently. Supporting drag-and-drop rows and intuitive controls allow my notes become more systematic. Usually, I use table as a header template for document type, like meeting notes and agendas. It is much easier than writing on a completely blank note. 
+New table features revamped a year ago, but I have discovered only recently. Supporting drag-and-drop rows and intuitive controls allow my notes become more systematic. Usually, I use tables as a header template for document type, like meeting notes and agendas. It is much easier than writing on a completely blank note. 
 
 ## **To-do List + Saved Search with Filters**
 
@@ -63,4 +63,4 @@ It is weird that Evernote has actually built a Masonry Grid View (It's called Th
 
 ## Last Words
 
-In the meantime, I'm also experimenting other note-taking tools especially the idea of building a personal knowledge base has become more popular in this field. Suggest your favourite Evernote hack / tips and share with me on [Twitter](http://twitter.com/desktopofsamuel) / [Medium](http://medium.com/@desktopofsamuel)
+In the meantime, I'm also experimenting with other note-taking tools. Since I'm especially obsessed with the idea of building a personal knowledge base. Suggest your favourite Evernote hack / tips and share them with me on [Twitter](http://twitter.com/desktopofsamuel) / [Medium](http://medium.com/@desktopofsamuel)
