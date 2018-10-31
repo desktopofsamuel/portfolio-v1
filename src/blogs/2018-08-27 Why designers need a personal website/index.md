@@ -5,6 +5,7 @@ date: "2018-08-26"
 title: "Why designers need a personal website?"
 tags: ["Work In Progress", "Design", "Gatsby", ]
 intro: "I'm summing up the reasons why a designer should build a custom site using Gatsby.JS." 
+image: "./why-designer.jpg"
 
 ---
 

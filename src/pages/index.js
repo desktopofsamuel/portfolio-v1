@@ -277,7 +277,10 @@ query Index {
       }
     }
   }
-  BlogIndex: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 1) {
+  BlogIndex: allMarkdownRemark(
+    sort: {order: DESC, fields: [frontmatter___date]}, limit: 1,
+    filter: {fileAbsolutePath: {regex: "\/blogs/"}})
+     {
     edges {
       node {
         id

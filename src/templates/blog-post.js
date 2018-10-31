@@ -30,7 +30,7 @@ export default function Template({data, pathContext}) {
                 <h1>{post.frontmatter.title}</h1>
                 <hr />
 
-                {/*<Img className="ContentWide" sizes={post.frontmatter.image.childImageSharp.sizes} />*/}
+                <Img className="ContentWide Bottom-S" sizes={post.frontmatter.image.childImageSharp.sizes} />
                 
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
                 <div className="BlogNavigate">

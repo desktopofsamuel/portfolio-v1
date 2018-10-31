@@ -23,6 +23,7 @@ It was a challenging yet rewarding period in the last two months. I have set up 
 - Enhanced scroll animation using [React Anchor Link Smooth Scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll) when you click Get In Touch on landing page
 - Enhanced blog reading experience especially with code block. Code will highlight according to the language using [Gatsby-Remark-PrismicJS](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/)
 - Enhanced footer design by replacing the author component, also added social media links and contact access.
+- All blog posts have a feature image now on the top
 - Fixed related post referenced to [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter/blob/master/gatsby-node.js) node.js
 - Fixed code block overflow problem in blog
 - Fixed Footer Width Problem

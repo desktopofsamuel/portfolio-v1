@@ -8,9 +8,9 @@ title: "Essential Color Tools to Step Up Your Design Game"
 
 tags: ["Design", "Productivity", "Color", ]
 
----
+image: "./1.jpg"
 
-![Photo by Andras Vas on Unsplash](./1.jpg)
+---
 
 Color is the combination of science and art, a simple color change could have drastic effect on the emotion or perception of the viewer. Being a UI/UX designer, mastering the color theory and its application truly can step up your design game.
 

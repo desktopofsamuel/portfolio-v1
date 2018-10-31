@@ -3,6 +3,7 @@ path: "/design-with-real-data"
 date: "2018-04-24"
 title: "Why real data & content matter"
 tags: ["prototype", "design"]
+image: "./main.jpg"
 ---
 
 We have a lot of assumptions in the process of creating wireframes and mockups for websites & apps. As wireframes & mock-ups are not dynamic, it is easy to aware various scenarios when dummy content or placeholders are used.
