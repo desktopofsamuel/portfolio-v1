@@ -1,6 +1,6 @@
 ---
 
-path: "/scrap1"
+path: "/scrap2"
 
 date: "2018-10-31"
 

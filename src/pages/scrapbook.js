@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
 import { Zoom, Slide, Fade } from 'react-reveal'
+import Masonry from 'react-masonry-component';
 
 
 const ScrapbookPage = ({data}) => (
@@ -11,7 +13,7 @@ const ScrapbookPage = ({data}) => (
 
         <Seo data="" />
         <Helmet title={`Scrapbook | Desktop of Samuel`} meta={[
-      { property: 'og:url', content: 'http://desktopofsamuel.com/blog', },
+      { property: 'og:url', content: 'http://desktopofsamuel.com/scrapbook', },
       ]}> > </Helmet>
         
         <div className="BlogIndex">
@@ -24,13 +26,15 @@ const ScrapbookPage = ({data}) => (
         
                     </div>
                 </div>
+                <Masonry>
                 {data.allMarkdownRemark.edges.map(post => (
                     <Zoom><div className="Column Grid-S" key={ post.node.id }>
                         <div className="LeftColumn Lower">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
                         <div className="RightColumn Blog">
-                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                            <Img sizes={post.node.frontmatter.image.childImageSharp.sizes}></Img>
+                            <h2><span className="highlight">{post.node.frontmatter.title}</span></h2>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />
@@ -38,6 +42,7 @@ const ScrapbookPage = ({data}) => (
                     </div></Zoom>
                     
                 ))}
+                </Masonry>
             </div>
         </div>
     </div>
@@ -63,6 +68,23 @@ query ScrapbookIndex {
                 title
                 date(formatString: "MMM DD, YYYY", locale: "en")
                 tags
+                image {
+                    publicURL
+                    size
+                    childImageSharp {
+                        sizes(maxWidth: 1140) {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                            originalImg
+                            originalName
+                        }
+                    }
+                }
           }
         }
       }
