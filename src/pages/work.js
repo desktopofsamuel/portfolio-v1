@@ -46,9 +46,20 @@ const ProjectSubtitle = styled.h5`
     }
 ` 
 
-const ProjectInfo = styled.small`
+const ProjectInfo = styled.div`
+  small {
     color: #fff;
     opacity: 0.7;
+  }
+`
+
+const ProjectCategory = styled.small`
+    .category:not(:last-child) { 
+      margin-right: 8px;
+    }
+`
+
+const ProjectDate = styled.small`
 `
 
 const ProjectIntro = styled.p`
@@ -87,7 +98,9 @@ const WorkPage = ({ data }) => (
                     
                     <ProjectTitle>{post.node.frontmatter.title}</ProjectTitle>
                     <ProjectSubtitle>{post.node.frontmatter.subtitle}</ProjectSubtitle>
-                    <ProjectInfo>{post.node.frontmatter.category} | {post.node.frontmatter.date}</ProjectInfo>
+                    <ProjectInfo><ProjectCategory>{post.node.frontmatter.category.map((category, index) => {
+                      return (<span key={index} className="category">{category}</span>)})
+                    }</ProjectCategory><ProjectDate> | {post.node.frontmatter.date}</ProjectDate></ProjectInfo>
                     
                   </div>
                   </ProjectTitleWrapper>

@@ -4,11 +4,18 @@ import Img from 'gatsby-image'
 import Seo from '../components/seo';
 import MajorButton from '../components/majorbutton-a';
 import kebabCase from 'lodash/kebabCase';
+import styled from 'styled-components'
 
 export default function Template({data, pathContext}) {
     const post = data.markdownRemark
     const {next, prev} = pathContext;
     const CategoryURL = "/category/" + data.markdownRemark.frontmatter.category ;
+
+    const ProjectCategory = styled.div`
+    .category small {
+        margin-right: 8px;
+    }
+    `
 
     return(
         <div className="Container">
@@ -16,12 +23,13 @@ export default function Template({data, pathContext}) {
             <Seo data={post} />
             <div className="Padding-S">
                 <div className="Content">
+                <ProjectCategory>
                 {post.frontmatter.category.map(((category, index) => {
                     return (
-                        <span key={index}><Link to={`/categories/${kebabCase(category)}`}><small>{category}</small></Link></span>
+                        <span className="category" key={index}><Link to={`/categories/${kebabCase(category)}`}><small>{category}</small></Link></span>
                     )
                 })
-                )}
+                )}</ProjectCategory>
                 <h1>{post.frontmatter.title}</h1>
                 <small>{post.frontmatter.date}</small>
                 <div className="BlogContent" dangerouslySetInnerHTML={{ __html: post.html }}></div>
