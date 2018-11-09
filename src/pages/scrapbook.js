@@ -28,14 +28,14 @@ const ScrapbookPage = ({data}) => (
                 </div>
                 <Masonry>
                 {data.allMarkdownRemark.edges.map(post => (
-                    <Zoom><div className="" key={ post.node.id }>
+                    <div><Zoom><div className="" key={ post.node.id }>
                             <small>{post.node.frontmatter.date} </small>
                             <Img sizes={post.node.frontmatter.image.childImageSharp.sizes}></Img>
                             <h2><span className="highlight">{post.node.frontmatter.title}</span></h2>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />
-                    </div></Zoom>
+                    </div></Zoom></div>
                     
                 ))}
                 </Masonry>
