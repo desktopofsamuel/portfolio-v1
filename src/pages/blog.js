@@ -52,7 +52,7 @@ query BlogIndex {
     }
     allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] },
-        filter: {fileAbsolutePath: {regex: "\/blogs/"}},
+        filter: {fileAbsolutePath: {regex: "\/blogs/"}, frontmatter: { posttype: {ne: "scrap" }}},
     ) {
       edges {
         node {

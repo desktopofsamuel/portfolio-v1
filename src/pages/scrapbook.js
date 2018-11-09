@@ -28,17 +28,13 @@ const ScrapbookPage = ({data}) => (
                 </div>
                 <Masonry>
                 {data.allMarkdownRemark.edges.map(post => (
-                    <Zoom><div className="Column Grid-S" key={ post.node.id }>
-                        <div className="LeftColumn Lower">
+                    <Zoom><div className="" key={ post.node.id }>
                             <small>{post.node.frontmatter.date} </small>
-                        </div>
-                        <div className="RightColumn Blog">
                             <Img sizes={post.node.frontmatter.image.childImageSharp.sizes}></Img>
                             <h2><span className="highlight">{post.node.frontmatter.title}</span></h2>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />
-                        </div>
                     </div></Zoom>
                     
                 ))}
@@ -73,7 +69,6 @@ query ScrapbookIndex {
                     size
                     childImageSharp {
                         sizes(maxWidth: 1140) {
-                            base64
                             aspectRatio
                             src
                             srcSet
