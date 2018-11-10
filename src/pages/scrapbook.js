@@ -7,6 +7,10 @@ import Img from 'gatsby-image';
 import { Zoom, Slide, Fade } from 'react-reveal'
 import Masonry from 'react-masonry-component';
 
+var masonryOptions = {
+    transitionDuration: '0.1s',
+    columnWidth: 500,
+};
 
 const ScrapbookPage = ({data}) => (
     <div>
@@ -26,16 +30,16 @@ const ScrapbookPage = ({data}) => (
         
                     </div>
                 </div>
-                <Masonry>
+                <Masonry options={masonryOptions} >
                 {data.allMarkdownRemark.edges.map(post => (
-                    <div><Zoom><div className="" key={ post.node.id }>
+                    <div className="scrap-post" key={ post.node.id }>
                             <small>{post.node.frontmatter.date} </small>
-                            <Img sizes={post.node.frontmatter.image.childImageSharp.sizes}></Img>
+                            <Img width="250px" sizes={post.node.frontmatter.image.childImageSharp.sizes}></Img>
                             <h2><span className="highlight">{post.node.frontmatter.title}</span></h2>
                             <p>{post.node.excerpt}</p>
                             <br />
                             <hr />
-                    </div></Zoom></div>
+                    </div>
                     
                 ))}
                 </Masonry>
