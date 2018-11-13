@@ -6,7 +6,7 @@ date: "2018-10-29"
 
 title: "Practical Tips on Evernote"
 
-tags: ["Evernote", "Productivity" ]
+tags: ["Evernote", "Productivity", "App" ]
 
 image: "./Evernote.png"
 

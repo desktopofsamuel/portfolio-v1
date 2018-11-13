@@ -36,12 +36,16 @@
     "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
+    "react-items-carousel": "^2.2.1",
     "react-masonry-component": "^6.2.1",
     "react-masonry-infinite": "^1.2.2",
+    "react-responsive-carousel": "^3.1.43",
     "react-reveal": "^1.2.2",
     "react-scroll-into-view": "^1.3.2",
     "react-simple-maps": "^0.12.1",
+    "react-slick": "^0.23.2",
     "resolve-url-loader": "^2.3.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^3.4.5"
   },
   "keywords": [

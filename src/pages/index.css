@@ -553,10 +553,22 @@ font-weight: 800;
     padding-bottom: 25px;
 }
 
+.Small-Blog-List {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5%;
+    grid-gap: 36px;
 
+}
+
+.Small-Blog {
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-right: 20px;
+}
 
 .RightColumn h3 {
-    color: #3284DC;
+    color: rgb(4, 6, 7);
 }
 
 hr {

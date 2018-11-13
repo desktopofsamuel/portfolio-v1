@@ -4,11 +4,11 @@ import HeroBlogLogo from '../images/HeroBlog.svg'
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import { Zoom, Slide, Fade } from 'react-reveal'
+import Img from "gatsby-image"
 
 
 const BlogPage = ({data}) => (
-    <div>
-
+<div>
         <Seo data="" />
         <Helmet title={`Blog | Desktop of Samuel`} meta={[
       { property: 'og:url', content: 'http://desktopofsamuel.com/blog', },
@@ -24,7 +24,35 @@ const BlogPage = ({data}) => (
         
                     </div>
                 </div>
-                {data.allMarkdownRemark.edges.map(post => (
+                {data.BlogThree.edges.map(post => (
+                    <Zoom><div className="Column Grid-S" key={ post.node.id }>
+                        <div className="LeftColumn Lower">
+                            <small>{post.node.frontmatter.date} </small>
+                        </div>
+                        <div className="RightColumn Blog">
+                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
+                            <p>{post.node.excerpt}</p>
+                            <br />
+                            <hr />
+                        </div>
+                    </div></Zoom>
+                    
+                ))}
+                <h6>App in the Air | Best Software Review </h6>
+                <div className="Small-Blog-List">
+                
+                {data.AppTag.edges.map(post => (
+                   <div className="Small-Blog" key={ post.node.id }>
+                            <Img className="Bottom-S" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                            <small>{post.node.frontmatter.date} </small>
+                            <Link to={post.node.frontmatter.path}><h3><span className="highlight">{post.node.frontmatter.title}</span></h3></Link>
+                            <br />
+                    </div>
+                   
+                ))}
+                <div><Link to="/tags/app"><h5>See More</h5></Link></div>
+                </div>
+                {data.BlogAfter.edges.map(post => (
                     <Zoom><div className="Column Grid-S" key={ post.node.id }>
                         <div className="LeftColumn Lower">
                             <small>{post.node.frontmatter.date} </small>
@@ -45,14 +73,65 @@ const BlogPage = ({data}) => (
 
 export const pageQuery = graphql`
 query BlogIndex {
-    site {
+    Site: site {
         siteMetadata {
         title
         }
     }
-    allMarkdownRemark (
+    BlogThree: allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: {fileAbsolutePath: {regex: "\/blogs/"}, frontmatter: { posttype: {ne: "scrap" }}},
+        limit: 3,
+    ) {
+      edges {
+        node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+                path
+                title
+                date(formatString: "MMM DD, YYYY", locale: "en")
+                tags
+          }
+        }
+      }
+    }
+    AppTag: allMarkdownRemark (
+        sort: { order: DESC, fields: [frontmatter___date] },
+        filter: { frontmatter: { tags: { in: "App" } }},
+        limit: 2,
+    ) {
+      edges {
+        node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+                path
+                title
+                date(formatString: "MMM DD, YYYY", locale: "en")
+                tags
+                image {
+                    childImageSharp {
+                      sizes {
+                        aspectRatio
+                        src
+                        srcSet
+                        srcWebp
+                        srcSetWebp
+                        sizes
+                        originalImg
+                        originalName
+                      }
+                    }
+                  }
+          }
+        }
+      }
+    }
+    BlogAfter: allMarkdownRemark (
+        sort: { order: DESC, fields: [frontmatter___date] },
+        filter: {fileAbsolutePath: {regex: "\/blogs/"}, frontmatter: { posttype: {ne: "scrap" }}},
+        skip: 3,
     ) {
       edges {
         node {
@@ -68,7 +147,6 @@ query BlogIndex {
       }
     }
   }
-
 `
 
 export default BlogPage
