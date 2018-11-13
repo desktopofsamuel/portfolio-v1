@@ -38,7 +38,7 @@ const BlogPage = ({data}) => (
                     </div></Zoom>
                     
                 ))}
-                <h6>Let's Talk About App </h6>
+                <h6>Let's Talk About Apps </h6>
                 <div className="Small-Blog-List">
                 
                 {data.AppTag.edges.map(post => (
