@@ -555,9 +555,9 @@ font-weight: 800;
 
 .Small-Blog-List {
     display: grid;
-    grid-template-columns: 1fr 1fr 5%;
+    grid-template-columns: 1fr 1fr 10%;
     grid-gap: 36px;
-
+    align-items: center;
 }
 
 .Small-Blog {
@@ -565,6 +565,28 @@ font-weight: 800;
     height: auto;
     padding: 0;
     padding-right: 20px;
+}
+
+.Small-Blog h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.See-More {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+    height: 100px;
+}
+
+.See-More:hover {
+    background-color: #f7f7f7;
+}
+
+.See-More h5 {
+    line-height: 20px;
+    margin: 0;
 }
 
 .RightColumn h3 {
@@ -1043,6 +1065,10 @@ margin-right: 5px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .Small-Blog-List {
+        grid-gap: 8px;
     }
 }
 

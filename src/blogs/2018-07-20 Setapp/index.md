@@ -3,7 +3,7 @@ path: "/setapp"
 date: "2018-07-20"
 title: "Do Subscription Models Work with Apps?"
 tags: ["Subscription", "App", "Technology"]
-image: "./main.jpg"
+image: "./Does-subscription.png"
 ---
 
 ##Thoughts on Setapp — subscription-based collection for Mac apps 

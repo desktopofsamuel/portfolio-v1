@@ -38,19 +38,19 @@ const BlogPage = ({data}) => (
                     </div></Zoom>
                     
                 ))}
-                <h6>App in the Air | Best Software Review </h6>
+                <h6>Let's Talk About App </h6>
                 <div className="Small-Blog-List">
                 
                 {data.AppTag.edges.map(post => (
-                   <div className="Small-Blog" key={ post.node.id }>
-                            <Img className="Bottom-S" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                    <Zoom><Link to={post.node.frontmatter.path}><div className="Small-Blog" key={ post.node.id }>
+                            <Img className="Bottom-XS" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
                             <small>{post.node.frontmatter.date} </small>
-                            <Link to={post.node.frontmatter.path}><h3><span className="highlight">{post.node.frontmatter.title}</span></h3></Link>
+                            <h4><span className="highlight">{post.node.frontmatter.title}</span></h4>
                             <br />
                     </div>
-                   
+                    </Link></Zoom>
                 ))}
-                <div><Link to="/tags/app"><h5>See More</h5></Link></div>
+                <div className="See-More"><Link to="/tags/app"><h5>See <br/>More</h5></Link></div>
                 </div>
                 {data.BlogAfter.edges.map(post => (
                     <Zoom><div className="Column Grid-S" key={ post.node.id }>
