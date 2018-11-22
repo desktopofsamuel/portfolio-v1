@@ -4,9 +4,9 @@ path: "/undraw"
 
 date: "2018-11-09"
 
-title: "test"
+title: "Undraw"
 
-tags: ["Work In Progress", "gatsby"]
+tags: ["App"]
 
 image: "./undrawjpg.jpg"
 

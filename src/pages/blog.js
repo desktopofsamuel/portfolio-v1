@@ -43,7 +43,7 @@ const BlogPage = ({data}) => (
                 
                 {data.AppTag.edges.map(post => (
                     <Zoom><Link to={post.node.frontmatter.path}><div className="Small-Blog" key={ post.node.id }>
-                            <Img className="Bottom-XS" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
+                            <Img className="See-More-Photo Bottom-XS" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
                             <small>{post.node.frontmatter.date} </small>
                             <h4><span className="highlight">{post.node.frontmatter.title}</span></h4>
                             <br />
@@ -86,7 +86,7 @@ query BlogIndex {
       edges {
         node {
             id
-            excerpt(pruneLength: 250)
+            excerpt(pruneLength: 150)
             frontmatter {
                 path
                 title
@@ -99,12 +99,12 @@ query BlogIndex {
     AppTag: allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: { frontmatter: { tags: { in: "App" } }},
-        limit: 2,
+        limit: 3,
     ) {
       edges {
         node {
             id
-            excerpt(pruneLength: 250)
+            excerpt(pruneLength: 150)
             frontmatter {
                 path
                 title
@@ -136,7 +136,7 @@ query BlogIndex {
       edges {
         node {
             id
-            excerpt(pruneLength: 250)
+            excerpt(pruneLength: 150)
             frontmatter {
                 path
                 title

@@ -555,9 +555,15 @@ font-weight: 800;
 
 .Small-Blog-List {
     display: grid;
-    grid-template-columns: 1fr 1fr 10%;
-    grid-gap: 36px;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 10%;
+    grid-gap: 16px;
+    align-items: start;
+    overflow: auto;
+    
+}
+
+.Small-Blog-List::-webkit-scrollbar {
+    display: none;
 }
 
 .Small-Blog {
@@ -565,6 +571,8 @@ font-weight: 800;
     height: auto;
     padding: 0;
     padding-right: 20px;
+    max-width: 300px;
+    
 }
 
 .Small-Blog h4 {
@@ -582,6 +590,10 @@ font-weight: 800;
 
 .See-More:hover {
     background-color: #f7f7f7;
+}
+
+.See-More-Photo {
+    height: 150px;
 }
 
 .See-More h5 {
@@ -1069,6 +1081,11 @@ margin-right: 5px;
 
     .Small-Blog-List {
         grid-gap: 8px;
+        grid-template-columns: 1fr 1fr 1fr auto;
+    }
+
+    .Small-Blog {
+        width: 200px;
     }
 }
 
