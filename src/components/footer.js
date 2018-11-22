@@ -22,7 +22,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.025);
 `
 
 const Propic = styled.div`
-background-image: url("/static/Profile.jpg");
+background-image: url("/static/Profile.webp");
 background-position: left bottom;
 background-size: cover;
 background-repeat: no-repeat;
@@ -31,7 +31,7 @@ background-repeat: no-repeat;
 const NametagWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr
+    grid-auto-rows: 1fr;
 
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
