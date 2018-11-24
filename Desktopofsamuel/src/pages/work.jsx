@@ -11,6 +11,7 @@ class Work extends React.Component {
         return (
         <Layout>
             <div className="index-container">
+            <h1>Work</h1>
             <BlogListing postEdges={postEdges}></BlogListing>
             </div>
         </Layout>
