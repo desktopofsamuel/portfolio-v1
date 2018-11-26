@@ -5,13 +5,20 @@ import Layout from "../layout";
 import BlogListing from "../components/BlogListing/BlogListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import styled from 'styled-components'
+import NavButton from "../components/Navbutton/NavButton";
+import PhotoIcon from "../../static/photography.svg";
 
 class Index extends React.Component {
+  
+
   render() {
     const postEdges = this.props.data.Main.edges;
+
     return (
       <Layout>
         <div className="index-container">
+          <NavButton title="Hello" icon={PhotoIcon} to="/blog"></NavButton>
           <Helmet title={config.siteTitle} />
           <SEO />
           <BlogListing postEdges={postEdges} />
