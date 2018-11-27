@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
       <Link exact to="/" activeClassName="active"><Button><Icon src={ProfileIcon} /><NavLink style={{color: "#95973B",}}>Home</NavLink></Button></Link>
       <Link to="/work" activeClassName="active"><Button><Icon src={WorkIcon} /><NavLink style={{ color: "#49CB74" }}>Work</NavLink></Button></Link>
       <Link to="/blog" activeClassName="active"><Button><Icon src={BlogIcon} /><NavLink style={{ color: "#FE8170" }}>Blog</NavLink></Button></Link>
-      <a href="http://pins.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#6469DA" }}>Pin</NavLink></Button></a>
+      <a href="http://pins.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#6469DA" }}>Pins</NavLink></Button></a>
       </div>
       {/* <div className="NavBarRight">
       <div className="NavBarIcon">
