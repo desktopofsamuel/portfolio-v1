@@ -5,7 +5,7 @@ import { FaTwitter, FaDribbble, FaLinkedin } from 'react-icons/lib/fa';
 import ProfileIcon from '../images/HeroProfile.svg'
 import BlogIcon from '../images/HeroBlog.svg'
 import WorkIcon from '../images/HeroProject.svg'
-import BookmarkIcon from '../images/HeroContact.svg'
+import BookmarkIcon from '../images/HeroPin.svg'
 import styled from 'styled-components'
 
 const Button = styled.div`
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
       <Link exact to="/" activeClassName="active"><Button><Icon src={ProfileIcon} /><NavLink style={{color: "#95973B",}}>Home</NavLink></Button></Link>
       <Link to="/work" activeClassName="active"><Button><Icon src={WorkIcon} /><NavLink style={{ color: "#49CB74" }}>Work</NavLink></Button></Link>
       <Link to="/blog" activeClassName="active"><Button><Icon src={BlogIcon} /><NavLink style={{ color: "#FE8170" }}>Blog</NavLink></Button></Link>
-      <a href="http://bookmark.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#3284DC" }}>Bookmark</NavLink></Button></a>
+      <a href="http://pins.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#6469DA" }}>Pin</NavLink></Button></a>
       
       </div>
       {/* <div className="NavBarRight">
