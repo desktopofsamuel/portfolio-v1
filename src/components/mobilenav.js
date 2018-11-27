@@ -89,7 +89,7 @@ render () {
         <Link className="clean" to="/blog"><Button><img src={HeroBlogLogo} width="50px"></img><p className="clean">Blog</p></Button></Link>
         <Link className="clean" to="/blog"><Button><img src={HeroProjectLogo} width="50px"></img><p className="clean">Work</p></Button></Link>
         <Link className="clean" to="/blog"><Button><img src={HeroProfileLogo} width="50px"></img><p className="clean">Profile</p></Button></Link>
-        <Link className="clean" to="/blog"><Button><img src={HeroProfileLogo} width="50px"></img><p className="clean">Social</p></Button></Link>
+        <a className="clean" href="https://bookmark.desktopofsamuel.com"><Button><img src={HeroProfileLogo} width="50px"></img><p className="clean">Bookmark</p></Button></a>
         </Grid>
 
     </Section>

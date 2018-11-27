@@ -116,7 +116,7 @@ class NavBar extends Component {
           <Link className="borderright bordertop" to="/"><Button><NavLogo src={HeroProfileLogo}></NavLogo><p className="clean">Profile</p></Button></Link>
           <Link className="bordertop" to="/work"><Button><NavLogo src={HeroProjectLogo}></NavLogo><p className="clean">Work</p></Button></Link>
           <Link className="borderright" to="/blog"><Button><NavLogo src={HeroBlogLogo}></NavLogo><p className="clean">Blog</p></Button></Link>
-          <AnchorLink className="" href="#footer"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Social</p></Button></AnchorLink>
+          <a className="" href="https://bookmark.desktopofsamuel.com"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Bookmark</p></Button></a>
           </Grid>
         </Menu>
         
