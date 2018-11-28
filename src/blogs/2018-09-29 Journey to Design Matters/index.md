@@ -14,8 +14,6 @@ intro: "Here I come, Denamrk. My journey to Copenhagen, participating Design Mat
 
 ---
 
-![](./IMG_20180927_145719.jpg)
-
 It was a truly enlightening trip to Denmark, attending Design Matters 2018 in Copenhagen (Sep 26 -27, 2018). Not only did the talks and workshops given by design practitioners across the industry are illuminating, but it had also made me realized to take a step back to reflect on the whole workflow of design process.
 
 ##Design for feelings

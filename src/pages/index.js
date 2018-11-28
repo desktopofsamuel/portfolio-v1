@@ -26,7 +26,7 @@ h1:first-child {
 }
 
 h1:last-child {
-  color: #625E6B;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 700px) {

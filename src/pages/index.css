@@ -90,10 +90,11 @@
 }
 
 .HeroStyle h1 {
-    font-weight: 600;
-    letter-spacing: -0.8px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
     font-size: 64px;
     line-height: 1.25;
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .TextContainer {
@@ -971,6 +972,11 @@ margin-right: 5px;
 
 }
 
+.Category {
+    color: grey;
+    margin-right: 5px;
+}
+
 @media (max-width: 700px) {
 
     .HeroStyle h1 {
@@ -1013,7 +1019,7 @@ margin-right: 5px;
         justify-content: center;
 
     }
-
+  
     .clean {
         margin: 0;
         padding: 0;
