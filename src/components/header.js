@@ -6,6 +6,7 @@ import ProfileIcon from '../images/HeroProfile.svg'
 import BlogIcon from '../images/HeroBlog.svg'
 import WorkIcon from '../images/HeroProject.svg'
 import BookmarkIcon from '../images/HeroPin.svg'
+import PhotoIcon from '../images/HeroPhotography.svg'
 import styled from 'styled-components'
 
 const Button = styled.div`
@@ -14,7 +15,7 @@ const Button = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 2em;
+  margin-right: 10px;
 `
 
 const Icon = styled.img`
@@ -41,7 +42,9 @@ const Header = ({ siteTitle }) => (
       <Link exact to="/" activeClassName="active"><Button><Icon src={ProfileIcon} /><NavLink style={{color: "#95973B",}}>Home</NavLink></Button></Link>
       <Link to="/work" activeClassName="active"><Button><Icon src={WorkIcon} /><NavLink style={{ color: "#49CB74" }}>Work</NavLink></Button></Link>
       <Link to="/blog" activeClassName="active"><Button><Icon src={BlogIcon} /><NavLink style={{ color: "#FE8170" }}>Blog</NavLink></Button></Link>
-      <a href="http://pins.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#6469DA" }}>Pins</NavLink></Button></a>
+      <a href="http://photo.desktopofsamuel.com"><Button><Icon src={PhotoIcon} /><NavLink style={{ color: "#3284DC" }}>Aperture</NavLink></Button></a>
+      <a href="http://pin.desktopofsamuel.com"><Button><Icon src={BookmarkIcon} /><NavLink style={{ color: "#6469DA" }}>Pin</NavLink></Button></a>
+      
       </div>
       {/* <div className="NavBarRight">
       <div className="NavBarIcon">

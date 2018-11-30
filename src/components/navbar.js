@@ -8,6 +8,8 @@ import HeroProjectLogo from '../images/HeroProject.svg'
 import HeroProfileLogo from '../images/HeroProfile.svg'
 import HeroContactLogo from '../images/HeroContact.svg'
 import HeroBlogLogo from '../images/HeroBlog.svg'
+import HeroPinLogo from '../images/HeroPin.svg'
+import HeroPhotoLogo from '../images/HeroPhotography.svg'
 import './hamburgers.css'
 
 const Wrapper = styled.section`
@@ -116,7 +118,10 @@ class NavBar extends Component {
           <Link className="borderright bordertop" to="/"><Button><NavLogo src={HeroProfileLogo}></NavLogo><p className="clean">Profile</p></Button></Link>
           <Link className="bordertop" to="/work"><Button><NavLogo src={HeroProjectLogo}></NavLogo><p className="clean">Work</p></Button></Link>
           <Link className="borderright" to="/blog"><Button><NavLogo src={HeroBlogLogo}></NavLogo><p className="clean">Blog</p></Button></Link>
-          <a className="" href="https://bookmark.desktopofsamuel.com"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Bookmark</p></Button></a>
+          <a className="" href="https://photo.desktopofsamuel.com"><Button><NavLogo src={HeroPhotoLogo}></NavLogo><p className="clean">Aperture</p></Button></a>
+          <a className="" href="https://pin.desktopofsamuel.com"><Button><NavLogo src={HeroPinLogo}></NavLogo><p className="clean">Pin</p></Button></a>
+          <AnchorLink className="borderright" to="/#anchor"><Button><NavLogo src={HeroContactLogo}></NavLogo><p className="clean">Contact</p></Button></AnchorLink>
+
           </Grid>
         </Menu>
         

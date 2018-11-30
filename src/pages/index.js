@@ -23,10 +23,11 @@ import Banner from '../components/banner'
 const HeroText = styled.div`
 h1:first-child {
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 h1:last-child {
-  color: #625E6B;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 700px) {
