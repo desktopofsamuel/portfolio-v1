@@ -8,7 +8,7 @@ title: "Lessons I learned from my personal project"
 
 tags: ["Work In Progress"]
 
-image: "./undrawjpg.jpg"
+image: "./Pin.png"
 
 
 ---
