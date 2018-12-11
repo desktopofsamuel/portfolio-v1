@@ -2,9 +2,9 @@
 
 path: "/lessons-learned-from-personal-project"
 
-date: "2018-12-03"
+date: "2018-12-11"
 
-title: "Lessons I learned from my personal project"
+title: "Lessons learned from my personal project"
 
 tags: ["Work In Progress"]
 
@@ -25,6 +25,8 @@ It's called Today Dojo, aiming to provide daily resources for designers and crea
 
 I have pivoted 2 times and then rewrote the whole site for once. The initial idea was to build a browser extension that delivers daily resources to users' new tab. But the idea has scaled down to a website first, since the content is all that matters.
 
+![](./Dojo-Webflow.png)
+
 So I used Webflow to experiment the whole project with its own CMS and hosting. Webflow excels at building launch-ready websites instead of static mock-ups. Its customised CMS allows me to set up the database with rich media. Photos, text, link and date, reference entries (tags and categories) can be previewed instantly.
 
 ###The sooner I kickstart operation, sooner I realise real problems.
@@ -43,11 +45,15 @@ At the same time, I'm also finding myself desperately need more time and sources
 
 So after two months of part-time running the site, I have decided to rollback to a smaller scale. Here are the main reasons:
 
-1. You'll see there's a cost of using a code-free solution, Webflow's CMS hosting plan cost USD $16 per month alone. If you have more than 2 projects, you'll need to pay another USD $16 for pro membership subscription.
+1. You'll see there's a cost of using a code-free solution, [Webflow's CMS hosting plan](https://webflow.com/hosting) cost USD $16 per month alone. If you have more than 2 projects, you'll need to pay another USD $16 for pro membership subscription.
 2. I felt that running a separate social media accounts are time-consuming. Even I have already using aggregated social media tools like Buffer. Scheduling and reposting content from the site simply does not worth the effort.
 
 While I was launching a curatorial site, I was also learning to code my own portfolio. So when my portfolio has completed, I asked myself why not code my own project as well? So I rewrite the site using [Gatsby.JS](https://www.gatsbyjs.org/) Using Github and Netlify, I hook up with backend platform [Prismic.io](https://prismic.io) with Gatsby Prismic Starter. The cost then cut down to be free while I could still update site content separately.
 
+![](./Rebrand.png)
+
 Another thing I did is rebranding. I roll back the site into a subsidiary site under my personal domain. Renaming the site with a coherent name and navigation bar makes the experience more unified among my other sites. It also adds more regular content to my personal twitter account with human touch, rather than reposting content like a bot. 
 
-Now the site is renamed to be Pins, and available to browse right now at https://pin.desktopofsamuel.com. Check it out now! 
+![](./Pin-Home.png)
+
+Now the site is renamed to be Pins, and available to browse right now at [https://pin.desktopofsamuel.com](https://pin.desktopofsamuel.com). Old site is also available on [http://dojotoday.webflow.io/](http://dojotoday.webflow.io/). Check it out now! 
