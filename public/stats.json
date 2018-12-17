@@ -1,138 +1,150 @@
 {
   "assetsByChunkName": {
     "path---categories-ui-ux-design": [
-      "path---categories-ui-ux-design-0a255f23f4ee2be04667.js",
-      "path---categories-ui-ux-design-0a255f23f4ee2be04667.js.map"
+      "path---categories-ui-ux-design-d2124a93653650f31534.js",
+      "path---categories-ui-ux-design-d2124a93653650f31534.js.map"
     ],
     "path---roadnottaken": [
-      "path---roadnottaken-232ace337ba28cc91942.js",
-      "path---roadnottaken-232ace337ba28cc91942.js.map"
+      "path---roadnottaken-6c1dd667846b082b09dc.js",
+      "path---roadnottaken-6c1dd667846b082b09dc.js.map"
     ],
     "path---waterforfree": [
-      "path---waterforfree-bcd1430dbda0db81af82.js",
-      "path---waterforfree-bcd1430dbda0db81af82.js.map"
+      "path---waterforfree-0a3a8e893fd5637cf803.js",
+      "path---waterforfree-0a3a8e893fd5637cf803.js.map"
+    ],
+    "component---src-pages-scrapbook-js": [
+      "component---src-pages-scrapbook-js-dbd2ac988a5be97a5c14.js",
+      "component---src-pages-scrapbook-js-dbd2ac988a5be97a5c14.js.map"
     ],
     "component---src-pages-work-js": [
-      "component---src-pages-work-js-808941a6c5610abb8e3a.js",
-      "component---src-pages-work-js-808941a6c5610abb8e3a.js.map"
+      "component---src-pages-work-js-329c41051ed8a41266e2.js",
+      "component---src-pages-work-js-329c41051ed8a41266e2.js.map"
     ],
     "path---tags-design-matters-18": [
-      "path---tags-design-matters-18-e185fcaca56b7faa95d3.js",
-      "path---tags-design-matters-18-e185fcaca56b7faa95d3.js.map"
+      "path---tags-design-matters-18-71ac229be37fd5777e44.js",
+      "path---tags-design-matters-18-71ac229be37fd5777e44.js.map"
     ],
     "path---work": [
-      "path---work-f6cf579f88aa80f1091a.js",
-      "path---work-f6cf579f88aa80f1091a.js.map"
+      "path---work-dbf9894b1f5e68409f8e.js",
+      "path---work-dbf9894b1f5e68409f8e.js.map"
     ],
     "path---tags-productivity": [
-      "path---tags-productivity-73f2b89d76ea2e7b08a3.js",
-      "path---tags-productivity-73f2b89d76ea2e7b08a3.js.map"
+      "path---tags-productivity-fa83620bd251b3c49e74.js",
+      "path---tags-productivity-fa83620bd251b3c49e74.js.map"
     ],
     "path---essential-color-tool-2018": [
-      "path---essential-color-tool-2018-8888e788689642d42be2.js",
-      "path---essential-color-tool-2018-8888e788689642d42be2.js.map"
+      "path---essential-color-tool-2018-388073d7a3e576ea5a40.js",
+      "path---essential-color-tool-2018-388073d7a3e576ea5a40.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-f8afc72a14088cfda5df.js",
-      "component---src-pages-index-js-f8afc72a14088cfda5df.js.map"
+      "component---src-pages-index-js-809068b9ff16e0933ddc.js",
+      "component---src-pages-index-js-809068b9ff16e0933ddc.js.map"
+    ],
+    "path---tags-evernote": [
+      "path---tags-evernote-e94d14343281c9cb88a2.js",
+      "path---tags-evernote-e94d14343281c9cb88a2.js.map"
     ],
     "path---blog": [
-      "path---blog-fa0afc9d9835860341f9.js",
-      "path---blog-fa0afc9d9835860341f9.js.map"
+      "path---blog-04b1789c84ba9f63187b.js",
+      "path---blog-04b1789c84ba9f63187b.js.map"
     ],
     "path---": [
       "path----e02c6e6d826999166b7e.js",
       "path----e02c6e6d826999166b7e.js.map"
     ],
     "path---tags-design": [
-      "path---tags-design-6448612cb7f638da5af6.js",
-      "path---tags-design-6448612cb7f638da5af6.js.map"
+      "path---tags-design-db77ccf0123c4957e62c.js",
+      "path---tags-design-db77ccf0123c4957e62c.js.map"
     ],
     "component---src-templates-tag-page-js": [
-      "component---src-templates-tag-page-js-f39ee763de05feb9331e.js",
-      "component---src-templates-tag-page-js-f39ee763de05feb9331e.js.map"
+      "component---src-templates-tag-page-js-845ad4217efaf552cdec.js",
+      "component---src-templates-tag-page-js-845ad4217efaf552cdec.js.map"
     ],
     "path---lessonsfromikea": [
-      "path---lessonsfromikea-b3c07987b88710bbc92c.js",
-      "path---lessonsfromikea-b3c07987b88710bbc92c.js.map"
+      "path---lessonsfromikea-a8f5a9cba7fea3993f31.js",
+      "path---lessonsfromikea-a8f5a9cba7fea3993f31.js.map"
     ],
-    "path---project": [
-      "path---project-97670b0c4477308db975.js",
-      "path---project-97670b0c4477308db975.js.map"
+    "path---test": [
+      "path---test-39963fc44e29f67392c0.js",
+      "path---test-39963fc44e29f67392c0.js.map"
     ],
     "path---journey-to-design-matters": [
-      "path---journey-to-design-matters-13d27ecc9b1d488fdad3.js",
-      "path---journey-to-design-matters-13d27ecc9b1d488fdad3.js.map"
+      "path---journey-to-design-matters-2f4c4f466c94f97373f4.js",
+      "path---journey-to-design-matters-2f4c4f466c94f97373f4.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-3f74750ab7b3a38a0678.js",
-      "component---src-templates-blog-post-js-3f74750ab7b3a38a0678.js.map"
-    ],
-    "component---src-pages-project-js": [
-      "component---src-pages-project-js-d2143337a2facaf8cfca.js",
-      "component---src-pages-project-js-d2143337a2facaf8cfca.js.map"
+      "component---src-templates-blog-post-js-4d3ff0156fec57a24ef8.js",
+      "component---src-templates-blog-post-js-4d3ff0156fec57a24ef8.js.map"
     ],
     "path---why-designers-need-a-personal-website": [
-      "path---why-designers-need-a-personal-website-493bc386a7ce790932c3.js",
-      "path---why-designers-need-a-personal-website-493bc386a7ce790932c3.js.map"
+      "path---why-designers-need-a-personal-website-52938bbaca9c1c0fce6a.js",
+      "path---why-designers-need-a-personal-website-52938bbaca9c1c0fce6a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-f1df70856430339a7055.js",
-      "component---src-layouts-index-js-f1df70856430339a7055.js.map"
+      "component---src-layouts-index-js-418c14de9d2c04fdc450.js",
+      "component---src-layouts-index-js-418c14de9d2c04fdc450.js.map"
     ],
     "path---tags-subscription": [
       "path---tags-subscription-39ad547f48ac014468bc.js",
       "path---tags-subscription-39ad547f48ac014468bc.js.map"
     ],
     "path---tags-conference": [
-      "path---tags-conference-c2c1895124a4fdaeb7f1.js",
-      "path---tags-conference-c2c1895124a4fdaeb7f1.js.map"
+      "path---tags-conference-25bc4a6ac707e7c8caf4.js",
+      "path---tags-conference-25bc4a6ac707e7c8caf4.js.map"
     ],
     "component---src-templates-category-page-js": [
-      "component---src-templates-category-page-js-f9e2420dc95555221981.js",
-      "component---src-templates-category-page-js-f9e2420dc95555221981.js.map"
+      "component---src-templates-category-page-js-5dfea8920357e6d90292.js",
+      "component---src-templates-category-page-js-5dfea8920357e6d90292.js.map"
     ],
     "path---hyperair": [
-      "path---hyperair-22d137303f9881921542.js",
-      "path---hyperair-22d137303f9881921542.js.map"
+      "path---hyperair-dfa6c1a1049752cc42c6.js",
+      "path---hyperair-dfa6c1a1049752cc42c6.js.map"
     ],
     "path---pingspace": [
-      "path---pingspace-460c53133623f56b00d4.js",
-      "path---pingspace-460c53133623f56b00d4.js.map"
+      "path---pingspace-6ee9b01a8e3f72a75833.js",
+      "path---pingspace-6ee9b01a8e3f72a75833.js.map"
     ],
     "path---tags-gatsby": [
-      "path---tags-gatsby-9d65428ff2f51675161d.js",
-      "path---tags-gatsby-9d65428ff2f51675161d.js.map"
+      "path---tags-gatsby-53e4d4984978a19023c8.js",
+      "path---tags-gatsby-53e4d4984978a19023c8.js.map"
     ],
     "path---categories-brand-design": [
-      "path---categories-brand-design-f90fae5991587ab32043.js",
-      "path---categories-brand-design-f90fae5991587ab32043.js.map"
+      "path---categories-brand-design-19119d52e2fc5594add9.js",
+      "path---categories-brand-design-19119d52e2fc5594add9.js.map"
+    ],
+    "path---wholeearthcatalog": [
+      "path---wholeearthcatalog-2cafa00fef843fc96a24.js",
+      "path---wholeearthcatalog-2cafa00fef843fc96a24.js.map"
     ],
     "path---index": [
-      "path---index-f05f85e5c6e477c1d57a.js",
-      "path---index-f05f85e5c6e477c1d57a.js.map"
+      "path---index-deaba142906b784c6c21.js",
+      "path---index-deaba142906b784c6c21.js.map"
+    ],
+    "path---lessons-learned-from-personal-project": [
+      "path---lessons-learned-from-personal-project-2740dfe0db913fc43634.js",
+      "path---lessons-learned-from-personal-project-2740dfe0db913fc43634.js.map"
     ],
     "path---tags-technology": [
       "path---tags-technology-8dc2f28d26c0123cd9df.js",
       "path---tags-technology-8dc2f28d26c0123cd9df.js.map"
     ],
     "component---src-templates-project-post-js": [
-      "component---src-templates-project-post-js-4bf9e905f1ba5616e45e.js",
-      "component---src-templates-project-post-js-4bf9e905f1ba5616e45e.js.map"
+      "component---src-templates-project-post-js-de3b4a035d58dd133839.js",
+      "component---src-templates-project-post-js-de3b4a035d58dd133839.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-23c991c98c4b01616267.js",
-      "component---src-pages-404-js-23c991c98c4b01616267.js.map"
+      "component---src-pages-404-js-88de92b870306eed3fcd.js",
+      "component---src-pages-404-js-88de92b870306eed3fcd.js.map"
     ],
     "commons": [
-      "commons-51ba4f7fefa5fae45d5f.js",
+      "commons-c89c2f4fd69de1ed8059.js",
       "build-js-styles.css",
-      "commons-51ba4f7fefa5fae45d5f.js.map",
+      "commons-c89c2f4fd69de1ed8059.js.map",
       "build-js-styles.css.map"
     ],
     "path---ftc": [
-      "path---ftc-15b2ea43d86e59f1cc66.js",
-      "path---ftc-15b2ea43d86e59f1cc66.js.map"
+      "path---ftc-7c5cd276bb962c6b3220.js",
+      "path---ftc-7c5cd276bb962c6b3220.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -143,82 +155,98 @@
       "path---tags-prototype-0f46456fadaf2621c658.js.map"
     ],
     "path---tags-work-in-progress": [
-      "path---tags-work-in-progress-c1f205f1abef58d0e569.js",
-      "path---tags-work-in-progress-c1f205f1abef58d0e569.js.map"
+      "path---tags-work-in-progress-c0279d5841e569b3dbec.js",
+      "path---tags-work-in-progress-c0279d5841e569b3dbec.js.map"
     ],
     "path---setapp": [
-      "path---setapp-ead7d02b1967e96232e7.js",
-      "path---setapp-ead7d02b1967e96232e7.js.map"
+      "path---setapp-b49f4218458f906cde0e.js",
+      "path---setapp-b49f4218458f906cde0e.js.map"
     ],
     "path---tags-app": [
-      "path---tags-app-acd3e9aa3fbd21a89fbe.js",
-      "path---tags-app-acd3e9aa3fbd21a89fbe.js.map"
+      "path---tags-app-4386a2ef3b011d474f82.js",
+      "path---tags-app-4386a2ef3b011d474f82.js.map"
     ],
     "path---tags-ikea": [
-      "path---tags-ikea-4780a3e4665cfcef3598.js",
-      "path---tags-ikea-4780a3e4665cfcef3598.js.map"
+      "path---tags-ikea-583dd0a2b4914a4da7c3.js",
+      "path---tags-ikea-583dd0a2b4914a4da7c3.js.map"
     ],
     "path---tags-sweden": [
-      "path---tags-sweden-c8c0d4d4aa2bedf061f3.js",
-      "path---tags-sweden-c8c0d4d4aa2bedf061f3.js.map"
-    ],
-    "path---categories-ui-ux-design-brand-design": [
-      "path---categories-ui-ux-design-brand-design-997a22917fe30e7090ad.js",
-      "path---categories-ui-ux-design-brand-design-997a22917fe30e7090ad.js.map"
+      "path---tags-sweden-d6611cff2b0fece3a233.js",
+      "path---tags-sweden-d6611cff2b0fece3a233.js.map"
     ],
     "path---building-gatsby-with-multiple-post-type": [
-      "path---building-gatsby-with-multiple-post-type-148700888650aff13607.js",
-      "path---building-gatsby-with-multiple-post-type-148700888650aff13607.js.map"
+      "path---building-gatsby-with-multiple-post-type-cc112156739d498d658e.js",
+      "path---building-gatsby-with-multiple-post-type-cc112156739d498d658e.js.map"
     ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-37f24a833b4970d66e42.js",
-      "component---src-pages-blog-js-37f24a833b4970d66e42.js.map"
+      "component---src-pages-blog-js-a21dbc00e1ca40a4495f.js",
+      "component---src-pages-blog-js-a21dbc00e1ca40a4495f.js.map"
+    ],
+    "path---scrapbook": [
+      "path---scrapbook-58897dad4221467eb00f.js",
+      "path---scrapbook-58897dad4221467eb00f.js.map"
     ],
     "path---tags-localization": [
-      "path---tags-localization-bdf590a847e37efd5f71.js",
-      "path---tags-localization-bdf590a847e37efd5f71.js.map"
+      "path---tags-localization-75c06dfc70f83a09c0a9.js",
+      "path---tags-localization-75c06dfc70f83a09c0a9.js.map"
     ],
     "path---categories-documentary": [
       "path---categories-documentary-aa4e5fc6f09cf6190490.js",
       "path---categories-documentary-aa4e5fc6f09cf6190490.js.map"
     ],
     "app": [
-      "app-a6e544352da2e1002510.js",
+      "app-e0ea12dafae5c230def1.js",
       "build-js-styles.css",
-      "app-a6e544352da2e1002510.js.map",
+      "app-e0ea12dafae5c230def1.js.map",
       "build-js-styles.css.map"
     ],
+    "path---2018-oct-update": [
+      "path---2018-oct-update-5694577a5320e51b07ef.js",
+      "path---2018-oct-update-5694577a5320e51b07ef.js.map"
+    ],
+    "path---undraw": [
+      "path---undraw-ca1f624133870b097f18.js",
+      "path---undraw-ca1f624133870b097f18.js.map"
+    ],
     "path---tags-experience-design": [
-      "path---tags-experience-design-50c62f5aa79273ad883d.js",
-      "path---tags-experience-design-50c62f5aa79273ad883d.js.map"
+      "path---tags-experience-design-c8b6f1351d7b434eff94.js",
+      "path---tags-experience-design-c8b6f1351d7b434eff94.js.map"
     ],
     "component---src-layouts-404-index-js": [
-      "component---src-layouts-404-index-js-fb26dcf416757c9c3235.js",
-      "component---src-layouts-404-index-js-fb26dcf416757c9c3235.js.map"
+      "component---src-layouts-404-index-js-8d5199e0ca33fa46d2af.js",
+      "component---src-layouts-404-index-js-8d5199e0ca33fa46d2af.js.map"
+    ],
+    "path---practical-evernote-tips": [
+      "path---practical-evernote-tips-405bfd41422cc869dd1d.js",
+      "path---practical-evernote-tips-405bfd41422cc869dd1d.js.map"
     ],
     "path---tags-color": [
-      "path---tags-color-d49d93251c8b67ff58d6.js",
-      "path---tags-color-d49d93251c8b67ff58d6.js.map"
+      "path---tags-color-306e466595d9c1cb562e.js",
+      "path---tags-color-306e466595d9c1cb562e.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---design-with-real-data": [
-      "path---design-with-real-data-33118be454fac6cd7d77.js",
-      "path---design-with-real-data-33118be454fac6cd7d77.js.map"
+      "path---design-with-real-data-1755d20c22748fcd2899.js",
+      "path---design-with-real-data-1755d20c22748fcd2899.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-80c3f3d14f554d3324a9.js",
       "component---src-pages-about-js-80c3f3d14f554d3324a9.js.map"
     ],
     "path---citymapper": [
-      "path---citymapper-3b08cb5c5ee6da58c3d8.js",
-      "path---citymapper-3b08cb5c5ee6da58c3d8.js.map"
+      "path---citymapper-f8e219198f8ef6d91dd2.js",
+      "path---citymapper-f8e219198f8ef6d91dd2.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
       "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-test-js": [
+      "component---src-pages-test-js-8fdfe768bd3744d06133.js",
+      "component---src-pages-test-js-8fdfe768bd3744d06133.js.map"
     ]
   }
 }
