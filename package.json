@@ -7,7 +7,7 @@
     "babel": "^6.23.0",
     "babel-plugin-styled-components": "^1.8.0",
     "classnames": "^2.2.6",
-    "gatsby": "^1.9.272",
+    "gatsby": "^1.9.279",
     "gatsby-cli": "^2.4.5",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
