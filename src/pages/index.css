@@ -606,6 +606,23 @@ font-weight: 800;
     color: rgb(4, 6, 7);
 }
 
+.blog-tag {
+    font-size: 12px;
+    margin-right: 12px;
+    color: #0c0c0c;
+    background: #f7f7f7;
+    padding: 0.5em 0.8em;
+}
+
+.tag-group {
+    display: none;
+}
+
+
+.Blog-Post:hover > div.RightColumn > div.tag-group {
+        display: inline-block;
+}
+
 hr {
       background-color: #DFDFDF;
       border: 0;

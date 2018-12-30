@@ -25,43 +25,17 @@ const BlogPage = ({data}) => (
                     </div>
                 </div>
                 {data.BlogThree.edges.map(post => (
-                    <Zoom><div className="Column Grid-S" key={ post.node.id }>
+                    <Zoom><div className="Column Grid-S Blog-Post" key={ post.node.id }>
                         <div className="LeftColumn Lower">
                             <small>{post.node.frontmatter.date} </small>
                         </div>
                         <div className="RightColumn Blog">
                             <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
                             <p>{post.node.excerpt}</p>
-                            <br />
                             <hr />
-                        </div>
-                    </div></Zoom>
-                    
-                ))}
-                <h6>Let's Talk About Apps </h6>
-                <div className="Small-Blog-List">
-                
-                {data.AppTag.edges.map(post => (
-                    <Zoom><Link to={post.node.frontmatter.path}><div className="Small-Blog" key={ post.node.id }>
-                            <Img className="See-More-Photo Bottom-XS" sizes={post.node.frontmatter.image.childImageSharp.sizes} />
-                            <small>{post.node.frontmatter.date} </small>
-                            <h4><span className="highlight">{post.node.frontmatter.title}</span></h4>
-                            <br />
-                    </div>
-                    </Link></Zoom>
-                ))}
-                <div className="See-More"><Link to="/tags/app"><h5>See <br/>More</h5></Link></div>
-                </div>
-                {data.BlogAfter.edges.map(post => (
-                    <Zoom><div className="Column Grid-S" key={ post.node.id }>
-                        <div className="LeftColumn Lower">
-                            <small>{post.node.frontmatter.date} </small>
-                        </div>
-                        <div className="RightColumn Blog">
-                            <Link to={post.node.frontmatter.path}><h2><span className="highlight">{post.node.frontmatter.title}</span></h2></Link>
-                            <p>{post.node.excerpt}</p>
-                            <br />
-                            <hr />
+                            {post.node.frontmatter.tags.map((tag, index) => {
+                    return (
+                        <div className="tag-group"><span key={index} className="blog-tag">{tag}</span></div>)})}
                         </div>
                     </div></Zoom>
                     
@@ -81,7 +55,7 @@ query BlogIndex {
     BlogThree: allMarkdownRemark (
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: {fileAbsolutePath: {regex: "\/blogs/"}, frontmatter: { posttype: {ne: "scrap" }}},
-        limit: 3,
+        limit: 10,
     ) {
       edges {
         node {
@@ -104,7 +78,7 @@ query BlogIndex {
       edges {
         node {
             id
-            excerpt(pruneLength: 150)
+            excerpt(pruneLength: 250)
             frontmatter {
                 path
                 title
